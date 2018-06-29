@@ -33,13 +33,14 @@ Partial Class TheLoaiSachGUI
         Me.MaTLS = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TenTLS = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnThem = New System.Windows.Forms.Button()
+        Me.btnThoat = New System.Windows.Forms.Button()
         CType(Me.dgvDanhSachTLS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnXoa
         '
-        Me.btnXoa.Location = New System.Drawing.Point(329, 373)
-        Me.btnXoa.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnXoa.Location = New System.Drawing.Point(292, 373)
+        Me.btnXoa.Margin = New System.Windows.Forms.Padding(4)
         Me.btnXoa.Name = "btnXoa"
         Me.btnXoa.Size = New System.Drawing.Size(100, 28)
         Me.btnXoa.TabIndex = 46
@@ -49,7 +50,7 @@ Partial Class TheLoaiSachGUI
         'btnCapNhat
         '
         Me.btnCapNhat.Location = New System.Drawing.Point(169, 373)
-        Me.btnCapNhat.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnCapNhat.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCapNhat.Name = "btnCapNhat"
         Me.btnCapNhat.Size = New System.Drawing.Size(100, 28)
         Me.btnCapNhat.TabIndex = 44
@@ -59,7 +60,7 @@ Partial Class TheLoaiSachGUI
         'txtMaLoai
         '
         Me.txtMaLoai.Location = New System.Drawing.Point(169, 245)
-        Me.txtMaLoai.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtMaLoai.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMaLoai.Name = "txtMaLoai"
         Me.txtMaLoai.ReadOnly = True
         Me.txtMaLoai.Size = New System.Drawing.Size(176, 22)
@@ -79,7 +80,7 @@ Partial Class TheLoaiSachGUI
         'txtTenLoai
         '
         Me.txtTenLoai.Location = New System.Drawing.Point(169, 303)
-        Me.txtTenLoai.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTenLoai.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTenLoai.Name = "txtTenLoai"
         Me.txtTenLoai.Size = New System.Drawing.Size(295, 22)
         Me.txtTenLoai.TabIndex = 41
@@ -113,7 +114,7 @@ Partial Class TheLoaiSachGUI
         Me.dgvDanhSachTLS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvDanhSachTLS.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaTLS, Me.TenTLS})
         Me.dgvDanhSachTLS.Location = New System.Drawing.Point(16, 30)
-        Me.dgvDanhSachTLS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvDanhSachTLS.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvDanhSachTLS.MultiSelect = False
         Me.dgvDanhSachTLS.Name = "dgvDanhSachTLS"
         Me.dgvDanhSachTLS.ReadOnly = True
@@ -139,18 +140,29 @@ Partial Class TheLoaiSachGUI
         'btnThem
         '
         Me.btnThem.Location = New System.Drawing.Point(47, 373)
-        Me.btnThem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnThem.Margin = New System.Windows.Forms.Padding(4)
         Me.btnThem.Name = "btnThem"
         Me.btnThem.Size = New System.Drawing.Size(100, 28)
         Me.btnThem.TabIndex = 45
         Me.btnThem.Text = "Thêm"
         Me.btnThem.UseVisualStyleBackColor = True
         '
+        'btnThoat
+        '
+        Me.btnThoat.Location = New System.Drawing.Point(420, 373)
+        Me.btnThoat.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnThoat.Name = "btnThoat"
+        Me.btnThoat.Size = New System.Drawing.Size(100, 28)
+        Me.btnThoat.TabIndex = 47
+        Me.btnThoat.Text = "Thoát"
+        Me.btnThoat.UseVisualStyleBackColor = True
+        '
         'TheLoaiSachGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(557, 423)
+        Me.Controls.Add(Me.btnThoat)
         Me.Controls.Add(Me.btnXoa)
         Me.Controls.Add(Me.btnCapNhat)
         Me.Controls.Add(Me.txtMaLoai)
@@ -160,7 +172,8 @@ Partial Class TheLoaiSachGUI
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dgvDanhSachTLS)
         Me.Controls.Add(Me.btnThem)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "TheLoaiSachGUI"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -182,4 +195,5 @@ Partial Class TheLoaiSachGUI
     Friend WithEvents btnThem As Button
     Friend WithEvents MaTLS As DataGridViewTextBoxColumn
     Friend WithEvents TenTLS As DataGridViewTextBoxColumn
+    Friend WithEvents btnThoat As Button
 End Class

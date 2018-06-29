@@ -33,7 +33,7 @@ Partial Class ThemTheLoaiSachGUI
         'btnThoat
         '
         Me.btnThoat.Location = New System.Drawing.Point(280, 143)
-        Me.btnThoat.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnThoat.Margin = New System.Windows.Forms.Padding(4)
         Me.btnThoat.Name = "btnThoat"
         Me.btnThoat.Size = New System.Drawing.Size(100, 28)
         Me.btnThoat.TabIndex = 49
@@ -43,7 +43,7 @@ Partial Class ThemTheLoaiSachGUI
         'btnThem
         '
         Me.btnThem.Location = New System.Drawing.Point(120, 143)
-        Me.btnThem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnThem.Margin = New System.Windows.Forms.Padding(4)
         Me.btnThem.Name = "btnThem"
         Me.btnThem.Size = New System.Drawing.Size(100, 28)
         Me.btnThem.TabIndex = 48
@@ -53,7 +53,7 @@ Partial Class ThemTheLoaiSachGUI
         'txtMaLoai
         '
         Me.txtMaLoai.Location = New System.Drawing.Point(120, 15)
-        Me.txtMaLoai.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtMaLoai.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMaLoai.Name = "txtMaLoai"
         Me.txtMaLoai.ReadOnly = True
         Me.txtMaLoai.Size = New System.Drawing.Size(176, 22)
@@ -73,7 +73,7 @@ Partial Class ThemTheLoaiSachGUI
         'txtTenLoai
         '
         Me.txtTenLoai.Location = New System.Drawing.Point(120, 73)
-        Me.txtTenLoai.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTenLoai.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTenLoai.Name = "txtTenLoai"
         Me.txtTenLoai.Size = New System.Drawing.Size(295, 22)
         Me.txtTenLoai.TabIndex = 45
@@ -99,7 +99,8 @@ Partial Class ThemTheLoaiSachGUI
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtTenLoai)
         Me.Controls.Add(Me.Label2)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "ThemTheLoaiSachGUI"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

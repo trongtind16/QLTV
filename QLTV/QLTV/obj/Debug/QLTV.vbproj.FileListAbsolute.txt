@@ -70,3 +70,4 @@ E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.vbproj.CopyComplete
 E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.exe
 E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.xml
 E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.pdb
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\Bunifu_UI_v1.5.3.dll

@@ -290,6 +290,7 @@ Partial Class QuyDinhGUI
         Me.Controls.Add(Me.btnThoat)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.btnCapNhat)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "QuyDinhGUI"

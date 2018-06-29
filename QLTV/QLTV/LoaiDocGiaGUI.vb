@@ -125,4 +125,8 @@ Public Class LoaiDocGiaGUI
     Private Sub btnThem_Click(sender As Object, e As EventArgs) Handles btnThem.Click
         ThemLoaiDocGiaGUI.Show()
     End Sub
+
+    Private Sub btnThoat_Click(sender As Object, e As EventArgs) Handles btnThoat.Click
+        Me.Close()
+    End Sub
 End Class

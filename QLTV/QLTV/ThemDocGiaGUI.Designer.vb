@@ -331,6 +331,7 @@ Partial Class ThemDocGiaGUI
         Me.Controls.Add(Me.btnNhap)
         Me.Controls.Add(Me.btnThoat)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "ThemDocGiaGUI"

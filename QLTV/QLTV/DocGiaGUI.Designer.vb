@@ -23,17 +23,17 @@ Partial Class DocGiaGUI
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DocGiaGUI))
-        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dtpNgayHetHan = New System.Windows.Forms.DateTimePicker()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
@@ -49,6 +49,15 @@ Partial Class DocGiaGUI
         Me.btsua = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.dgvListDG = New System.Windows.Forms.DataGridView()
+        Me.MaDG = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TenDG = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GioiTinh = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NgaySinh = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Email = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DiaChi = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MaLDG = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NgayLapThe = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NgayHetHan = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cbGioiTinh = New System.Windows.Forms.ComboBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -66,15 +75,6 @@ Partial Class DocGiaGUI
         Me.cbLoaiDG = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.NgayHetHan = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NgayLapThe = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MaLDG = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DiaChi = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Email = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NgaySinh = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GioiTinh = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenDG = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MaDG = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -286,9 +286,9 @@ Partial Class DocGiaGUI
         '
         'dgvListDG
         '
-        DataGridViewCellStyle23.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle23.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.dgvListDG.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle23
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.dgvListDG.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvListDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvListDG.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaDG, Me.TenDG, Me.GioiTinh, Me.NgaySinh, Me.Email, Me.DiaChi, Me.MaLDG, Me.NgayLapThe, Me.NgayHetHan})
         Me.dgvListDG.ImeMode = System.Windows.Forms.ImeMode.NoControl
@@ -296,10 +296,102 @@ Partial Class DocGiaGUI
         Me.dgvListDG.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvListDG.Name = "dgvListDG"
         Me.dgvListDG.ReadOnly = True
-        DataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.dgvListDG.RowsDefaultCellStyle = DataGridViewCellStyle33
+        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.dgvListDG.RowsDefaultCellStyle = DataGridViewCellStyle11
         Me.dgvListDG.Size = New System.Drawing.Size(1428, 473)
         Me.dgvListDG.TabIndex = 55
+        '
+        'MaDG
+        '
+        Me.MaDG.DataPropertyName = "MaDG"
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Red
+        Me.MaDG.DefaultCellStyle = DataGridViewCellStyle2
+        Me.MaDG.HeaderText = "Mã Độc Giả"
+        Me.MaDG.Name = "MaDG"
+        Me.MaDG.ReadOnly = True
+        '
+        'TenDG
+        '
+        Me.TenDG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.TenDG.DataPropertyName = "TenDG"
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TenDG.DefaultCellStyle = DataGridViewCellStyle3
+        Me.TenDG.HeaderText = "Tên Độc Giả"
+        Me.TenDG.Name = "TenDG"
+        Me.TenDG.ReadOnly = True
+        '
+        'GioiTinh
+        '
+        Me.GioiTinh.DataPropertyName = "GioiTinh"
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.GioiTinh.DefaultCellStyle = DataGridViewCellStyle4
+        Me.GioiTinh.HeaderText = "Giới Tính"
+        Me.GioiTinh.Name = "GioiTinh"
+        Me.GioiTinh.ReadOnly = True
+        '
+        'NgaySinh
+        '
+        Me.NgaySinh.DataPropertyName = "NgaySinh"
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.NgaySinh.DefaultCellStyle = DataGridViewCellStyle5
+        Me.NgaySinh.HeaderText = "Ngày Sinh"
+        Me.NgaySinh.Name = "NgaySinh"
+        Me.NgaySinh.ReadOnly = True
+        '
+        'Email
+        '
+        Me.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Email.DataPropertyName = "Email"
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Email.DefaultCellStyle = DataGridViewCellStyle6
+        Me.Email.HeaderText = "Email"
+        Me.Email.Name = "Email"
+        Me.Email.ReadOnly = True
+        '
+        'DiaChi
+        '
+        Me.DiaChi.DataPropertyName = "DiaChi"
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.DiaChi.DefaultCellStyle = DataGridViewCellStyle7
+        Me.DiaChi.HeaderText = "Địa Chỉ"
+        Me.DiaChi.Name = "DiaChi"
+        Me.DiaChi.ReadOnly = True
+        '
+        'MaLDG
+        '
+        Me.MaLDG.DataPropertyName = "MaLDG"
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.MaLDG.DefaultCellStyle = DataGridViewCellStyle8
+        Me.MaLDG.HeaderText = "Loại ĐG"
+        Me.MaLDG.Name = "MaLDG"
+        Me.MaLDG.ReadOnly = True
+        '
+        'NgayLapThe
+        '
+        Me.NgayLapThe.DataPropertyName = "NgayLapThe"
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.NgayLapThe.DefaultCellStyle = DataGridViewCellStyle9
+        Me.NgayLapThe.HeaderText = "Ngày Lập Thẻ"
+        Me.NgayLapThe.Name = "NgayLapThe"
+        Me.NgayLapThe.ReadOnly = True
+        '
+        'NgayHetHan
+        '
+        Me.NgayHetHan.DataPropertyName = "NgayHetHan"
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.NgayHetHan.DefaultCellStyle = DataGridViewCellStyle10
+        Me.NgayHetHan.HeaderText = "Ngày Hết Hạn"
+        Me.NgayHetHan.Name = "NgayHetHan"
+        Me.NgayHetHan.ReadOnly = True
         '
         'cbGioiTinh
         '
@@ -505,98 +597,6 @@ Partial Class DocGiaGUI
         Me.Label1.TabIndex = 37
         Me.Label1.Text = "Loại Độc Giả :"
         '
-        'NgayHetHan
-        '
-        Me.NgayHetHan.DataPropertyName = "NgayHetHan"
-        DataGridViewCellStyle32.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle32.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NgayHetHan.DefaultCellStyle = DataGridViewCellStyle32
-        Me.NgayHetHan.HeaderText = "Ngày Hết Hạn"
-        Me.NgayHetHan.Name = "NgayHetHan"
-        Me.NgayHetHan.ReadOnly = True
-        '
-        'NgayLapThe
-        '
-        Me.NgayLapThe.DataPropertyName = "NgayLapThe"
-        DataGridViewCellStyle31.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle31.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NgayLapThe.DefaultCellStyle = DataGridViewCellStyle31
-        Me.NgayLapThe.HeaderText = "Ngày Lập Thẻ"
-        Me.NgayLapThe.Name = "NgayLapThe"
-        Me.NgayLapThe.ReadOnly = True
-        '
-        'MaLDG
-        '
-        Me.MaLDG.DataPropertyName = "MaLDG"
-        DataGridViewCellStyle30.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.MaLDG.DefaultCellStyle = DataGridViewCellStyle30
-        Me.MaLDG.HeaderText = "Loại ĐG"
-        Me.MaLDG.Name = "MaLDG"
-        Me.MaLDG.ReadOnly = True
-        '
-        'DiaChi
-        '
-        Me.DiaChi.DataPropertyName = "DiaChi"
-        DataGridViewCellStyle29.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle29.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.DiaChi.DefaultCellStyle = DataGridViewCellStyle29
-        Me.DiaChi.HeaderText = "Địa Chỉ"
-        Me.DiaChi.Name = "DiaChi"
-        Me.DiaChi.ReadOnly = True
-        '
-        'Email
-        '
-        Me.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Email.DataPropertyName = "Email"
-        DataGridViewCellStyle28.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle28.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Email.DefaultCellStyle = DataGridViewCellStyle28
-        Me.Email.HeaderText = "Email"
-        Me.Email.Name = "Email"
-        Me.Email.ReadOnly = True
-        '
-        'NgaySinh
-        '
-        Me.NgaySinh.DataPropertyName = "NgaySinh"
-        DataGridViewCellStyle27.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NgaySinh.DefaultCellStyle = DataGridViewCellStyle27
-        Me.NgaySinh.HeaderText = "Ngày Sinh"
-        Me.NgaySinh.Name = "NgaySinh"
-        Me.NgaySinh.ReadOnly = True
-        '
-        'GioiTinh
-        '
-        Me.GioiTinh.DataPropertyName = "GioiTinh"
-        DataGridViewCellStyle26.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle26.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GioiTinh.DefaultCellStyle = DataGridViewCellStyle26
-        Me.GioiTinh.HeaderText = "Giới Tính"
-        Me.GioiTinh.Name = "GioiTinh"
-        Me.GioiTinh.ReadOnly = True
-        '
-        'TenDG
-        '
-        Me.TenDG.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.TenDG.DataPropertyName = "TenDG"
-        DataGridViewCellStyle25.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle25.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TenDG.DefaultCellStyle = DataGridViewCellStyle25
-        Me.TenDG.HeaderText = "Tên Độc Giả"
-        Me.TenDG.Name = "TenDG"
-        Me.TenDG.ReadOnly = True
-        '
-        'MaDG
-        '
-        Me.MaDG.DataPropertyName = "MaDG"
-        DataGridViewCellStyle24.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle24.ForeColor = System.Drawing.Color.Red
-        Me.MaDG.DefaultCellStyle = DataGridViewCellStyle24
-        Me.MaDG.HeaderText = "Mã Độc Giả"
-        Me.MaDG.Name = "MaDG"
-        Me.MaDG.ReadOnly = True
-        '
         'DocGiaGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -607,6 +607,7 @@ Partial Class DocGiaGUI
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.dgvListDG)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "DocGiaGUI"

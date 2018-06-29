@@ -56,7 +56,7 @@ Partial Class ThemSachGUI
         Me.btnNhap.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.btnNhap.ForeColor = System.Drawing.Color.Black
         Me.btnNhap.Location = New System.Drawing.Point(401, 348)
-        Me.btnNhap.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnNhap.Margin = New System.Windows.Forms.Padding(4)
         Me.btnNhap.Name = "btnNhap"
         Me.btnNhap.Size = New System.Drawing.Size(119, 49)
         Me.btnNhap.TabIndex = 39
@@ -72,7 +72,7 @@ Partial Class ThemSachGUI
         Me.btnThoat.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.btnThoat.ForeColor = System.Drawing.Color.Black
         Me.btnThoat.Location = New System.Drawing.Point(565, 351)
-        Me.btnThoat.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnThoat.Margin = New System.Windows.Forms.Padding(4)
         Me.btnThoat.Name = "btnThoat"
         Me.btnThoat.Size = New System.Drawing.Size(119, 49)
         Me.btnThoat.TabIndex = 40
@@ -84,7 +84,7 @@ Partial Class ThemSachGUI
         '
         Me.txtNamXuatBan.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNamXuatBan.Location = New System.Drawing.Point(139, 279)
-        Me.txtNamXuatBan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNamXuatBan.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNamXuatBan.Name = "txtNamXuatBan"
         Me.txtNamXuatBan.Size = New System.Drawing.Size(199, 27)
         Me.txtNamXuatBan.TabIndex = 47
@@ -95,7 +95,7 @@ Partial Class ThemSachGUI
         Me.cbTheLoai.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbTheLoai.FormattingEnabled = True
         Me.cbTheLoai.Location = New System.Drawing.Point(559, 26)
-        Me.cbTheLoai.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbTheLoai.Margin = New System.Windows.Forms.Padding(4)
         Me.cbTheLoai.Name = "cbTheLoai"
         Me.cbTheLoai.Size = New System.Drawing.Size(187, 28)
         Me.cbTheLoai.TabIndex = 44
@@ -104,7 +104,7 @@ Partial Class ThemSachGUI
         '
         Me.txtNhaXuatBan.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNhaXuatBan.Location = New System.Drawing.Point(139, 209)
-        Me.txtNhaXuatBan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNhaXuatBan.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNhaXuatBan.Name = "txtNhaXuatBan"
         Me.txtNhaXuatBan.Size = New System.Drawing.Size(199, 27)
         Me.txtNhaXuatBan.TabIndex = 43
@@ -115,7 +115,7 @@ Partial Class ThemSachGUI
         Me.cbTinhTrang.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbTinhTrang.FormattingEnabled = True
         Me.cbTinhTrang.Location = New System.Drawing.Point(559, 149)
-        Me.cbTinhTrang.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbTinhTrang.Margin = New System.Windows.Forms.Padding(4)
         Me.cbTinhTrang.Name = "cbTinhTrang"
         Me.cbTinhTrang.Size = New System.Drawing.Size(187, 28)
         Me.cbTinhTrang.TabIndex = 42
@@ -126,7 +126,7 @@ Partial Class ThemSachGUI
         Me.dtpNgayNhap.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpNgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpNgayNhap.Location = New System.Drawing.Point(559, 206)
-        Me.dtpNgayNhap.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dtpNgayNhap.Margin = New System.Windows.Forms.Padding(4)
         Me.dtpNgayNhap.Name = "dtpNgayNhap"
         Me.dtpNgayNhap.Size = New System.Drawing.Size(187, 27)
         Me.dtpNgayNhap.TabIndex = 41
@@ -136,7 +136,7 @@ Partial Class ThemSachGUI
         '
         Me.txtTriGia.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTriGia.Location = New System.Drawing.Point(559, 87)
-        Me.txtTriGia.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTriGia.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTriGia.Name = "txtTriGia"
         Me.txtTriGia.Size = New System.Drawing.Size(187, 27)
         Me.txtTriGia.TabIndex = 39
@@ -145,7 +145,7 @@ Partial Class ThemSachGUI
         '
         Me.txtTacGia.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTacGia.Location = New System.Drawing.Point(139, 149)
-        Me.txtTacGia.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTacGia.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTacGia.Name = "txtTacGia"
         Me.txtTacGia.Size = New System.Drawing.Size(199, 27)
         Me.txtTacGia.TabIndex = 38
@@ -154,7 +154,7 @@ Partial Class ThemSachGUI
         '
         Me.txtTenSach.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTenSach.Location = New System.Drawing.Point(139, 87)
-        Me.txtTenSach.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTenSach.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTenSach.Name = "txtTenSach"
         Me.txtTenSach.Size = New System.Drawing.Size(199, 27)
         Me.txtTenSach.TabIndex = 36
@@ -163,7 +163,7 @@ Partial Class ThemSachGUI
         '
         Me.txtMaSach.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMaSach.Location = New System.Drawing.Point(139, 26)
-        Me.txtMaSach.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtMaSach.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMaSach.Name = "txtMaSach"
         Me.txtMaSach.ReadOnly = True
         Me.txtMaSach.Size = New System.Drawing.Size(199, 27)
@@ -291,7 +291,7 @@ Partial Class ThemSachGUI
         Me.Panel2.Controls.Add(Me.Label10)
         Me.Panel2.ForeColor = System.Drawing.Color.White
         Me.Panel2.Location = New System.Drawing.Point(16, 15)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(771, 326)
         Me.Panel2.TabIndex = 42
@@ -305,7 +305,8 @@ Partial Class ThemSachGUI
         Me.Controls.Add(Me.btnNhap)
         Me.Controls.Add(Me.btnThoat)
         Me.Controls.Add(Me.Panel2)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "ThemSachGUI"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

@@ -30,9 +30,10 @@ Partial Class LoaiDocGiaGUI
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dgvDanhSachTLS = New System.Windows.Forms.DataGridView()
-        Me.btnThem = New System.Windows.Forms.Button()
         Me.MaLDG = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TenLDG = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnThem = New System.Windows.Forms.Button()
+        Me.btnThoat = New System.Windows.Forms.Button()
         CType(Me.dgvDanhSachTLS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -116,7 +117,7 @@ Partial Class LoaiDocGiaGUI
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(186, 17)
         Me.Label1.TabIndex = 31
-        Me.Label1.Text = "Danh sách Loại Đọc giả:"
+        Me.Label1.Text = "Danh sách Loại Độc giả:"
         '
         'dgvDanhSachTLS
         '
@@ -136,6 +137,20 @@ Partial Class LoaiDocGiaGUI
         Me.dgvDanhSachTLS.Size = New System.Drawing.Size(515, 185)
         Me.dgvDanhSachTLS.TabIndex = 30
         '
+        'MaLDG
+        '
+        Me.MaLDG.DataPropertyName = "MaLDG"
+        Me.MaLDG.HeaderText = "Mã Loại Độc Giả"
+        Me.MaLDG.Name = "MaLDG"
+        Me.MaLDG.ReadOnly = True
+        '
+        'TenLDG
+        '
+        Me.TenLDG.DataPropertyName = "TenLDG"
+        Me.TenLDG.HeaderText = "Tên LDG"
+        Me.TenLDG.Name = "TenLDG"
+        Me.TenLDG.ReadOnly = True
+        '
         'btnThem
         '
         Me.btnThem.BackColor = System.Drawing.Color.Cyan
@@ -151,27 +166,28 @@ Partial Class LoaiDocGiaGUI
         Me.btnThem.Text = "Thêm"
         Me.btnThem.UseVisualStyleBackColor = False
         '
-        'MaLDG
+        'btnThoat
         '
-        Me.MaLDG.DataPropertyName = "MaLDG"
-        Me.MaLDG.HeaderText = "Mã Loại Độc Giả"
-        Me.MaLDG.Name = "MaLDG"
-        Me.MaLDG.ReadOnly = True
-        '
-        'TenLDG
-        '
-        Me.TenLDG.DataPropertyName = "TenLDG"
-        Me.TenLDG.HeaderText = "Tên LDG"
-        Me.TenLDG.Name = "TenLDG"
-        Me.TenLDG.ReadOnly = True
+        Me.btnThoat.BackColor = System.Drawing.Color.Cyan
+        Me.btnThoat.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.btnThoat.FlatAppearance.BorderSize = 3
+        Me.btnThoat.Location = New System.Drawing.Point(581, 366)
+        Me.btnThoat.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnThoat.Name = "btnThoat"
+        Me.btnThoat.Size = New System.Drawing.Size(123, 34)
+        Me.btnThoat.TabIndex = 38
+        Me.btnThoat.TabStop = False
+        Me.btnThoat.Text = "Thoát"
+        Me.btnThoat.UseVisualStyleBackColor = False
         '
         'LoaiDocGiaGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(733, 411)
         Me.ControlBox = False
+        Me.Controls.Add(Me.btnThoat)
         Me.Controls.Add(Me.btnXoa)
         Me.Controls.Add(Me.btnThem)
         Me.Controls.Add(Me.btnCapNhat)
@@ -182,6 +198,7 @@ Partial Class LoaiDocGiaGUI
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dgvDanhSachTLS)
         Me.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "LoaiDocGiaGUI"
@@ -204,4 +221,5 @@ Partial Class LoaiDocGiaGUI
     Friend WithEvents btnThem As Button
     Friend WithEvents MaLDG As DataGridViewTextBoxColumn
     Friend WithEvents TenLDG As DataGridViewTextBoxColumn
+    Friend WithEvents btnThoat As Button
 End Class

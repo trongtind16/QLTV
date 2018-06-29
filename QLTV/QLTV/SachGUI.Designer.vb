@@ -620,6 +620,7 @@ Partial Class SachGUI
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.dgvlistSach)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "SachGUI"
