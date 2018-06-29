@@ -1,0 +1,10 @@
+C:\Users\TrongTin16\Desktop\git\QLTV\Utility\bin\Debug\Utility.dll
+C:\Users\TrongTin16\Desktop\git\QLTV\Utility\bin\Debug\Utility.pdb
+C:\Users\TrongTin16\Desktop\git\QLTV\Utility\bin\Debug\Utility.xml
+C:\Users\TrongTin16\Desktop\git\QLTV\Utility\obj\Debug\Utility.vbprojResolveAssemblyReference.cache
+C:\Users\TrongTin16\Desktop\git\QLTV\Utility\obj\Debug\Utility.Resources.resources
+C:\Users\TrongTin16\Desktop\git\QLTV\Utility\obj\Debug\Utility.vbproj.GenerateResource.cache
+C:\Users\TrongTin16\Desktop\git\QLTV\Utility\obj\Debug\Utility.vbproj.CoreCompileInputs.cache
+C:\Users\TrongTin16\Desktop\git\QLTV\Utility\obj\Debug\Utility.dll
+C:\Users\TrongTin16\Desktop\git\QLTV\Utility\obj\Debug\Utility.xml
+C:\Users\TrongTin16\Desktop\git\QLTV\Utility\obj\Debug\Utility.pdb

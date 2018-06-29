@@ -1,0 +1,17 @@
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\bin\Debug\DAL.dll
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\bin\Debug\DAL.pdb
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\bin\Debug\DAL.xml
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\bin\Debug\DTO.dll
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\bin\Debug\Utility.dll
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\bin\Debug\DTO.pdb
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\bin\Debug\DTO.xml
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\bin\Debug\Utility.pdb
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\bin\Debug\Utility.xml
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\obj\Debug\DAL.Resources.resources
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\obj\Debug\DAL.vbproj.GenerateResource.cache
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\obj\Debug\DAL.vbproj.CoreCompileInputs.cache
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\obj\Debug\DAL.vbproj.CopyComplete
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\obj\Debug\DAL.dll
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\obj\Debug\DAL.xml
+C:\Users\TrongTin16\Desktop\git\QLTV\DAL\obj\Debug\DAL.pdb

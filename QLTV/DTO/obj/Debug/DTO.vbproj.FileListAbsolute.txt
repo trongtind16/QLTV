@@ -1,0 +1,10 @@
+C:\Users\TrongTin16\Desktop\git\QLTV\DTO\bin\Debug\DTO.dll
+C:\Users\TrongTin16\Desktop\git\QLTV\DTO\bin\Debug\DTO.pdb
+C:\Users\TrongTin16\Desktop\git\QLTV\DTO\bin\Debug\DTO.xml
+C:\Users\TrongTin16\Desktop\git\QLTV\DTO\obj\Debug\DTO.vbprojResolveAssemblyReference.cache
+C:\Users\TrongTin16\Desktop\git\QLTV\DTO\obj\Debug\DTO.Resources.resources
+C:\Users\TrongTin16\Desktop\git\QLTV\DTO\obj\Debug\DTO.vbproj.GenerateResource.cache
+C:\Users\TrongTin16\Desktop\git\QLTV\DTO\obj\Debug\DTO.vbproj.CoreCompileInputs.cache
+C:\Users\TrongTin16\Desktop\git\QLTV\DTO\obj\Debug\DTO.dll
+C:\Users\TrongTin16\Desktop\git\QLTV\DTO\obj\Debug\DTO.xml
+C:\Users\TrongTin16\Desktop\git\QLTV\DTO\obj\Debug\DTO.pdb
