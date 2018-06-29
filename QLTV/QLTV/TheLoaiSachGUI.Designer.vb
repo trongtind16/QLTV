@@ -38,62 +38,69 @@ Partial Class TheLoaiSachGUI
         '
         'btnXoa
         '
-        Me.btnXoa.Location = New System.Drawing.Point(247, 303)
+        Me.btnXoa.Location = New System.Drawing.Point(329, 373)
+        Me.btnXoa.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnXoa.Name = "btnXoa"
-        Me.btnXoa.Size = New System.Drawing.Size(75, 23)
+        Me.btnXoa.Size = New System.Drawing.Size(100, 28)
         Me.btnXoa.TabIndex = 46
         Me.btnXoa.Text = "Xóa"
         Me.btnXoa.UseVisualStyleBackColor = True
         '
         'btnCapNhat
         '
-        Me.btnCapNhat.Location = New System.Drawing.Point(127, 303)
+        Me.btnCapNhat.Location = New System.Drawing.Point(169, 373)
+        Me.btnCapNhat.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnCapNhat.Name = "btnCapNhat"
-        Me.btnCapNhat.Size = New System.Drawing.Size(75, 23)
+        Me.btnCapNhat.Size = New System.Drawing.Size(100, 28)
         Me.btnCapNhat.TabIndex = 44
         Me.btnCapNhat.Text = "Cập Nhật"
         Me.btnCapNhat.UseVisualStyleBackColor = True
         '
         'txtMaLoai
         '
-        Me.txtMaLoai.Location = New System.Drawing.Point(127, 199)
+        Me.txtMaLoai.Location = New System.Drawing.Point(169, 245)
+        Me.txtMaLoai.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtMaLoai.Name = "txtMaLoai"
         Me.txtMaLoai.ReadOnly = True
-        Me.txtMaLoai.Size = New System.Drawing.Size(133, 20)
+        Me.txtMaLoai.Size = New System.Drawing.Size(176, 22)
         Me.txtMaLoai.TabIndex = 43
         Me.txtMaLoai.WordWrap = False
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(45, 206)
+        Me.Label3.Location = New System.Drawing.Point(60, 254)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(48, 13)
+        Me.Label3.Size = New System.Drawing.Size(62, 17)
         Me.Label3.TabIndex = 42
         Me.Label3.Text = "Mã Loại:"
         '
         'txtTenLoai
         '
-        Me.txtTenLoai.Location = New System.Drawing.Point(127, 246)
+        Me.txtTenLoai.Location = New System.Drawing.Point(169, 303)
+        Me.txtTenLoai.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTenLoai.Name = "txtTenLoai"
-        Me.txtTenLoai.Size = New System.Drawing.Size(222, 20)
+        Me.txtTenLoai.Size = New System.Drawing.Size(295, 22)
         Me.txtTenLoai.TabIndex = 41
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(45, 253)
+        Me.Label2.Location = New System.Drawing.Point(60, 311)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 13)
+        Me.Label2.Size = New System.Drawing.Size(68, 17)
         Me.Label2.TabIndex = 40
         Me.Label2.Text = "Tên Loại:"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(9, 8)
+        Me.Label1.Location = New System.Drawing.Point(12, 10)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(125, 13)
+        Me.Label1.Size = New System.Drawing.Size(163, 17)
         Me.Label1.TabIndex = 39
         Me.Label1.Text = "Danh sách Loại Đọc giả:"
         '
@@ -105,13 +112,14 @@ Partial Class TheLoaiSachGUI
         Me.dgvDanhSachTLS.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.dgvDanhSachTLS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvDanhSachTLS.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaTLS, Me.TenTLS})
-        Me.dgvDanhSachTLS.Location = New System.Drawing.Point(12, 24)
+        Me.dgvDanhSachTLS.Location = New System.Drawing.Point(16, 30)
+        Me.dgvDanhSachTLS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvDanhSachTLS.MultiSelect = False
         Me.dgvDanhSachTLS.Name = "dgvDanhSachTLS"
         Me.dgvDanhSachTLS.ReadOnly = True
         Me.dgvDanhSachTLS.RowHeadersVisible = False
         Me.dgvDanhSachTLS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvDanhSachTLS.Size = New System.Drawing.Size(386, 150)
+        Me.dgvDanhSachTLS.Size = New System.Drawing.Size(515, 185)
         Me.dgvDanhSachTLS.TabIndex = 38
         '
         'MaTLS
@@ -130,18 +138,19 @@ Partial Class TheLoaiSachGUI
         '
         'btnThem
         '
-        Me.btnThem.Location = New System.Drawing.Point(35, 303)
+        Me.btnThem.Location = New System.Drawing.Point(47, 373)
+        Me.btnThem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnThem.Name = "btnThem"
-        Me.btnThem.Size = New System.Drawing.Size(75, 23)
+        Me.btnThem.Size = New System.Drawing.Size(100, 28)
         Me.btnThem.TabIndex = 45
         Me.btnThem.Text = "Thêm"
         Me.btnThem.UseVisualStyleBackColor = True
         '
         'TheLoaiSachGUI
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(418, 344)
+        Me.ClientSize = New System.Drawing.Size(557, 423)
         Me.Controls.Add(Me.btnXoa)
         Me.Controls.Add(Me.btnCapNhat)
         Me.Controls.Add(Me.txtMaLoai)
@@ -151,7 +160,10 @@ Partial Class TheLoaiSachGUI
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dgvDanhSachTLS)
         Me.Controls.Add(Me.btnThem)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MaximizeBox = False
         Me.Name = "TheLoaiSachGUI"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TheLoaiSachGUI"
         CType(Me.dgvDanhSachTLS, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

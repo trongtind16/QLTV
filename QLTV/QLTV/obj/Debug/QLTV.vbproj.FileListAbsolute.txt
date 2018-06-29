@@ -34,3 +34,39 @@ C:\Users\TrongTin16\Desktop\git\QLTV\QLTV\obj\Debug\QLTV.TinhTrangSachGUI.resour
 C:\Users\TrongTin16\Desktop\git\QLTV\QLTV\obj\Debug\QLTV.SachGUI.resources
 C:\Users\TrongTin16\Desktop\git\QLTV\QLTV\obj\Debug\QLTV.ThemSachGUI.resources
 C:\Users\TrongTin16\Desktop\git\QLTV\QLTV\obj\Debug\QLTV.PhieuMuonSachGUI.resources
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\QLTV.exe.config
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\QLTV.exe
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\QLTV.pdb
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\QLTV.xml
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\BUS.dll
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\DAL.dll
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\DTO.dll
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\Utility.dll
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\BUS.pdb
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\BUS.xml
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\DAL.pdb
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\DAL.xml
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\DTO.pdb
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\DTO.xml
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\Utility.pdb
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\Utility.xml
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.vbprojResolveAssemblyReference.cache
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.DocGiaGUI.resources
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.Form1.resources
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.LoaiDocGiaGUI.resources
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.Resources.resources
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.PhieuMuonSachGUI.resources
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.QuyDinhGUI.resources
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.SachGUI.resources
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.TheLoaiSachGUI.resources
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.ThemDocGiaGUI.resources
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.ThemLoaiDocGiaGUI.resources
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.ThemSachGUI.resources
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.ThemTheLoaiSachGUI.resources
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.TinhTrangSachGUI.resources
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.vbproj.GenerateResource.cache
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.vbproj.CoreCompileInputs.cache
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.vbproj.CopyComplete
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.exe
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.xml
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.pdb

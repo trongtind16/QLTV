@@ -136,4 +136,10 @@ Public Class ThemDocGiaGUI
     Private Sub btnThoat_Click(sender As Object, e As EventArgs) Handles btnThoat.Click
         Me.Close()
     End Sub
+
+    Private Sub txtTenDG_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTenDG.KeyPress
+        If Not Char.IsLetter(e.KeyChar) And Not Char.IsControl(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
 End Class

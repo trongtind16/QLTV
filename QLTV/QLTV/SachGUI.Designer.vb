@@ -90,9 +90,11 @@ Partial Class SachGUI
         Me.GroupBox2.Controls.Add(Me.btsua)
         Me.GroupBox2.Font = New System.Drawing.Font("Segoe UI", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.White
-        Me.GroupBox2.Location = New System.Drawing.Point(3, 178)
+        Me.GroupBox2.Location = New System.Drawing.Point(4, 219)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(457, 80)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox2.Size = New System.Drawing.Size(609, 98)
         Me.GroupBox2.TabIndex = 59
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Chức Năng"
@@ -104,9 +106,10 @@ Partial Class SachGUI
         Me.btxoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btxoa.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btxoa.ForeColor = System.Drawing.Color.Black
-        Me.btxoa.Location = New System.Drawing.Point(230, 24)
+        Me.btxoa.Location = New System.Drawing.Point(307, 30)
+        Me.btxoa.Margin = New System.Windows.Forms.Padding(4)
         Me.btxoa.Name = "btxoa"
-        Me.btxoa.Size = New System.Drawing.Size(98, 44)
+        Me.btxoa.Size = New System.Drawing.Size(131, 54)
         Me.btxoa.TabIndex = 45
         Me.btxoa.Text = "Xóa"
         Me.btxoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -119,9 +122,10 @@ Partial Class SachGUI
         Me.btthoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btthoat.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btthoat.ForeColor = System.Drawing.Color.Black
-        Me.btthoat.Location = New System.Drawing.Point(335, 25)
+        Me.btthoat.Location = New System.Drawing.Point(447, 31)
+        Me.btthoat.Margin = New System.Windows.Forms.Padding(4)
         Me.btthoat.Name = "btthoat"
-        Me.btthoat.Size = New System.Drawing.Size(98, 44)
+        Me.btthoat.Size = New System.Drawing.Size(131, 54)
         Me.btthoat.TabIndex = 48
         Me.btthoat.Text = "Trở Về"
         Me.btthoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -134,9 +138,10 @@ Partial Class SachGUI
         Me.btthem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btthem.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btthem.ForeColor = System.Drawing.Color.Black
-        Me.btthem.Location = New System.Drawing.Point(20, 25)
+        Me.btthem.Location = New System.Drawing.Point(27, 31)
+        Me.btthem.Margin = New System.Windows.Forms.Padding(4)
         Me.btthem.Name = "btthem"
-        Me.btthem.Size = New System.Drawing.Size(98, 43)
+        Me.btthem.Size = New System.Drawing.Size(131, 53)
         Me.btthem.TabIndex = 44
         Me.btthem.Text = "Thêm"
         Me.btthem.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -149,9 +154,10 @@ Partial Class SachGUI
         Me.btsua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btsua.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btsua.ForeColor = System.Drawing.Color.Black
-        Me.btsua.Location = New System.Drawing.Point(125, 24)
+        Me.btsua.Location = New System.Drawing.Point(167, 30)
+        Me.btsua.Margin = New System.Windows.Forms.Padding(4)
         Me.btsua.Name = "btsua"
-        Me.btsua.Size = New System.Drawing.Size(98, 44)
+        Me.btsua.Size = New System.Drawing.Size(131, 54)
         Me.btsua.TabIndex = 46
         Me.btsua.Text = "Sửa"
         Me.btsua.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -166,9 +172,11 @@ Partial Class SachGUI
         Me.GroupBox3.Controls.Add(Me.txtts)
         Me.GroupBox3.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.White
-        Me.GroupBox3.Location = New System.Drawing.Point(466, 178)
+        Me.GroupBox3.Location = New System.Drawing.Point(621, 219)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(498, 80)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox3.Size = New System.Drawing.Size(664, 98)
         Me.GroupBox3.TabIndex = 60
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Tìm Kiếm Theo : "
@@ -179,18 +187,20 @@ Partial Class SachGUI
         Me.cmbSach.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.cmbSach.FormattingEnabled = True
         Me.cmbSach.Items.AddRange(New Object() {"Mã Sách", "Tên Sách"})
-        Me.cmbSach.Location = New System.Drawing.Point(6, 32)
+        Me.cmbSach.Location = New System.Drawing.Point(8, 39)
+        Me.cmbSach.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbSach.Name = "cmbSach"
-        Me.cmbSach.Size = New System.Drawing.Size(101, 23)
+        Me.cmbSach.Size = New System.Drawing.Size(133, 28)
         Me.cmbSach.TabIndex = 95
         '
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.White
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(134, 0)
+        Me.PictureBox2.Location = New System.Drawing.Point(179, 0)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(52, 26)
+        Me.PictureBox2.Size = New System.Drawing.Size(69, 32)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 94
         Me.PictureBox2.TabStop = False
@@ -202,9 +212,10 @@ Partial Class SachGUI
         Me.txthuy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.txthuy.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txthuy.ForeColor = System.Drawing.Color.Black
-        Me.txthuy.Location = New System.Drawing.Point(395, 25)
+        Me.txthuy.Location = New System.Drawing.Point(527, 31)
+        Me.txthuy.Margin = New System.Windows.Forms.Padding(4)
         Me.txthuy.Name = "txthuy"
-        Me.txthuy.Size = New System.Drawing.Size(89, 44)
+        Me.txthuy.Size = New System.Drawing.Size(119, 54)
         Me.txthuy.TabIndex = 93
         Me.txthuy.Text = "Hủy"
         Me.txthuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -217,9 +228,10 @@ Partial Class SachGUI
         Me.bttimkiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.bttimkiem.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bttimkiem.ForeColor = System.Drawing.Color.Black
-        Me.bttimkiem.Location = New System.Drawing.Point(275, 26)
+        Me.bttimkiem.Location = New System.Drawing.Point(367, 32)
+        Me.bttimkiem.Margin = New System.Windows.Forms.Padding(4)
         Me.bttimkiem.Name = "bttimkiem"
-        Me.bttimkiem.Size = New System.Drawing.Size(114, 44)
+        Me.bttimkiem.Size = New System.Drawing.Size(152, 54)
         Me.bttimkiem.TabIndex = 92
         Me.bttimkiem.Text = "Tìm Kiếm"
         Me.bttimkiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -228,9 +240,10 @@ Partial Class SachGUI
         'txtts
         '
         Me.txtts.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtts.Location = New System.Drawing.Point(113, 32)
+        Me.txtts.Location = New System.Drawing.Point(151, 39)
+        Me.txtts.Margin = New System.Windows.Forms.Padding(4)
         Me.txtts.Name = "txtts"
-        Me.txtts.Size = New System.Drawing.Size(156, 23)
+        Me.txtts.Size = New System.Drawing.Size(207, 27)
         Me.txtts.TabIndex = 53
         '
         'Button1
@@ -240,9 +253,10 @@ Partial Class SachGUI
         Me.Button1.ForeColor = System.Drawing.Color.Black
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button1.Location = New System.Drawing.Point(970, 196)
+        Me.Button1.Location = New System.Drawing.Point(1293, 241)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(140, 56)
+        Me.Button1.Size = New System.Drawing.Size(187, 69)
         Me.Button1.TabIndex = 61
         Me.Button1.Text = "Thêm Loại Sách"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -254,10 +268,11 @@ Partial Class SachGUI
         Me.dgvlistSach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvlistSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvlistSach.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaSach, Me.TenSach, Me.MaTLS, Me.TenTG, Me.NamXB, Me.NXB, Me.NgayNhap, Me.TriGia, Me.MaTTS})
-        Me.dgvlistSach.Location = New System.Drawing.Point(12, 264)
+        Me.dgvlistSach.Location = New System.Drawing.Point(16, 325)
+        Me.dgvlistSach.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvlistSach.Name = "dgvlistSach"
         Me.dgvlistSach.ReadOnly = True
-        Me.dgvlistSach.Size = New System.Drawing.Size(1098, 372)
+        Me.dgvlistSach.Size = New System.Drawing.Size(1464, 458)
         Me.dgvlistSach.TabIndex = 58
         '
         'MaSach
@@ -385,9 +400,11 @@ Partial Class SachGUI
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(46, 18)
+        Me.GroupBox1.Location = New System.Drawing.Point(61, 22)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1027, 154)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Size = New System.Drawing.Size(1369, 190)
         Me.GroupBox1.TabIndex = 57
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Thông Tin Sách"
@@ -395,18 +412,20 @@ Partial Class SachGUI
         'txtNamXuatBan
         '
         Me.txtNamXuatBan.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNamXuatBan.Location = New System.Drawing.Point(478, 78)
+        Me.txtNamXuatBan.Location = New System.Drawing.Point(637, 96)
+        Me.txtNamXuatBan.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNamXuatBan.Name = "txtNamXuatBan"
-        Me.txtNamXuatBan.Size = New System.Drawing.Size(199, 23)
+        Me.txtNamXuatBan.Size = New System.Drawing.Size(264, 27)
         Me.txtNamXuatBan.TabIndex = 25
         '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.White
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(173, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(231, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(63, 33)
+        Me.PictureBox1.Size = New System.Drawing.Size(84, 41)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 24
         Me.PictureBox1.TabStop = False
@@ -416,17 +435,19 @@ Partial Class SachGUI
         Me.cbTheLoai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbTheLoai.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbTheLoai.FormattingEnabled = True
-        Me.cbTheLoai.Location = New System.Drawing.Point(121, 116)
+        Me.cbTheLoai.Location = New System.Drawing.Point(161, 143)
+        Me.cbTheLoai.Margin = New System.Windows.Forms.Padding(4)
         Me.cbTheLoai.Name = "cbTheLoai"
-        Me.cbTheLoai.Size = New System.Drawing.Size(210, 23)
+        Me.cbTheLoai.Size = New System.Drawing.Size(279, 28)
         Me.cbTheLoai.TabIndex = 21
         '
         'txtNhaXuatBan
         '
         Me.txtNhaXuatBan.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNhaXuatBan.Location = New System.Drawing.Point(478, 40)
+        Me.txtNhaXuatBan.Location = New System.Drawing.Point(637, 49)
+        Me.txtNhaXuatBan.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNhaXuatBan.Name = "txtNhaXuatBan"
-        Me.txtNhaXuatBan.Size = New System.Drawing.Size(199, 23)
+        Me.txtNhaXuatBan.Size = New System.Drawing.Size(264, 27)
         Me.txtNhaXuatBan.TabIndex = 20
         '
         'cbTinhTrang
@@ -434,9 +455,10 @@ Partial Class SachGUI
         Me.cbTinhTrang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbTinhTrang.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbTinhTrang.FormattingEnabled = True
-        Me.cbTinhTrang.Location = New System.Drawing.Point(813, 75)
+        Me.cbTinhTrang.Location = New System.Drawing.Point(1084, 92)
+        Me.cbTinhTrang.Margin = New System.Windows.Forms.Padding(4)
         Me.cbTinhTrang.Name = "cbTinhTrang"
-        Me.cbTinhTrang.Size = New System.Drawing.Size(184, 23)
+        Me.cbTinhTrang.Size = New System.Drawing.Size(244, 28)
         Me.cbTinhTrang.TabIndex = 19
         '
         'dtpNgayNhap
@@ -444,52 +466,58 @@ Partial Class SachGUI
         Me.dtpNgayNhap.CustomFormat = "dd/MM/yyyy"
         Me.dtpNgayNhap.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpNgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpNgayNhap.Location = New System.Drawing.Point(813, 113)
+        Me.dtpNgayNhap.Location = New System.Drawing.Point(1084, 139)
+        Me.dtpNgayNhap.Margin = New System.Windows.Forms.Padding(4)
         Me.dtpNgayNhap.Name = "dtpNgayNhap"
         Me.dtpNgayNhap.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.dtpNgayNhap.Size = New System.Drawing.Size(184, 23)
+        Me.dtpNgayNhap.Size = New System.Drawing.Size(244, 27)
         Me.dtpNgayNhap.TabIndex = 18
         '
         'txtTriGia
         '
         Me.txtTriGia.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTriGia.Location = New System.Drawing.Point(813, 40)
+        Me.txtTriGia.Location = New System.Drawing.Point(1084, 49)
+        Me.txtTriGia.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTriGia.Name = "txtTriGia"
-        Me.txtTriGia.Size = New System.Drawing.Size(184, 23)
+        Me.txtTriGia.Size = New System.Drawing.Size(244, 27)
         Me.txtTriGia.TabIndex = 15
         '
         'txtTacGia
         '
         Me.txtTacGia.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTacGia.Location = New System.Drawing.Point(478, 116)
+        Me.txtTacGia.Location = New System.Drawing.Point(637, 143)
+        Me.txtTacGia.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTacGia.Name = "txtTacGia"
-        Me.txtTacGia.Size = New System.Drawing.Size(199, 23)
+        Me.txtTacGia.Size = New System.Drawing.Size(264, 27)
         Me.txtTacGia.TabIndex = 14
         '
         'txtTenSach
         '
         Me.txtTenSach.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTenSach.Location = New System.Drawing.Point(121, 78)
+        Me.txtTenSach.Location = New System.Drawing.Point(161, 96)
+        Me.txtTenSach.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTenSach.Name = "txtTenSach"
-        Me.txtTenSach.Size = New System.Drawing.Size(210, 23)
+        Me.txtTenSach.Size = New System.Drawing.Size(279, 27)
         Me.txtTenSach.TabIndex = 10
         '
         'txtMaSach
         '
         Me.txtMaSach.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMaSach.Location = New System.Drawing.Point(121, 40)
+        Me.txtMaSach.Location = New System.Drawing.Point(161, 49)
+        Me.txtMaSach.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMaSach.Name = "txtMaSach"
         Me.txtMaSach.ReadOnly = True
-        Me.txtMaSach.Size = New System.Drawing.Size(210, 23)
+        Me.txtMaSach.Size = New System.Drawing.Size(279, 27)
         Me.txtMaSach.TabIndex = 9
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(712, 76)
+        Me.Label9.Location = New System.Drawing.Point(949, 94)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(71, 15)
+        Me.Label9.Size = New System.Drawing.Size(92, 20)
         Me.Label9.TabIndex = 8
         Me.Label9.Text = "Tình Trạng :"
         '
@@ -497,9 +525,10 @@ Partial Class SachGUI
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(712, 40)
+        Me.Label8.Location = New System.Drawing.Point(949, 49)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(48, 15)
+        Me.Label8.Size = New System.Drawing.Size(62, 20)
         Me.Label8.TabIndex = 7
         Me.Label8.Text = "Trị Giá :"
         '
@@ -507,9 +536,10 @@ Partial Class SachGUI
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(708, 119)
+        Me.Label7.Location = New System.Drawing.Point(944, 146)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(73, 15)
+        Me.Label7.Size = New System.Drawing.Size(96, 20)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Ngày Nhập :"
         '
@@ -517,9 +547,10 @@ Partial Class SachGUI
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(362, 78)
+        Me.Label6.Location = New System.Drawing.Point(483, 96)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(92, 15)
+        Me.Label6.Size = New System.Drawing.Size(119, 20)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Năm Xuất Bản :"
         '
@@ -527,9 +558,10 @@ Partial Class SachGUI
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(362, 40)
+        Me.Label5.Location = New System.Drawing.Point(483, 49)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(88, 15)
+        Me.Label5.Size = New System.Drawing.Size(114, 20)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Nhà Xuất Bản :"
         '
@@ -537,9 +569,10 @@ Partial Class SachGUI
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(362, 116)
+        Me.Label4.Location = New System.Drawing.Point(483, 143)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(52, 15)
+        Me.Label4.Size = New System.Drawing.Size(67, 20)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Tác Giả :"
         '
@@ -547,9 +580,10 @@ Partial Class SachGUI
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(28, 116)
+        Me.Label3.Location = New System.Drawing.Point(37, 143)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(59, 15)
+        Me.Label3.Size = New System.Drawing.Size(76, 20)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Thể Loại :"
         '
@@ -557,9 +591,10 @@ Partial Class SachGUI
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(28, 78)
+        Me.Label2.Location = New System.Drawing.Point(37, 96)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(62, 15)
+        Me.Label2.Size = New System.Drawing.Size(78, 20)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Tên Sách :"
         '
@@ -567,24 +602,28 @@ Partial Class SachGUI
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(28, 40)
+        Me.Label1.Location = New System.Drawing.Point(37, 49)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(59, 15)
+        Me.Label1.Size = New System.Drawing.Size(75, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Mã Sách :"
         '
         'SachGUI
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.ClientSize = New System.Drawing.Size(1200, 706)
+        Me.ClientSize = New System.Drawing.Size(1600, 869)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.dgvlistSach)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaximizeBox = False
         Me.Name = "SachGUI"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SachGUI"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)

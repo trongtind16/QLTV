@@ -8,3 +8,13 @@ C:\Users\TrongTin16\Desktop\git\QLTV\Utility\obj\Debug\Utility.vbproj.CoreCompil
 C:\Users\TrongTin16\Desktop\git\QLTV\Utility\obj\Debug\Utility.dll
 C:\Users\TrongTin16\Desktop\git\QLTV\Utility\obj\Debug\Utility.xml
 C:\Users\TrongTin16\Desktop\git\QLTV\Utility\obj\Debug\Utility.pdb
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\Utility\bin\Debug\Utility.dll
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\Utility\bin\Debug\Utility.pdb
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\Utility\bin\Debug\Utility.xml
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\Utility\obj\Debug\Utility.vbprojResolveAssemblyReference.cache
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\Utility\obj\Debug\Utility.Resources.resources
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\Utility\obj\Debug\Utility.vbproj.GenerateResource.cache
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\Utility\obj\Debug\Utility.vbproj.CoreCompileInputs.cache
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\Utility\obj\Debug\Utility.dll
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\Utility\obj\Debug\Utility.xml
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\Utility\obj\Debug\Utility.pdb

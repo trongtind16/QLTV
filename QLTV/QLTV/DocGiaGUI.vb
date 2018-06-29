@@ -223,4 +223,13 @@ Public Class DocGiaGUI
 
     End Sub
 
+    Private Sub txtTenDG_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTenDG.KeyPress
+        If Not Char.IsLetter(e.KeyChar) And Not Char.IsControl(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub dgvListDG_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvListDG.CellContentClick
+
+    End Sub
 End Class

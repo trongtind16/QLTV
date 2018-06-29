@@ -18,3 +18,23 @@ C:\Users\TrongTin16\Desktop\git\QLTV\BUS\obj\Debug\BUS.vbproj.CopyComplete
 C:\Users\TrongTin16\Desktop\git\QLTV\BUS\obj\Debug\BUS.dll
 C:\Users\TrongTin16\Desktop\git\QLTV\BUS\obj\Debug\BUS.xml
 C:\Users\TrongTin16\Desktop\git\QLTV\BUS\obj\Debug\BUS.pdb
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\bin\Debug\BUS.dll
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\bin\Debug\BUS.pdb
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\bin\Debug\BUS.xml
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\bin\Debug\DAL.dll
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\bin\Debug\DTO.dll
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\bin\Debug\Utility.dll
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\bin\Debug\DAL.pdb
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\bin\Debug\DAL.xml
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\bin\Debug\DTO.pdb
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\bin\Debug\DTO.xml
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\bin\Debug\Utility.pdb
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\bin\Debug\Utility.xml
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\obj\Debug\BUS.vbprojResolveAssemblyReference.cache
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\obj\Debug\BUS.Resources.resources
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\obj\Debug\BUS.vbproj.GenerateResource.cache
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\obj\Debug\BUS.vbproj.CoreCompileInputs.cache
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\obj\Debug\BUS.vbproj.CopyComplete
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\obj\Debug\BUS.dll
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\obj\Debug\BUS.xml
+E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\BUS\obj\Debug\BUS.pdb

@@ -32,68 +32,77 @@ Partial Class ThemLoaiDocGiaGUI
         '
         'btnThoat
         '
-        Me.btnThoat.Location = New System.Drawing.Point(230, 116)
+        Me.btnThoat.Location = New System.Drawing.Point(307, 143)
+        Me.btnThoat.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnThoat.Name = "btnThoat"
-        Me.btnThoat.Size = New System.Drawing.Size(75, 23)
+        Me.btnThoat.Size = New System.Drawing.Size(100, 28)
         Me.btnThoat.TabIndex = 43
         Me.btnThoat.Text = "Thoát"
         Me.btnThoat.UseVisualStyleBackColor = True
         '
         'btnThem
         '
-        Me.btnThem.Location = New System.Drawing.Point(110, 116)
+        Me.btnThem.Location = New System.Drawing.Point(147, 143)
+        Me.btnThem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnThem.Name = "btnThem"
-        Me.btnThem.Size = New System.Drawing.Size(75, 23)
+        Me.btnThem.Size = New System.Drawing.Size(100, 28)
         Me.btnThem.TabIndex = 42
         Me.btnThem.Text = "Thêm"
         Me.btnThem.UseVisualStyleBackColor = True
         '
         'txtMaLoai
         '
-        Me.txtMaLoai.Location = New System.Drawing.Point(110, 12)
+        Me.txtMaLoai.Location = New System.Drawing.Point(147, 15)
+        Me.txtMaLoai.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtMaLoai.Name = "txtMaLoai"
         Me.txtMaLoai.ReadOnly = True
-        Me.txtMaLoai.Size = New System.Drawing.Size(133, 20)
+        Me.txtMaLoai.Size = New System.Drawing.Size(176, 22)
         Me.txtMaLoai.TabIndex = 41
         Me.txtMaLoai.WordWrap = False
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(28, 19)
+        Me.Label3.Location = New System.Drawing.Point(37, 23)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(48, 13)
+        Me.Label3.Size = New System.Drawing.Size(62, 17)
         Me.Label3.TabIndex = 40
         Me.Label3.Text = "Mã Loại:"
         '
         'txtTenLoai
         '
-        Me.txtTenLoai.Location = New System.Drawing.Point(110, 59)
+        Me.txtTenLoai.Location = New System.Drawing.Point(147, 73)
+        Me.txtTenLoai.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTenLoai.Name = "txtTenLoai"
-        Me.txtTenLoai.Size = New System.Drawing.Size(222, 20)
+        Me.txtTenLoai.Size = New System.Drawing.Size(295, 22)
         Me.txtTenLoai.TabIndex = 39
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(28, 66)
+        Me.Label2.Location = New System.Drawing.Point(37, 81)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 13)
+        Me.Label2.Size = New System.Drawing.Size(68, 17)
         Me.Label2.TabIndex = 38
         Me.Label2.Text = "Tên Loại:"
         '
-        'ThemLoaiDocGia
+        'ThemLoaiDocGiaGUI
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(374, 162)
+        Me.ClientSize = New System.Drawing.Size(499, 199)
         Me.Controls.Add(Me.btnThoat)
         Me.Controls.Add(Me.btnThem)
         Me.Controls.Add(Me.txtMaLoai)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtTenLoai)
         Me.Controls.Add(Me.Label2)
-        Me.Name = "ThemLoaiDocGia"
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MaximizeBox = False
+        Me.Name = "ThemLoaiDocGiaGUI"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ThemLoaiDocGia"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -179,4 +179,16 @@ Public Class SachGUI
     Private Sub btthem_Click(sender As Object, e As EventArgs) Handles btthem.Click
         ThemSachGUI.Show()
     End Sub
+
+    Private Sub txtNamXuatBan_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNamXuatBan.KeyPress
+        If Not Char.IsDigit(e.KeyChar) And Not Char.IsControl(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtTriGia_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTriGia.KeyPress
+        If Not Char.IsDigit(e.KeyChar) And Not Char.IsControl(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
 End Class
