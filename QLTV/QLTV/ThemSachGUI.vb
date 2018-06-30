@@ -121,7 +121,7 @@ Public Class ThemSachGUI
         ' Get Quy Dinh
     End Sub
     Private Sub btnThoat_Click(sender As Object, e As EventArgs) Handles btnThoat.Click
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub txtTriGia_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTriGia.KeyPress

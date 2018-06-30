@@ -37,62 +37,69 @@ Partial Class TinhTrangSachGUI
         '
         'btnThoat
         '
-        Me.btnThoat.Location = New System.Drawing.Point(260, 309)
+        Me.btnThoat.Location = New System.Drawing.Point(347, 380)
+        Me.btnThoat.Margin = New System.Windows.Forms.Padding(4)
         Me.btnThoat.Name = "btnThoat"
-        Me.btnThoat.Size = New System.Drawing.Size(75, 23)
+        Me.btnThoat.Size = New System.Drawing.Size(100, 28)
         Me.btnThoat.TabIndex = 55
         Me.btnThoat.Text = "Thoát"
         Me.btnThoat.UseVisualStyleBackColor = True
         '
         'btnCapNhat
         '
-        Me.btnCapNhat.Location = New System.Drawing.Point(140, 309)
+        Me.btnCapNhat.Location = New System.Drawing.Point(187, 380)
+        Me.btnCapNhat.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCapNhat.Name = "btnCapNhat"
-        Me.btnCapNhat.Size = New System.Drawing.Size(75, 23)
+        Me.btnCapNhat.Size = New System.Drawing.Size(100, 28)
         Me.btnCapNhat.TabIndex = 53
         Me.btnCapNhat.Text = "Cập Nhật"
         Me.btnCapNhat.UseVisualStyleBackColor = True
         '
         'txtMaLoai
         '
-        Me.txtMaLoai.Location = New System.Drawing.Point(140, 205)
+        Me.txtMaLoai.Location = New System.Drawing.Point(187, 252)
+        Me.txtMaLoai.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMaLoai.Name = "txtMaLoai"
         Me.txtMaLoai.ReadOnly = True
-        Me.txtMaLoai.Size = New System.Drawing.Size(133, 20)
+        Me.txtMaLoai.Size = New System.Drawing.Size(176, 22)
         Me.txtMaLoai.TabIndex = 52
         Me.txtMaLoai.WordWrap = False
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(58, 212)
+        Me.Label3.Location = New System.Drawing.Point(77, 261)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(48, 13)
+        Me.Label3.Size = New System.Drawing.Size(62, 17)
         Me.Label3.TabIndex = 51
         Me.Label3.Text = "Mã Loại:"
         '
         'txtTenLoai
         '
-        Me.txtTenLoai.Location = New System.Drawing.Point(140, 252)
+        Me.txtTenLoai.Location = New System.Drawing.Point(187, 310)
+        Me.txtTenLoai.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTenLoai.Name = "txtTenLoai"
-        Me.txtTenLoai.Size = New System.Drawing.Size(222, 20)
+        Me.txtTenLoai.Size = New System.Drawing.Size(295, 22)
         Me.txtTenLoai.TabIndex = 50
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(58, 259)
+        Me.Label2.Location = New System.Drawing.Point(77, 319)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 13)
+        Me.Label2.Size = New System.Drawing.Size(68, 17)
         Me.Label2.TabIndex = 49
         Me.Label2.Text = "Tên Loại:"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(22, 14)
+        Me.Label1.Location = New System.Drawing.Point(29, 17)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(125, 13)
+        Me.Label1.Size = New System.Drawing.Size(163, 17)
         Me.Label1.TabIndex = 48
         Me.Label1.Text = "Danh sách Loại Đọc giả:"
         '
@@ -104,13 +111,14 @@ Partial Class TinhTrangSachGUI
         Me.dgvDanhSachTTS.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.dgvDanhSachTTS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvDanhSachTTS.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaTTS, Me.TenTTS})
-        Me.dgvDanhSachTTS.Location = New System.Drawing.Point(25, 30)
+        Me.dgvDanhSachTTS.Location = New System.Drawing.Point(33, 37)
+        Me.dgvDanhSachTTS.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvDanhSachTTS.MultiSelect = False
         Me.dgvDanhSachTTS.Name = "dgvDanhSachTTS"
         Me.dgvDanhSachTTS.ReadOnly = True
         Me.dgvDanhSachTTS.RowHeadersVisible = False
         Me.dgvDanhSachTTS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvDanhSachTTS.Size = New System.Drawing.Size(386, 150)
+        Me.dgvDanhSachTTS.Size = New System.Drawing.Size(515, 185)
         Me.dgvDanhSachTTS.TabIndex = 47
         '
         'MaTTS
@@ -129,9 +137,9 @@ Partial Class TinhTrangSachGUI
         '
         'TinhTrangSachGUI
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(438, 360)
+        Me.ClientSize = New System.Drawing.Size(584, 443)
         Me.Controls.Add(Me.btnThoat)
         Me.Controls.Add(Me.btnCapNhat)
         Me.Controls.Add(Me.txtMaLoai)
@@ -140,7 +148,10 @@ Partial Class TinhTrangSachGUI
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dgvDanhSachTTS)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "TinhTrangSachGUI"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TinhTrangSachGUI"
         CType(Me.dgvDanhSachTTS, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

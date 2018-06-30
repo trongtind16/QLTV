@@ -243,7 +243,7 @@ Public Class SachGUI
         Me.txtTimKiem.Focus()
     End Sub
     Private Sub btthoat_Click(sender As Object, e As EventArgs) Handles btthoat.Click
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub btthem_Click(sender As Object, e As EventArgs) Handles btthem.Click

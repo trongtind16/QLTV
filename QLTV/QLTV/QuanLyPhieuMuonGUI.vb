@@ -59,6 +59,6 @@ Public Class QuanLyPhieuMuonGUI
 
 
     Private Sub btthoat_Click(sender As Object, e As EventArgs) Handles btthoat.Click
-        Me.Close()
+        Me.Hide()
     End Sub
 End Class
