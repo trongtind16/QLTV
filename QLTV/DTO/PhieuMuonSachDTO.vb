@@ -7,11 +7,10 @@
     Private dateNgayMuon As DateTime
     Private dateNgayHenTra As DateTime
     Private dateNgayTra As DateTime
-    Private iMaTTS As Integer
     Private strTinhTrangPhieuMuon As String
     Public Sub New()
     End Sub
-    Public Sub New(strMaPhieu As String, strMaDG As String, strMaSach As String, strTenDG As String, strTenSach As String, dateNgayMuon As DateTime, dateNgayHenTra As DateTime, dateNgayTra As DateTime, iMaTTS As Integer, strTinhTrangPhieuMuon As String)
+    Public Sub New(strMaPhieu As String, strMaDG As String, strTenDG As String, strMaSach As String, strTenSach As String, dateNgayMuon As DateTime, dateNgayHenTra As DateTime, dateNgayTra As DateTime, strTinhTrangPhieuMuon As String)
         Me.strMaPhieu = strMaPhieu
         Me.strMaDG = strMaDG
         Me.strTenDG = strTenDG
@@ -20,7 +19,6 @@
         Me.dateNgayMuon = dateNgayMuon
         Me.dateNgayTra = dateNgayTra
         Me.dateNgayHenTra = dateNgayHenTra
-        Me.iMaTTS = iMaTTS
         Me.strTinhTrangPhieuMuon = strTinhTrangPhieuMuon
     End Sub
     Public Property TenSach() As String
@@ -45,14 +43,6 @@
         End Get
         Set(value As String)
             strTinhTrangPhieuMuon = value
-        End Set
-    End Property
-    Public Property MaTTS() As Integer
-        Get
-            Return iMaTTS
-        End Get
-        Set(value As Integer)
-            iMaTTS = value
         End Set
     End Property
     Public Property NgayTra() As DateTime

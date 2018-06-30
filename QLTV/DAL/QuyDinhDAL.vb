@@ -21,6 +21,8 @@ Public Class QuyDinhDAL
         query &= " ,[TuoiToiDa] = @TuoiToiDa "
         query &= " ,[ThoiGianSuDung] = @ThoiGianSuDung"
         query &= " ,[KhoangCachNamXuatBan] = @KhoangCachNamXuatBan"
+        query &= " ,[SachMuonToiDa] = @SachMuonToiDa"
+        query &= " ,[NgayMuonToiDa] = @NgayMuonToiDa"
         query &= " WHERE "
         query &= " [Id] = @Id "
 
@@ -35,6 +37,9 @@ Public Class QuyDinhDAL
                     .Parameters.AddWithValue("@ThoiGianSuDung", qd.ThoiGianSuDung)
                     .Parameters.AddWithValue("@KhoangCachNamXuatBan", qd.KhoangCachNamXuatBan)
                     .Parameters.AddWithValue("@Id", qd.ID)
+                    .Parameters.AddWithValue("@SachMuonToiDa", qd.SachMuonToiDa)
+                    .Parameters.AddWithValue("@NgayMuonToiDa", qd.NgayMuonToiDa)
+
                 End With
                 Try
                     conn.Open()
@@ -52,7 +57,7 @@ Public Class QuyDinhDAL
     Public Function selectALL(ByRef quydinh As List(Of QuyDinhDTO)) As Result
 
         Dim query As String = String.Empty
-        query &= " SELECT [Id], [TuoiToiThieu], [TuoiToiDa], [ThoiGianSuDung], [KhoangCachNamXuatBan]"
+        query &= " SELECT [Id], [TuoiToiThieu], [TuoiToiDa], [ThoiGianSuDung], [KhoangCachNamXuatBan],[SachMuonToiDa],[NgayMuonToiDa]"
         query &= " FROM [QuyDinh]"
 
 
@@ -70,7 +75,7 @@ Public Class QuyDinhDAL
                     If reader.HasRows = True Then
                         quydinh.Clear()
                         While reader.Read()
-                            quydinh.Add(New QuyDinhDTO(reader("Id"), reader("TuoiToiThieu"), reader("TuoiToiDa"), reader("ThoiGianSuDung"), reader("KhoangCachNamXuatBan")))
+                            quydinh.Add(New QuyDinhDTO(reader("Id"), reader("TuoiToiThieu"), reader("TuoiToiDa"), reader("ThoiGianSuDung"), reader("KhoangCachNamXuatBan"), reader("SachMuonToiDa"), reader("NgayMuonToiDa")))
                         End While
                     End If
                 Catch ex As Exception
@@ -84,17 +89,19 @@ Public Class QuyDinhDAL
         Return New Result(True) ' thanh cong
     End Function
 
-    Public Function GetQuyDinh(ByRef GetTuoiToiThieu As Integer, ByRef GetTuoiToiDa As Integer, ByRef GetThoiGianSuDung As Integer, ByRef GetKhoangCachNamXuatBan As Integer) As Result 'ex: 18222229
+    Public Function GetQuyDinh(ByRef GetTuoiToiThieu As Integer, ByRef GetTuoiToiDa As Integer, ByRef GetThoiGianSuDung As Integer, ByRef GetKhoangCachNamXuatBan As Integer, ByRef GetSachMuonToiDa As Integer, ByRef GetNgayMuonToiDa As Integer) As Result
 
         GetTuoiToiThieu = 0
         GetTuoiToiDa = 0
         GetThoiGianSuDung = 0
         GetKhoangCachNamXuatBan = 0
+        GetSachMuonToiDa = 0
+        GetNgayMuonToiDa = 0
 
 
 
         Dim query As String = String.Empty
-        query &= "SELECT [TuoiToiThieu],[TuoiToiDa],[ThoiGianSuDung],[KhoangCachNamXuatBan] "
+        query &= "SELECT [TuoiToiThieu],[TuoiToiDa],[ThoiGianSuDung],[KhoangCachNamXuatBan],[SachMuonToiDa],[NgayMuonToiDa]"
         query &= "FROM [QuyDinh] "
 
 
@@ -117,12 +124,18 @@ Public Class QuyDinhDAL
                     ThoiGianSuDung = Nothing
                     Dim KhoangCachNamXuatBan As Integer
                     KhoangCachNamXuatBan = Nothing
+                    Dim SachMuonToiDa As Integer
+                    SachMuonToiDa = Nothing
+                    Dim NgayMuonToiDa As Integer
+                    NgayMuonToiDa = Nothing
                     If reader.HasRows = True Then
                         While reader.Read()
                             TuoiToiThieu = reader("TuoiToiThieu")
                             TuoiToiDa = reader("TuoiToiDa")
                             ThoiGianSuDung = reader("ThoiGianSuDung")
                             KhoangCachNamXuatBan = reader("KhoangCachNamXuatBan")
+                            SachMuonToiDa = reader("SachMuonToiDa")
+                            NgayMuonToiDa = reader("NgayMuonToiDa")
                         End While
                     End If
 
@@ -130,6 +143,8 @@ Public Class QuyDinhDAL
                     GetTuoiToiDa = TuoiToiDa
                     GetThoiGianSuDung = ThoiGianSuDung
                     GetKhoangCachNamXuatBan = KhoangCachNamXuatBan
+                    GetSachMuonToiDa = SachMuonToiDa
+                    GetNgayMuonToiDa = NgayMuonToiDa
 
                 Catch ex As Exception
                     conn.Close() ' that bai!!!

@@ -47,15 +47,11 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\Bunifu_UI_v1.5.3.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -115,6 +111,12 @@
       <DependentUpon>PhieuMuonSachGUI.vb</DependentUpon>
     </Compile>
     <Compile Include="PhieuMuonSachGUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyPhieuMuonGUI.Designer.vb">
+      <DependentUpon>QuanLyPhieuMuonGUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyPhieuMuonGUI.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QuyDinhGUI.Designer.vb">
@@ -184,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PhieuMuonSachGUI.resx">
       <DependentUpon>PhieuMuonSachGUI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyPhieuMuonGUI.resx">
+      <DependentUpon>QuanLyPhieuMuonGUI.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuyDinhGUI.resx">
       <DependentUpon>QuyDinhGUI.vb</DependentUpon>

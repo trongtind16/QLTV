@@ -12,13 +12,86 @@ Public Class PhieuMuonSachDAL
     Public Sub New(ConnectionString As String)
         Me.connectionString = ConnectionString
     End Sub
-
-    Public Function insert(pms As PhieuMuonSachDTO) As Result
+    Public Function getNextID() As Integer
+        Dim id As Integer
+        id = 1
 
         Dim query As String = String.Empty
-        query &= "INSERT INTO [MuonTraSach] ([MaPhieu],[MaDG],[MaSach],[NgayMuon],[NgayHenTra],[NgayTra],[MaTTS],[TinhTrangPhieuMuon])"
-        query &= "VALUES (@MaPhieu,@MaDG,@MaSach,@NgayMuon,@NgayHenTra,@NgayTra,@MaTTS,@TinhTrangPhieuMuon)"
+        query &= "Select TOP 1 [MaPhieu] "
+        query &= "From [MuonTraSach] "
+        query &= "Order By [MaPhieu] DESC "
 
+        Using conn As New SqlConnection(connectionString)
+            Using comm As New SqlCommand()
+                With comm
+                    .Connection = conn
+                    .CommandType = CommandType.Text
+                    .CommandText = query
+                End With
+                Try
+                    conn.Open()
+                    Dim reader As SqlDataReader
+                    reader = comm.ExecuteReader()
+                    Dim idOnDB As Integer
+                    idOnDB = Nothing
+                    If reader.HasRows = True Then
+                        While reader.Read()
+                            idOnDB = reader("MaPhieu")
+                        End While
+                    End If
+                    ' new ID = current ID + 1
+                    id = idOnDB + 1
+                Catch ex As Exception
+                    conn.Close() ' that bai!!!
+                    System.Console.WriteLine(ex.StackTrace)
+                End Try
+            End Using
+        End Using
+        Return id ' thanh cong
+    End Function
+    Public Function getNextID(ByRef nextID As Integer) As Result
+
+        Dim query As String = String.Empty
+        query &= "Select TOP 1 [MaPhieu] "
+        query &= "From [MuonTraSach] "
+        query &= "Order By [MaPhieu] DESC "
+
+        Using conn As New SqlConnection(connectionString)
+            Using comm As New SqlCommand()
+                With comm
+                    .Connection = conn
+                    .CommandType = CommandType.Text
+                    .CommandText = query
+                End With
+                Try
+                    conn.Open()
+                    Dim reader As SqlDataReader
+                    reader = comm.ExecuteReader()
+                    Dim idOnDB As Integer
+                    idOnDB = Nothing
+                    If reader.HasRows = True Then
+                        While reader.Read()
+                            idOnDB = reader("MaPhieu")
+                        End While
+                    End If
+                    ' new ID = current ID + 1
+                    nextID = idOnDB + 1
+                Catch ex As Exception
+                    conn.Close()
+                    ' them that bai!!!
+                    nextID = 1
+                    Return New Result(False, "Lấy ID kế tiếp của Phiểu mượn không thành công", ex.StackTrace)
+                End Try
+            End Using
+        End Using
+        Return New Result(True) ' thanh cong
+    End Function
+    Public Function insert(pms As PhieuMuonSachDTO) As Result
+        Dim query As String = String.Empty
+        query &= "INSERT INTO [MuonTraSach]([MaPhieu],[MaDG],[MaSach],[NgayMuon],[NgayHenTra],[NgayTra],[TinhTrangPhieuMuon]) "
+        query &= "VALUES (@MaPhieu,@MaDG,@MaSach,@NgayMuon,@NgayHenTra,@NgayTra,@TinhTrangPhieuMuon)"
+
+        pms.MaPhieu = getNextID()
         Using conn As New SqlConnection(connectionString)
             Using comm As New SqlCommand()
                 With comm
@@ -30,16 +103,15 @@ Public Class PhieuMuonSachDAL
                     .Parameters.AddWithValue("@MaSach", pms.MaSach)
                     .Parameters.AddWithValue("@NgayMuon", pms.NgayMuon)
                     .Parameters.AddWithValue("@NgayHenTra", pms.NgayHenTra)
-                    .Parameters.AddWithValue("@NgayTra", pms.NgayHenTra)
-                    .Parameters.AddWithValue("@MaTTS", pms.MaTTS)
-                    .Parameters.AddWithValue("@TinhTrangTraSach", "Đang Mượn")
+                    .Parameters.AddWithValue("@NgayTra", pms.NgayTra)
+                    .Parameters.AddWithValue("@TinhTrangPhieuMuon", pms.TinhTrangPhieuMuon)
                 End With
                 Try
                     conn.Open()
                     comm.ExecuteNonQuery()
                 Catch ex As Exception
                     conn.Close()
-                    'System.Console.WriteLine(ex.StackTrace)
+                    System.Console.WriteLine(ex.StackTrace)
                     Return New Result(False, "Thêm Phiếu mượn không thành công", ex.StackTrace)
                 End Try
             End Using
@@ -50,8 +122,8 @@ Public Class PhieuMuonSachDAL
     Public Function selectAll(ByRef listPMS As List(Of PhieuMuonSachDTO)) As Result
 
         Dim query As String = String.Empty
-        query &= "SELECT [MaPhieu],[MaDG],[DocGia].[TenDG],[MaSach], [Sach].[TenSach], [NgayMuon], [NgayHenTra],[NgayTra],[TinhTrangSach].[TenTTS], [TinhTrangPhieuMuon] "
-        query &= "FROM [MuonTraSach],[DocGia],[Sach],[TinhTrangSach] WHERE [MuonTraSach].[MaDG]=[DocGia].[MaDG] AND [MuonTraSach].[MaSach]=[Sach].[MaSach] AND [MuonTraSach].[MaTTS]=[TinhTrangSach].[MaTTS]"
+        query &= "SELECT [MaPhieu],[DocGia].[MaDG],[DocGia].[TenDG], [Sach].[MaSach],[Sach].[TenSach], [NgayMuon], [NgayHenTra],[NgayTra], [TinhTrangPhieuMuon]  "
+        query &= "FROM [MuonTraSach],[DocGia],[Sach] WHERE [MuonTraSach].[MaDG]=[DocGia].[MaDG] AND [MuonTraSach].[MaSach]=[Sach].[MaSach]"
 
         Using conn As New SqlConnection(connectionString)
             Using comm As New SqlCommand()
@@ -69,7 +141,7 @@ Public Class PhieuMuonSachDAL
                     If reader.HasRows = True Then
                         listPMS.Clear()
                         While reader.Read()
-                            listPMS.Add(New PhieuMuonSachDTO(reader("MaPhieu"), reader("MaDG"), reader("TenDG"), reader("MaSach"), reader("TenSach"), reader("NgayMuon"), reader("NgayHenTra"), reader("NgayTra"), reader("TenTTS"), reader("TinhTrangPhieuMuon")))
+                            listPMS.Add(New PhieuMuonSachDTO(reader("MaPhieu"), reader("MaDG"), reader("TenDG"), reader("MaSach"), reader("TenSach"), reader("NgayMuon"), reader("NgayHenTra"), reader("NgayTra"), reader("TinhTrangPhieuMuon")))
                         End While
                     End If
 

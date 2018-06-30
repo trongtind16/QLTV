@@ -22,15 +22,15 @@ Partial Class PhieuMuonSachGUI
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.btnNhap = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cbMaDG = New System.Windows.Forms.ComboBox()
         Me.txtMaPhieu = New System.Windows.Forms.TextBox()
@@ -58,110 +58,96 @@ Partial Class PhieuMuonSachGUI
         Me.NamXB = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NXB = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txtMaSach = New System.Windows.Forms.TextBox()
+        Me.cbDoiTuong = New System.Windows.Forms.ComboBox()
+        Me.btnTimKiem = New System.Windows.Forms.Button()
+        Me.btnHuy = New System.Windows.Forms.Button()
+        Me.txtTimKiem = New System.Windows.Forms.TextBox()
         CType(Me.dgvlistSach, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnNhap
         '
-        Me.Button1.Location = New System.Drawing.Point(361, 185)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 28)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnNhap.Location = New System.Drawing.Point(299, 110)
+        Me.btnNhap.Name = "btnNhap"
+        Me.btnNhap.Size = New System.Drawing.Size(75, 23)
+        Me.btnNhap.TabIndex = 0
+        Me.btnNhap.Text = "Thêm"
+        Me.btnNhap.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(16, 44)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(12, 36)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(137, 23)
+        Me.Label1.Size = New System.Drawing.Size(82, 13)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Mã Phiếu Mượn"
         '
         'cbMaDG
         '
         Me.cbMaDG.FormattingEnabled = True
-        Me.cbMaDG.Location = New System.Drawing.Point(161, 91)
-        Me.cbMaDG.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbMaDG.Location = New System.Drawing.Point(121, 74)
         Me.cbMaDG.Name = "cbMaDG"
-        Me.cbMaDG.Size = New System.Drawing.Size(160, 24)
+        Me.cbMaDG.Size = New System.Drawing.Size(121, 21)
         Me.cbMaDG.TabIndex = 2
         '
         'txtMaPhieu
         '
-        Me.txtMaPhieu.Location = New System.Drawing.Point(161, 41)
-        Me.txtMaPhieu.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtMaPhieu.Enabled = False
+        Me.txtMaPhieu.Location = New System.Drawing.Point(121, 33)
         Me.txtMaPhieu.Name = "txtMaPhieu"
-        Me.txtMaPhieu.Size = New System.Drawing.Size(160, 22)
+        Me.txtMaPhieu.Size = New System.Drawing.Size(121, 20)
         Me.txtMaPhieu.TabIndex = 3
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(16, 101)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(12, 82)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(102, 23)
+        Me.Label2.Size = New System.Drawing.Size(64, 13)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Mã Độc Giả"
+        Me.Label2.Text = "Mã Đọc Giả"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(16, 135)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(12, 110)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(104, 23)
+        Me.Label3.Size = New System.Drawing.Size(68, 13)
         Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Tên Độc Giả"
+        Me.Label3.Text = "Tên Đọc Giả"
         '
         'txtTenDG
         '
-        Me.txtTenDG.Location = New System.Drawing.Point(161, 132)
-        Me.txtTenDG.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtTenDG.Location = New System.Drawing.Point(121, 107)
         Me.txtTenDG.Name = "txtTenDG"
-        Me.txtTenDG.Size = New System.Drawing.Size(160, 22)
+        Me.txtTenDG.Size = New System.Drawing.Size(121, 20)
         Me.txtTenDG.TabIndex = 3
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(851, 36)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(638, 29)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(77, 23)
+        Me.Label4.Size = New System.Drawing.Size(50, 13)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Mã Sách"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(851, 75)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(638, 61)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(79, 23)
+        Me.Label5.Size = New System.Drawing.Size(54, 13)
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "Tên Sách"
         '
         'txtTenSach
         '
-        Me.txtTenSach.Location = New System.Drawing.Point(996, 71)
-        Me.txtTenSach.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtTenSach.Enabled = False
+        Me.txtTenSach.Location = New System.Drawing.Point(747, 58)
         Me.txtTenSach.Name = "txtTenSach"
-        Me.txtTenSach.Size = New System.Drawing.Size(160, 22)
+        Me.txtTenSach.Size = New System.Drawing.Size(121, 20)
         Me.txtTenSach.TabIndex = 3
         '
         'dtpNgayMuon
@@ -169,34 +155,27 @@ Partial Class PhieuMuonSachGUI
         Me.dtpNgayMuon.CustomFormat = "dd/MM/yyyy"
         Me.dtpNgayMuon.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpNgayMuon.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpNgayMuon.Location = New System.Drawing.Point(524, 39)
-        Me.dtpNgayMuon.Margin = New System.Windows.Forms.Padding(4)
+        Me.dtpNgayMuon.Location = New System.Drawing.Point(393, 32)
         Me.dtpNgayMuon.Name = "dtpNgayMuon"
-        Me.dtpNgayMuon.Size = New System.Drawing.Size(275, 26)
+        Me.dtpNgayMuon.Size = New System.Drawing.Size(207, 22)
         Me.dtpNgayMuon.TabIndex = 35
         Me.dtpNgayMuon.Value = New Date(1999, 1, 1, 0, 0, 0, 0)
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(379, 39)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(284, 32)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(105, 23)
+        Me.Label6.Size = New System.Drawing.Size(62, 13)
         Me.Label6.TabIndex = 1
         Me.Label6.Text = "Ngày Mượn"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(379, 74)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(284, 60)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(119, 23)
+        Me.Label7.Size = New System.Drawing.Size(74, 13)
         Me.Label7.TabIndex = 1
         Me.Label7.Text = "Ngày Hẹn Trả"
         '
@@ -205,58 +184,51 @@ Partial Class PhieuMuonSachGUI
         Me.dtpNgayHenTra.CustomFormat = "dd/MM/yyyy"
         Me.dtpNgayHenTra.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpNgayHenTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpNgayHenTra.Location = New System.Drawing.Point(524, 74)
-        Me.dtpNgayHenTra.Margin = New System.Windows.Forms.Padding(4)
+        Me.dtpNgayHenTra.Location = New System.Drawing.Point(393, 60)
         Me.dtpNgayHenTra.Name = "dtpNgayHenTra"
-        Me.dtpNgayHenTra.Size = New System.Drawing.Size(275, 26)
+        Me.dtpNgayHenTra.Size = New System.Drawing.Size(207, 22)
         Me.dtpNgayHenTra.TabIndex = 35
         Me.dtpNgayHenTra.Value = New Date(1999, 1, 1, 0, 0, 0, 0)
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(379, 108)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Location = New System.Drawing.Point(284, 88)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(82, 23)
+        Me.Label8.Size = New System.Drawing.Size(51, 13)
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "Ngày Trả"
         '
         'dtpNgayTra
         '
         Me.dtpNgayTra.CustomFormat = "dd/MM/yyyy"
+        Me.dtpNgayTra.Enabled = False
         Me.dtpNgayTra.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpNgayTra.Location = New System.Drawing.Point(524, 108)
-        Me.dtpNgayTra.Margin = New System.Windows.Forms.Padding(4)
+        Me.dtpNgayTra.Location = New System.Drawing.Point(393, 88)
         Me.dtpNgayTra.Name = "dtpNgayTra"
-        Me.dtpNgayTra.Size = New System.Drawing.Size(275, 26)
+        Me.dtpNgayTra.Size = New System.Drawing.Size(207, 22)
         Me.dtpNgayTra.TabIndex = 35
         Me.dtpNgayTra.Value = New Date(1999, 1, 1, 0, 0, 0, 0)
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(379, 143)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Location = New System.Drawing.Point(12, 150)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(80, 23)
+        Me.Label10.Size = New System.Drawing.Size(52, 13)
         Me.Label10.TabIndex = 1
         Me.Label10.Text = "HSD Thẻ"
         '
         'dtpHSD
         '
         Me.dtpHSD.CustomFormat = "dd/MM/yyyy"
+        Me.dtpHSD.Enabled = False
         Me.dtpHSD.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpHSD.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpHSD.Location = New System.Drawing.Point(524, 143)
-        Me.dtpHSD.Margin = New System.Windows.Forms.Padding(4)
+        Me.dtpHSD.Location = New System.Drawing.Point(121, 150)
         Me.dtpHSD.Name = "dtpHSD"
-        Me.dtpHSD.Size = New System.Drawing.Size(275, 26)
+        Me.dtpHSD.Size = New System.Drawing.Size(137, 22)
         Me.dtpHSD.TabIndex = 35
         Me.dtpHSD.Value = New Date(1999, 1, 1, 0, 0, 0, 0)
         '
@@ -265,20 +237,19 @@ Partial Class PhieuMuonSachGUI
         Me.dgvlistSach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvlistSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvlistSach.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaSach, Me.TenSach, Me.MaTTS, Me.TriGia, Me.MaTLS, Me.TenTG, Me.NamXB, Me.NXB})
-        Me.dgvlistSach.Location = New System.Drawing.Point(16, 220)
-        Me.dgvlistSach.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvlistSach.Location = New System.Drawing.Point(12, 179)
         Me.dgvlistSach.Name = "dgvlistSach"
         Me.dgvlistSach.ReadOnly = True
-        Me.dgvlistSach.Size = New System.Drawing.Size(1464, 336)
+        Me.dgvlistSach.Size = New System.Drawing.Size(1098, 273)
         Me.dgvlistSach.TabIndex = 59
         '
         'MaSach
         '
         Me.MaSach.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
         Me.MaSach.DataPropertyName = "MaSach"
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.MaSach.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle17.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.MaSach.DefaultCellStyle = DataGridViewCellStyle17
         Me.MaSach.HeaderText = "Mã Sách"
         Me.MaSach.Name = "MaSach"
         Me.MaSach.ReadOnly = True
@@ -287,9 +258,9 @@ Partial Class PhieuMuonSachGUI
         'TenSach
         '
         Me.TenSach.DataPropertyName = "TenSach"
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TenSach.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TenSach.DefaultCellStyle = DataGridViewCellStyle18
         Me.TenSach.HeaderText = "Tên Sách"
         Me.TenSach.Name = "TenSach"
         Me.TenSach.ReadOnly = True
@@ -298,9 +269,9 @@ Partial Class PhieuMuonSachGUI
         '
         Me.MaTTS.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
         Me.MaTTS.DataPropertyName = "MaTTS"
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.MaTTS.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle19.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.MaTTS.DefaultCellStyle = DataGridViewCellStyle19
         Me.MaTTS.HeaderText = "Tình Trạng"
         Me.MaTTS.Name = "MaTTS"
         Me.MaTTS.ReadOnly = True
@@ -310,9 +281,9 @@ Partial Class PhieuMuonSachGUI
         '
         Me.TriGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
         Me.TriGia.DataPropertyName = "TriGia"
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TriGia.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle20.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TriGia.DefaultCellStyle = DataGridViewCellStyle20
         Me.TriGia.HeaderText = "Trị Giá"
         Me.TriGia.Name = "TriGia"
         Me.TriGia.ReadOnly = True
@@ -322,9 +293,9 @@ Partial Class PhieuMuonSachGUI
         '
         Me.MaTLS.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
         Me.MaTLS.DataPropertyName = "MaTLS"
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.MaTLS.DefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle21.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.MaTLS.DefaultCellStyle = DataGridViewCellStyle21
         Me.MaTLS.HeaderText = "Thể Loại"
         Me.MaTLS.Name = "MaTLS"
         Me.MaTLS.ReadOnly = True
@@ -333,9 +304,9 @@ Partial Class PhieuMuonSachGUI
         'TenTG
         '
         Me.TenTG.DataPropertyName = "TenTG"
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TenTG.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle22.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TenTG.DefaultCellStyle = DataGridViewCellStyle22
         Me.TenTG.HeaderText = "Tác Giả"
         Me.TenTG.Name = "TenTG"
         Me.TenTG.ReadOnly = True
@@ -344,9 +315,9 @@ Partial Class PhieuMuonSachGUI
         '
         Me.NamXB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
         Me.NamXB.DataPropertyName = "NamXB"
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NamXB.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle23.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle23.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.NamXB.DefaultCellStyle = DataGridViewCellStyle23
         Me.NamXB.HeaderText = "Năm Xuất Bản"
         Me.NamXB.Name = "NamXB"
         Me.NamXB.ReadOnly = True
@@ -355,27 +326,62 @@ Partial Class PhieuMuonSachGUI
         'NXB
         '
         Me.NXB.DataPropertyName = "NXB"
-        DataGridViewCellStyle16.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NXB.DefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle24.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.NXB.DefaultCellStyle = DataGridViewCellStyle24
         Me.NXB.HeaderText = "Nhà Xuất Bản"
         Me.NXB.Name = "NXB"
         Me.NXB.ReadOnly = True
         '
         'txtMaSach
         '
-        Me.txtMaSach.Location = New System.Drawing.Point(996, 36)
-        Me.txtMaSach.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtMaSach.Enabled = False
+        Me.txtMaSach.Location = New System.Drawing.Point(747, 29)
         Me.txtMaSach.Name = "txtMaSach"
-        Me.txtMaSach.Size = New System.Drawing.Size(160, 22)
+        Me.txtMaSach.Size = New System.Drawing.Size(121, 20)
         Me.txtMaSach.TabIndex = 3
+        '
+        'cbDoiTuong
+        '
+        Me.cbDoiTuong.FormattingEnabled = True
+        Me.cbDoiTuong.Items.AddRange(New Object() {"Mã Sách", "Tên Sách", "Tác Giả"})
+        Me.cbDoiTuong.Location = New System.Drawing.Point(329, 152)
+        Me.cbDoiTuong.Name = "cbDoiTuong"
+        Me.cbDoiTuong.Size = New System.Drawing.Size(121, 21)
+        Me.cbDoiTuong.TabIndex = 2
+        '
+        'btnTimKiem
+        '
+        Me.btnTimKiem.Location = New System.Drawing.Point(601, 149)
+        Me.btnTimKiem.Name = "btnTimKiem"
+        Me.btnTimKiem.Size = New System.Drawing.Size(75, 23)
+        Me.btnTimKiem.TabIndex = 0
+        Me.btnTimKiem.Text = "Thêm"
+        Me.btnTimKiem.UseVisualStyleBackColor = True
+        '
+        'btnHuy
+        '
+        Me.btnHuy.Location = New System.Drawing.Point(693, 152)
+        Me.btnHuy.Name = "btnHuy"
+        Me.btnHuy.Size = New System.Drawing.Size(75, 23)
+        Me.btnHuy.TabIndex = 0
+        Me.btnHuy.Text = "Thêm"
+        Me.btnHuy.UseVisualStyleBackColor = True
+        '
+        'txtTimKiem
+        '
+        Me.txtTimKiem.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTimKiem.Location = New System.Drawing.Point(456, 153)
+        Me.txtTimKiem.Name = "txtTimKiem"
+        Me.txtTimKiem.Size = New System.Drawing.Size(156, 23)
+        Me.txtTimKiem.TabIndex = 60
         '
         'PhieuMuonSachGUI
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.ClientSize = New System.Drawing.Size(1492, 554)
+        Me.ClientSize = New System.Drawing.Size(1152, 450)
+        Me.Controls.Add(Me.txtTimKiem)
         Me.Controls.Add(Me.dgvlistSach)
         Me.Controls.Add(Me.dtpHSD)
         Me.Controls.Add(Me.dtpNgayTra)
@@ -388,6 +394,7 @@ Partial Class PhieuMuonSachGUI
         Me.Controls.Add(Me.txtMaPhieu)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.cbDoiTuong)
         Me.Controls.Add(Me.cbMaDG)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -395,12 +402,10 @@ Partial Class PhieuMuonSachGUI
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.MaximizeBox = False
+        Me.Controls.Add(Me.btnHuy)
+        Me.Controls.Add(Me.btnTimKiem)
+        Me.Controls.Add(Me.btnNhap)
         Me.Name = "PhieuMuonSachGUI"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PhieuMuonSachGUI"
         CType(Me.dgvlistSach, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -408,7 +413,7 @@ Partial Class PhieuMuonSachGUI
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnNhap As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents cbMaDG As ComboBox
     Friend WithEvents txtMaPhieu As TextBox
@@ -436,4 +441,8 @@ Partial Class PhieuMuonSachGUI
     Friend WithEvents NamXB As DataGridViewTextBoxColumn
     Friend WithEvents NXB As DataGridViewTextBoxColumn
     Friend WithEvents txtMaSach As TextBox
+    Friend WithEvents cbDoiTuong As ComboBox
+    Friend WithEvents btnTimKiem As Button
+    Friend WithEvents btnHuy As Button
+    Friend WithEvents txtTimKiem As TextBox
 End Class

@@ -14,7 +14,8 @@ Public Class SachGUI
     Dim quydinh As QuyDinhDTO
     Dim listQuyDinh = New List(Of QuyDinhDTO)
     Dim resul As Result
-    Private Sub Sach_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private con As SqlConnection
+    Private Sub SachGUI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         sBUS = New SachBUS()
         tlsBUS = New TheLoaiSachBUS()
         ttsBUS = New TinhTrangSachBUS()
@@ -28,6 +29,8 @@ Public Class SachGUI
             System.Console.WriteLine(result.SystemMessage)
             Return
         End If
+        cbDoiTuong.Text = "Chọn..."
+        ''
         cbTheLoai.DataSource = New BindingSource(listTheLoaiSach, String.Empty)
         cbTheLoai.DisplayMember = "MaTLS"
         cbTheLoai.ValueMember = "MaTLS"
@@ -42,6 +45,7 @@ Public Class SachGUI
         cbTinhTrang.DataSource = New BindingSource(listTinhTrangSach, String.Empty)
         cbTinhTrang.DisplayMember = "MaTTS"
         cbTinhTrang.ValueMember = "MaTTS"
+
     End Sub
     Public Sub loadListSach()
         Dim listSach = New List(Of SachDTO)
@@ -172,6 +176,72 @@ Public Class SachGUI
 
         End If
     End Sub
+    Private Sub Connect()
+        Dim conn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Try
+            con = New SqlConnection(conn)
+        Catch ex As Exception
+            MessageBox.Show("Kết Nối Không Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End Try
+    End Sub
+
+    Private Sub btnTimKiem_Click(sender As Object, e As EventArgs) Handles bttimkiem.Click
+        Connect()
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
+        Dim MaSach As String = Me.txtTimKiem.Text.Trim()
+        If cbDoiTuong.SelectedIndex = 0 Then
+            Dim SQL = "SELECT * FROM Sach WHERE MaSach LIKE N'%" + MaSach + "%'"
+            Dim Adapter As New SqlClient.SqlDataAdapter(SQL, con)
+            Dim DATA As New DataSet
+            Adapter.Fill(DATA, "Sach")
+            dgvlistSach.DataSource = DATA
+            dgvlistSach.DataMember = "Sach"
+        End If
+        Dim TenSach As String = Me.txtTimKiem.Text.Trim()
+        If cbDoiTuong.SelectedIndex = 1 Then
+            Dim SQL = "SELECT * FROM Sach WHERE TenSach LIKE N'%" + TenSach + "%'"
+            Dim Adapter As New SqlClient.SqlDataAdapter(SQL, con)
+            Dim DATA As New DataSet
+            Adapter.Fill(DATA, "Sach")
+            dgvlistSach.DataSource = DATA
+            dgvlistSach.DataMember = "Sach"
+        End If
+        Dim TenTG As String = Me.txtTimKiem.Text.Trim()
+        If cbDoiTuong.SelectedIndex = 2 Then
+            Dim SQL = "SELECT * FROM Sach WHERE TenTG LIKE N'%" + TenTG + "%'"
+            Dim Adapter As New SqlClient.SqlDataAdapter(SQL, con)
+            Dim DATA As New DataSet
+            Adapter.Fill(DATA, "Sach")
+            dgvlistSach.DataSource = DATA
+            dgvlistSach.DataMember = "Sach"
+        End If
+    End Sub
+    Private Sub cbDoiTuong_SelectedValueChanged(sender As Object, e As EventArgs) Handles cbDoiTuong.SelectedIndexChanged
+        If (cbDoiTuong.Text = "Mã Sách") Then
+            txtTimKiem.Text = "Nhập Mã Sách Cần Tìm"
+        ElseIf (cbDoiTuong.Text = "Tên Sách") Then
+            txtTimKiem.Text = "Nhập Tên Sách Cần Tìm"
+        ElseIf (cbDoiTuong.Text = "Tác Giả") Then
+            txtTimKiem.Text = "Nhập Tên Tác Giả Cần Tìm"
+        End If
+    End Sub
+    Private Sub txtTimKiem_Click(sender As Object, e As EventArgs) Handles txtTimKiem.Click
+        txtTimKiem.Text = ""
+    End Sub
+    Private Sub txtTriGia_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTriGia.KeyPress
+        If Not Char.IsDigit(e.KeyChar) And Not Char.IsControl(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txthuy_Click(sender As Object, e As EventArgs) Handles txthuy.Click
+        loadListSach()
+        Me.cbDoiTuong.Text = "Chọn..."
+        Me.txtTimKiem.Text = ""
+        Me.txtTimKiem.Focus()
+    End Sub
     Private Sub btthoat_Click(sender As Object, e As EventArgs) Handles btthoat.Click
         Me.Close()
     End Sub
@@ -180,15 +250,5 @@ Public Class SachGUI
         ThemSachGUI.Show()
     End Sub
 
-    Private Sub txtNamXuatBan_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNamXuatBan.KeyPress
-        If Not Char.IsDigit(e.KeyChar) And Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
-        End If
-    End Sub
 
-    Private Sub txtTriGia_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTriGia.KeyPress
-        If Not Char.IsDigit(e.KeyChar) And Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
-        End If
-    End Sub
 End Class

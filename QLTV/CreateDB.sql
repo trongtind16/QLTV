@@ -149,12 +149,15 @@ Go
 INSERT INTO [dbo].[Sach]([MaSach], [TenSach], [MaTLS], [TenTG],[NXB],[NamXB],[NgayNhap],[MaTTS], [TriGia]) 
 	VALUES(N'18003',N'Nhà Giàu', 2, N'abc', N'xyz', 2018,'12/30/2017', 1, 50000)
 Go
+
 CREATE TABLE [dbo].[QuyDinh](
 	[Id] [int] NOT NULL,
 	[TuoiToiThieu] [int] NOT NULL,
 	[TuoiToiDa] [int] NOT NULL,
 	[ThoiGianSuDung] [int] NOT NULL,
 	[KhoangCachNamXuatBan] [int] NOT NULL,
+	[SachMuonToiDa] [int] NOT NULL,
+	[NgayMuonToiDa] [int] NOT NULL,
  CONSTRAINT [PK_QuyDinh] PRIMARY KEY CLUSTERED 
 (
 	[id] ASC
@@ -162,8 +165,8 @@ CREATE TABLE [dbo].[QuyDinh](
 ) ON [PRIMARY]
 
 GO
-INSERT INTO [dbo].[QuyDinh]([Id], [TuoiToiThieu],[TuoiToiDa],[ThoiGianSuDung],[KhoangCachNamXuatBan]) 
-	VALUES(1,16,58,6,8)
+INSERT INTO [dbo].[QuyDinh]([Id], [TuoiToiThieu],[TuoiToiDa],[ThoiGianSuDung],[KhoangCachNamXuatBan],[SachMuonToiDa],[NgayMuonToiDa]) 
+	VALUES(1,16,58,6,8,5,4)
 GO
 USE [QLTV]
 GO
@@ -174,7 +177,6 @@ CREATE TABLE [dbo].[MuonTraSach](
 	[NgayMuon] datetime NOT NULL,
 	[NgayHenTra] datetime NOT NULL,
 	[NgayTra] datetime NOT NULL,
-	[MaTTS] [int] NOT NULL,
 	[TinhTrangPhieuMuon] nvarchar(25) NOT NULL,
  CONSTRAINT [PK_TRASACH] PRIMARY KEY CLUSTERED 
 (
@@ -189,19 +191,17 @@ GO
 ALTER TABLE [dbo].MuonTraSach  WITH CHECK ADD  CONSTRAINT [FK_tbl_MuonTraSach_tbl_Sach] FOREIGN KEY([MaSach])
 REFERENCES [dbo].[Sach] ([MaSach])
 GO
-ALTER TABLE [dbo].MuonTraSach  WITH CHECK ADD  CONSTRAINT [FK_tbl_MuontraSach_tbl_TinhTrangSach] FOREIGN KEY([MaTTS])
-REFERENCES [dbo].[TinhTrangSach] ([MaTTS])
-GO
 USE [QLTV]
 GO
-INSERT INTO [dbo].MuonTraSach([MaPhieu],[MaDG],[MaSach],[NgayMuon],[NgayHenTra],[NgayTra],[MaTTS],[TinhTrangPhieuMuon])
-	 VALUES (N'10001',N'17000001',N'18001','05/02/2018','05/29/2018','06/01/2018',1,N'Quá Hạn')
+INSERT INTO [dbo].MuonTraSach([MaPhieu],[MaDG],[MaSach],[NgayMuon],[NgayHenTra],[NgayTra],[TinhTrangPhieuMuon])
+	 VALUES (N'10001',N'17000001',N'18001','05/02/2018','05/29/2018','06/01/2018',N'Quá Hạn')
 GO
-INSERT INTO [dbo].MuonTraSach([MaPhieu],[MaDG],[MaSach],[NgayMuon],[NgayHenTra],[NgayTra],[MaTTS],[TinhTrangPhieuMuon])
-	VALUES (N'10002',N'17000002',N'18001','05/04/2018','05/28/2018','01/01/2000',2,N'Đang Mượn')
+INSERT INTO [dbo].MuonTraSach([MaPhieu],[MaDG],[MaSach],[NgayMuon],[NgayHenTra],[NgayTra],[TinhTrangPhieuMuon])
+	VALUES (N'10002',N'17000002',N'18001','05/04/2018','05/28/2018','01/01/2000',N'Đang Mượn')
 GO
-INSERT INTO [dbo].MuonTraSach([MaPhieu],[MaDG],[MaSach],[NgayMuon],[NgayHenTra],[NgayTra],[MaTTS],[TinhTrangPhieuMuon]) 
-	VALUES (N'10003',N'17000001',N'18001','05/03/2018','05/30/2018','01/01/2000',1,N'Đang Mượn')
+INSERT INTO [dbo].MuonTraSach([MaPhieu],[MaDG],[MaSach],[NgayMuon],[NgayHenTra],[NgayTra],[TinhTrangPhieuMuon]) 
+	VALUES (N'10003',N'17000001',N'18001','05/03/2018','05/30/2018','01/01/2000',N'Đang Mượn')
 GO
-
-
+ INSERT INTO [dbo].MuonTraSach([MaPhieu],[MaDG],[MaSach],[NgayMuon],[NgayHenTra],[NgayTra],[TinhTrangPhieuMuon])
+ VALUES (N'10004',N'17000005',N'18003','06/03/2017','05/30/2017','01/01/2001',N'ABC')
+ Go

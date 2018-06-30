@@ -16,6 +16,15 @@ Public Class DocGiaGUI
     Dim listQuyDinh = New List(Of QuyDinhDTO)
     Dim resul As Result
     Dim hsd As Integer
+    Private con As SqlConnection
+    Private Sub Connect()
+        Dim conn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Try
+            con = New SqlConnection(conn)
+        Catch ex As Exception
+            MessageBox.Show("Kết Nối Không Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End Try
+    End Sub
     Public Sub ThongTinDocGia_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         dgBUS = New DocGiaBUS()
         loadListDocGia()
@@ -36,6 +45,7 @@ Public Class DocGiaGUI
         cbLoaiDG.DataSource = New BindingSource(listLoaiDocGia, String.Empty)
         cbLoaiDG.DisplayMember = "MaLDG"
         cbLoaiDG.ValueMember = "MaLDG"
+        cbDoiTuong.Text = "Chọn..."
 
 
     End Sub
@@ -171,26 +181,6 @@ Public Class DocGiaGUI
         End If
     End Sub
 
-
-    Private Sub txthuy_Click(sender As Object, e As EventArgs) Handles txthuy.Click
-        loadListDocGia()
-        Me.txttdg.Focus()
-    End Sub
-
-    Private Sub cmbDocGia_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmbDocGia.SelectedValueChanged
-        If (cmbDocGia.Text = "Mã Độc Giả") Then
-            txttdg.Text = "Nhập Mã Độc Giả Cần Tìm"
-
-        ElseIf (cmbDocGia.Text = "Tên Độc Giả") Then
-            txttdg.Text = "Nhập Tên Độc Giả Cần Tìm"
-
-        End If
-    End Sub
-
-    Private Sub txttdg_Click(sender As Object, e As EventArgs) Handles txttdg.Click
-        txttdg.Text = ""
-    End Sub
-
     Private Sub dgvListDG_SelectionChanged(sender As Object, e As EventArgs) Handles dgvListDG.SelectionChanged
         Dim currentRowIndex As Integer = dgvListDG.CurrentCellAddress.Y 'current row selected
 
@@ -222,14 +212,45 @@ Public Class DocGiaGUI
         dtpNgayHetHan.Value = dtpNgayLapThe.Value.AddMonths(hsd)
 
     End Sub
-
-    Private Sub txtTenDG_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTenDG.KeyPress
-        If Not Char.IsLetter(e.KeyChar) And Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
+    Private Sub btnTimKiem_Click(sender As Object, e As EventArgs) Handles btnTimKiem.Click
+        Connect()
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
+        Dim MaDG As String = Me.txtTimKiem.Text.Trim()
+        If cbDoiTuong.SelectedIndex = 0 Then
+            Dim SQL = "SELECT * FROM DocGia WHERE MaDG LIKE N'%" + MaDG + "%'"
+            Dim Adapter As New SqlClient.SqlDataAdapter(SQL, con)
+            Dim DATA As New DataSet
+            Adapter.Fill(DATA, "DocGia")
+            dgvListDG.DataSource = DATA
+            dgvListDG.DataMember = "DocGia"
+        End If
+        Dim TenDocGia As String = Me.txtTimKiem.Text.Trim()
+        If cbDoiTuong.SelectedIndex = 1 Then
+            Dim SQL = "SELECT * FROM DocGia WHERE TenDG LIKE N'%" + TenDocGia + "%'"
+            Dim Adapter As New SqlClient.SqlDataAdapter(SQL, con)
+            Dim DATA As New DataSet
+            Adapter.Fill(DATA, "DocGia")
+            dgvListDG.DataSource = DATA
+            dgvListDG.DataMember = "DocGia"
         End If
     End Sub
-
-    Private Sub dgvListDG_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvListDG.CellContentClick
-
+    Private Sub cbDoiTuong_SelectedValueChanged(sender As Object, e As EventArgs) Handles cbDoiTuong.SelectedIndexChanged
+        If (cbDoiTuong.Text = "Mã Độc Giả") Then
+            txtTimKiem.Text = "Nhập Mã độc giả Cần Tìm"
+        ElseIf (cbDoiTuong.Text = "Tên độc giả") Then
+            txtTimKiem.Text = "Nhập Tên độc giả Cần Tìm"
+        End If
     End Sub
+    Private Sub txtTimKiem_Click(sender As Object, e As EventArgs) Handles txtTimKiem.Click
+        txtTimKiem.Text = ""
+    End Sub
+    Private Sub btnHuy_Click(sender As Object, e As EventArgs) Handles btnHuy.Click
+        loadListDocGia()
+        Me.txtTimKiem.Focus()
+        Me.cbDoiTuong.Text = "Chọn..."
+        Me.txtTimKiem.Text = ""
+    End Sub
+
 End Class

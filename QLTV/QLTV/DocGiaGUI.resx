@@ -164,7 +164,7 @@
         6gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="txthuy.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnHuy.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAhlJREFUWEftl7dOQzEUhiNRFvqGQGy0kfYcCHgV2ggSZUS0EQSvQX0MygozDIgy
@@ -179,7 +179,7 @@
         JdZnJhxN/TEVCj+XcMQxn3xdegAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bttimkiem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnTimKiem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAQ1JREFUWEftkz0OQUEUhd8OaFFo7IbEFiyC0NqRUuKn0liEQk8jCirOeTEh48w1

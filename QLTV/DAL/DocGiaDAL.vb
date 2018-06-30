@@ -19,7 +19,7 @@ Public Class DocGiaDAL
 
         Dim query As String = String.Empty
         query &= "Select TOP 1 [MaDG] "
-        query &= "From [DOCGIA] "
+        query &= "From [DocGia] "
         query &= "Order By [MaDG] DESC "
 
         Using conn As New SqlConnection(connectionString)

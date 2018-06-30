@@ -17,7 +17,8 @@ Public Class QuyDinhGUI
         txtTuoiToiDa.Text = quydinh.TuoiToiDa
         txtHanSuDung.Text = quydinh.ThoiGianSuDung
         txtKCNXB.Text = quydinh.KhoangCachNamXuatBan
-
+        txtNgayMuonToiDa.Text = quydinh.NgayMuonToiDa
+        txtSachMuonToiDa.Text = quydinh.SachMuonToiDa
     End Sub
 
     Private Sub btnCapNhat_Click(sender As Object, e As EventArgs) Handles btnCapNhat.Click
@@ -27,6 +28,8 @@ Public Class QuyDinhGUI
             quydinh.TuoiToiDa = Integer.Parse(txtTuoiToiDa.Text)
             quydinh.ThoiGianSuDung = Integer.Parse(txtHanSuDung.Text)
             quydinh.KhoangCachNamXuatBan = Integer.Parse(txtKCNXB.Text)
+            quydinh.SachMuonToiDa = Integer.Parse(txtSachMuonToiDa.Text)
+            quydinh.NgayMuonToiDa = Integer.Parse(txtNgayMuonToiDa.Text)
             Dim result = qdBus.update(quydinh)
             If (result.FlagResult = False) Then
                 MessageBox.Show("Cập nhật Quy Định không thành công.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -42,47 +45,5 @@ Public Class QuyDinhGUI
 
     Private Sub btnThoat_Click(sender As Object, e As EventArgs) Handles btnThoat.Click
         Me.Close()
-    End Sub
-
-    Private Sub txtTuoiToiThieu_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTuoiToiThieu.KeyPress
-        If Not Char.IsDigit(e.KeyChar) And Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
-        End If
-    End Sub
-
-    Private Sub txtTuoiToiDa_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTuoiToiDa.KeyPress
-        If Not Char.IsDigit(e.KeyChar) And Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
-        End If
-    End Sub
-
-    Private Sub txtHanSuDung_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtHanSuDung.KeyPress
-        If Not Char.IsDigit(e.KeyChar) And Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
-        End If
-    End Sub
-
-    Private Sub txtKCNXB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtKCNXB.KeyPress
-        If Not Char.IsDigit(e.KeyChar) And Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
-        End If
-    End Sub
-
-    Private Sub txtSoLuongTheLoai_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtSoLuongTheLoai.KeyPress
-        If Not Char.IsDigit(e.KeyChar) And Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
-        End If
-    End Sub
-
-    Private Sub txtSSMTD_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtSSMTD.KeyPress
-        If Not Char.IsDigit(e.KeyChar) And Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
-        End If
-    End Sub
-
-    Private Sub txtSNMuon_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtSNMuon.KeyPress
-        If Not Char.IsDigit(e.KeyChar) And Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
-        End If
     End Sub
 End Class

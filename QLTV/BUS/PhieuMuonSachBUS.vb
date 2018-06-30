@@ -9,23 +9,21 @@ Public Class PhieuMuonSachBUS
     Public Sub New(connectionString As String)
         pmsDAL = New PhieuMuonSachDAL(connectionString)
     End Sub
-    Public Function isValidTenSach(s As PhieuMuonSachDTO) As Boolean
+    Public Function isValidMaSach(s As PhieuMuonSachDTO) As Boolean
 
-        If (s.TenSach.Trim = "") Then
+        If (s.MaSach.Trim = "") Then
             Return False
         End If
         Return True
     End Function
-    Public Function isValidTenDocGia(s As PhieuMuonSachDTO) As Boolean
+    Public Function isValidMaDocGia(s As PhieuMuonSachDTO) As Boolean
 
-        If (s.TenDG.Trim = "") Then
+        If (s.MaDG.Trim = "") Then
             Return False
         End If
         Return True
     End Function
-    Public Function KiemTraNgay(s As PhieuMuonSachDTO) As Boolean
 
-    End Function
     Public Function insert(mpms As PhieuMuonSachDTO) As Result
         '1. verify data here!!
 
@@ -38,6 +36,9 @@ Public Class PhieuMuonSachBUS
 
         '2. insert to DB
         Return pmsDAL.selectAll(listPMS)
+    End Function
+    Public Function getNextID(ByRef nextID As Integer) As Result
+        Return pmsDAL.getNextID(nextID)
     End Function
 End Class
 

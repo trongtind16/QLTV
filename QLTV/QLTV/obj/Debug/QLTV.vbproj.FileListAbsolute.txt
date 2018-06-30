@@ -34,40 +34,77 @@ C:\Users\TrongTin16\Desktop\git\QLTV\QLTV\obj\Debug\QLTV.TinhTrangSachGUI.resour
 C:\Users\TrongTin16\Desktop\git\QLTV\QLTV\obj\Debug\QLTV.SachGUI.resources
 C:\Users\TrongTin16\Desktop\git\QLTV\QLTV\obj\Debug\QLTV.ThemSachGUI.resources
 C:\Users\TrongTin16\Desktop\git\QLTV\QLTV\obj\Debug\QLTV.PhieuMuonSachGUI.resources
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\QLTV.exe.config
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\QLTV.exe
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\QLTV.pdb
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\QLTV.xml
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\BUS.dll
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\DAL.dll
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\DTO.dll
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\Utility.dll
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\BUS.pdb
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\BUS.xml
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\DAL.pdb
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\DAL.xml
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\DTO.pdb
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\DTO.xml
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\Utility.pdb
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\Utility.xml
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.vbprojResolveAssemblyReference.cache
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.DocGiaGUI.resources
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.Form1.resources
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.LoaiDocGiaGUI.resources
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.Resources.resources
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.PhieuMuonSachGUI.resources
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.QuyDinhGUI.resources
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.SachGUI.resources
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.TheLoaiSachGUI.resources
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.ThemDocGiaGUI.resources
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.ThemLoaiDocGiaGUI.resources
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.ThemSachGUI.resources
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.ThemTheLoaiSachGUI.resources
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.TinhTrangSachGUI.resources
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.vbproj.GenerateResource.cache
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.vbproj.CoreCompileInputs.cache
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.vbproj.CopyComplete
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.exe
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.xml
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\obj\Debug\QLTV.pdb
-E:\Nam 2\HKII\NMCNPM\QLTV\QLTV\QLTV\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.vbprojResolveAssemblyReference.cache
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.DocGiaGUI.resources
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.Form1.resources
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.LoaiDocGiaGUI.resources
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.Resources.resources
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.PhieuMuonSachGUI.resources
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.QuanLyPhieuMuonGUI.resources
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.QuyDinhGUI.resources
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.SachGUI.resources
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.TheLoaiSachGUI.resources
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.ThemDocGiaGUI.resources
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.ThemLoaiDocGiaGUI.resources
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.ThemSachGUI.resources
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.ThemTheLoaiSachGUI.resources
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.TinhTrangSachGUI.resources
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.vbproj.GenerateResource.cache
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.vbproj.CoreCompileInputs.cache
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.exe
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.xml
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.pdb
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\bin\Debug\QLTV.exe.config
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\bin\Debug\QLTV.exe
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\bin\Debug\QLTV.pdb
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\bin\Debug\QLTV.xml
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\bin\Debug\BUS.dll
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\bin\Debug\DAL.dll
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\bin\Debug\DTO.dll
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\bin\Debug\Utility.dll
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\bin\Debug\BUS.pdb
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\bin\Debug\BUS.xml
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\bin\Debug\DAL.pdb
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\bin\Debug\DAL.xml
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\bin\Debug\DTO.pdb
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\bin\Debug\DTO.xml
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\bin\Debug\Utility.pdb
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\bin\Debug\Utility.xml
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.vbproj.CopyComplete
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\bin\Debug\QLTV.exe.config
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\bin\Debug\QLTV.exe
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\bin\Debug\QLTV.pdb
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\bin\Debug\QLTV.xml
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\bin\Debug\BUS.dll
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\bin\Debug\DAL.dll
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\bin\Debug\DTO.dll
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\bin\Debug\Utility.dll
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\bin\Debug\BUS.pdb
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\bin\Debug\BUS.xml
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\bin\Debug\DAL.pdb
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\bin\Debug\DAL.xml
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\bin\Debug\DTO.pdb
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\bin\Debug\DTO.xml
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\bin\Debug\Utility.pdb
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\bin\Debug\Utility.xml
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.vbprojResolveAssemblyReference.cache
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.DocGiaGUI.resources
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.Form1.resources
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.LoaiDocGiaGUI.resources
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.Resources.resources
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.PhieuMuonSachGUI.resources
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.QuanLyPhieuMuonGUI.resources
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.QuyDinhGUI.resources
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.SachGUI.resources
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.TheLoaiSachGUI.resources
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.ThemDocGiaGUI.resources
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.ThemLoaiDocGiaGUI.resources
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.ThemSachGUI.resources
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.ThemTheLoaiSachGUI.resources
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.TinhTrangSachGUI.resources
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.vbproj.GenerateResource.cache
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.vbproj.CoreCompileInputs.cache
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.vbproj.CopyComplete
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.exe
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.xml
+C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\QLTV\obj\Debug\QLTV.pdb
