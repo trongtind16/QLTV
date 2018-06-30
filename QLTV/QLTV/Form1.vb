@@ -11,40 +11,82 @@
 
         LDG.MdiParent = Me
         LDG.Hide()
+        DG.Hide()
+        QD.Hide()
+        TLS.Hide()
+        TTS.Hide()
+        S.Hide()
+        QLPM.Hide()
         LDG.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton2.Click
         DG.MdiParent = Me
         LDG.Hide()
+        DG.Hide()
+        QD.Hide()
+        TLS.Hide()
+        TTS.Hide()
+        S.Hide()
+        QLPM.Hide()
         DG.Show()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
         QD.MdiParent = Me
+        LDG.Hide()
+        DG.Hide()
         QD.Hide()
+        TLS.Hide()
+        TTS.Hide()
+        S.Hide()
+        QLPM.Hide()
         QD.Show()
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton4.Click
         TLS.MdiParent = Me
+        LDG.Hide()
+        DG.Hide()
+        QD.Hide()
         TLS.Hide()
+        TTS.Hide()
+        S.Hide()
+        QLPM.Hide()
         TLS.Show()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton5.Click
         TTS.MdiParent = Me
+        LDG.Hide()
+        DG.Hide()
+        QD.Hide()
+        TLS.Hide()
         TTS.Hide()
+        S.Hide()
+        QLPM.Hide()
         TTS.Show()
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton6.Click
         S.MdiParent = Me
+        LDG.Hide()
+        DG.Hide()
+        QD.Hide()
+        TLS.Hide()
+        TTS.Hide()
         S.Hide()
+        QLPM.Hide()
         S.Show()
     End Sub
     Private Sub Button7_Click(sender As Object, e As EventArgs)
         QLPM.MdiParent = Me
+        LDG.Hide()
+        DG.Hide()
+        QD.Hide()
+        TLS.Hide()
+        TTS.Hide()
+        S.Hide()
         QLPM.Hide()
         QLPM.Show()
     End Sub
@@ -54,13 +96,13 @@
     End Sub
 
     Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
-        If SideMenu.Width = 43 Then
+        If SideMenu.Width = 48 Then
             SideMenu.Visible = False
-            SideMenu.Width = 161
+            SideMenu.Width = 196
             PanelAnimator.ShowSync(SideMenu)
         Else
             SideMenu.Visible = False
-            SideMenu.Width = 43
+            SideMenu.Width = 48
             PanelAnimator2.ShowSync(SideMenu)
         End If
     End Sub

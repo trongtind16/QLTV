@@ -30,10 +30,10 @@ Partial Class LoaiDocGiaGUI
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dgvDanhSachTLS = New System.Windows.Forms.DataGridView()
-        Me.MaLDG = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenLDG = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnThem = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.MaLDG = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TenLDG = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgvDanhSachTLS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -103,7 +103,7 @@ Partial Class LoaiDocGiaGUI
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(163, 17)
         Me.Label1.TabIndex = 31
-        Me.Label1.Text = "Danh sách Loại Đọc giả:"
+        Me.Label1.Text = "Danh sách Loại Độc giả:"
         '
         'dgvDanhSachTLS
         '
@@ -122,20 +122,6 @@ Partial Class LoaiDocGiaGUI
         Me.dgvDanhSachTLS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvDanhSachTLS.Size = New System.Drawing.Size(515, 185)
         Me.dgvDanhSachTLS.TabIndex = 30
-        '
-        'MaLDG
-        '
-        Me.MaLDG.DataPropertyName = "MaLDG"
-        Me.MaLDG.HeaderText = "Mã Loại Đọc Giả"
-        Me.MaLDG.Name = "MaLDG"
-        Me.MaLDG.ReadOnly = True
-        '
-        'TenLDG
-        '
-        Me.TenLDG.DataPropertyName = "TenLDG"
-        Me.TenLDG.HeaderText = "Tên LDG"
-        Me.TenLDG.Name = "TenLDG"
-        Me.TenLDG.ReadOnly = True
         '
         'btnThem
         '
@@ -156,6 +142,20 @@ Partial Class LoaiDocGiaGUI
         Me.Button1.TabIndex = 38
         Me.Button1.Text = "Thoát"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'MaLDG
+        '
+        Me.MaLDG.DataPropertyName = "MaLDG"
+        Me.MaLDG.HeaderText = "Mã Loại Độc Giả"
+        Me.MaLDG.Name = "MaLDG"
+        Me.MaLDG.ReadOnly = True
+        '
+        'TenLDG
+        '
+        Me.TenLDG.DataPropertyName = "TenLDG"
+        Me.TenLDG.HeaderText = "Tên LDG"
+        Me.TenLDG.Name = "TenLDG"
+        Me.TenLDG.ReadOnly = True
         '
         'LoaiDocGiaGUI
         '
@@ -191,8 +191,8 @@ Partial Class LoaiDocGiaGUI
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents dgvDanhSachTLS As DataGridView
-    Friend WithEvents MaLDG As DataGridViewTextBoxColumn
-    Friend WithEvents TenLDG As DataGridViewTextBoxColumn
     Friend WithEvents btnThem As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents MaLDG As DataGridViewTextBoxColumn
+    Friend WithEvents TenLDG As DataGridViewTextBoxColumn
 End Class

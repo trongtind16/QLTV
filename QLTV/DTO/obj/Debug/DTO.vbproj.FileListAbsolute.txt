@@ -28,3 +28,15 @@ C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\DTO\obj\Debug\DTO.vbproj.CoreCompileI
 C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\DTO\obj\Debug\DTO.dll
 C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\DTO\obj\Debug\DTO.xml
 C:\Users\TrongTin16\Desktop\DoAn_CNPM\QLTV\DTO\obj\Debug\DTO.pdb
+C:\Users\USER\Desktop\QLTV\QLTV\DTO\bin\Debug\DTO.dll
+C:\Users\USER\Desktop\QLTV\QLTV\DTO\bin\Debug\DTO.pdb
+C:\Users\USER\Desktop\QLTV\QLTV\DTO\bin\Debug\DTO.xml
+C:\Users\USER\Desktop\QLTV\QLTV\DTO\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\USER\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.vbprojResolveAssemblyReference.cache
+C:\Users\USER\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.Resources.resources
+C:\Users\USER\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.vbproj.GenerateResource.cache
+C:\Users\USER\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.vbproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.vbproj.CopyComplete
+C:\Users\USER\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.dll
+C:\Users\USER\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.xml
+C:\Users\USER\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.pdb
