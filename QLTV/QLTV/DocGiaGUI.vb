@@ -43,7 +43,7 @@ Public Class DocGiaGUI
         End If
 
         cbLoaiDG.DataSource = New BindingSource(listLoaiDocGia, String.Empty)
-        cbLoaiDG.DisplayMember = "MaLDG"
+        cbLoaiDG.DisplayMember = "TenLDG"
         cbLoaiDG.ValueMember = "MaLDG"
         cbDoiTuong.Text = "Chọn..."
 
@@ -61,6 +61,7 @@ Public Class DocGiaGUI
         dgvListDG.AutoGenerateColumns = False
         dgvListDG.AllowUserToAddRows = False
         dgvListDG.DataSource = listDG
+
     End Sub
 
 
@@ -138,7 +139,7 @@ Public Class DocGiaGUI
                 docgia.NgaySinh = dtpNgaySinh.Value
                 docgia.Email = txtEmail.Text
                 docgia.DiaChi = txtDiaChi.Text
-                docgia.MaLDG = cbLoaiDG.Text
+                docgia.MaLDG = Convert.ToInt32(cbLoaiDG.SelectedValue)
                 docgia.NgayLapThe = dtpNgayLapThe.Value
                 dtpNgayHetHan.Value = dtpNgayLapThe.Value.AddMonths(hsd)
                 docgia.NgayHetHan = dtpNgayHetHan.Value

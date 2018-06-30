@@ -34,7 +34,7 @@ Public Class ThemDocGiaGUI
         docgia.NgaySinh = dtpNgaySinh.Value
         docgia.Email = txtEmail.Text
         docgia.DiaChi = txtDiaChi.Text
-        docgia.MaLDG = cbLoaiDG.Text
+        docgia.MaLDG = Convert.ToInt32(cbLoaiDG.SelectedValue)
         docgia.NgayLapThe = dtpNgayLapThe.Value
         dtpNgayHetHan.Value = dtpNgayLapThe.Value.AddMonths(hsd)
         docgia.NgayHetHan = dtpNgayHetHan.Value
@@ -82,6 +82,7 @@ Public Class ThemDocGiaGUI
             cbGioiTinh.SelectedIndex = -1
             cbLoaiDG.SelectedIndex = -1
             DocGiaGUI.loadListDocGia()
+            'docgia.LoaiDocGia = Convert.ToInt32(cbLoaiDG.SelectedValue)
 
         Else
             MessageBox.Show("Thêm loại Độc Giả không thành công.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -106,7 +107,7 @@ Public Class ThemDocGiaGUI
             Return
         End If
         cbLoaiDG.DataSource = New BindingSource(listLoaiDocGia, String.Empty)
-        cbLoaiDG.DisplayMember = "MaLDG"
+        cbLoaiDG.DisplayMember = "TenLDG"
         cbLoaiDG.ValueMember = "MaLDG"
 
 

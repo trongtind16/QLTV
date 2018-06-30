@@ -198,8 +198,8 @@ Public Class DocGiaDAL
     Public Function selectAll(ByRef listDG As List(Of DocGiaDTO)) As Result
 
         Dim query As String = String.Empty
-        query &= "SELECT [MaDG],[TenDG],[MaLDG],[NgaySinh],[DiaChi],[Email],[NgayLapThe],[NgayHetHan],[GioiTinh]"
-        query &= "FROM [DocGia]"
+        query &= "SELECT [MaDG],[TenDG],[TenLDG],[NgaySinh],[DiaChi],[Email],[NgayLapThe],[NgayHetHan],[GioiTinh]"
+        query &= "FROM [DocGia],[LoaiDocGia] WHERE [DocGia].[MaLDG] = [LoaiDocGia].[MaLDG]"
 
         Using conn As New SqlConnection(connectionString)
             Using comm As New SqlCommand()
@@ -215,7 +215,7 @@ Public Class DocGiaDAL
                     If reader.HasRows = True Then
                         listDG.Clear()
                         While reader.Read()
-                            listDG.Add(New DocGiaDTO(reader("MaDG"), reader("TenDG"), reader("MaLDG"), reader("NgaySinh"), reader("DiaChi"), reader("Email"), reader("NgayLapThe"), reader("NgayHetHan"), reader("GioiTinh")))
+                            listDG.Add(New DocGiaDTO(reader("MaDG"), reader("TenDG"), reader("TenLDG"), reader("NgaySinh"), reader("DiaChi"), reader("Email"), reader("NgayLapThe"), reader("NgayHetHan"), reader("GioiTinh")))
                         End While
                     End If
 
