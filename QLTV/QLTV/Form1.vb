@@ -79,7 +79,7 @@
         QLPM.Hide()
         S.Show()
     End Sub
-    Private Sub Button7_Click(sender As Object, e As EventArgs)
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton7.Click
         QLPM.MdiParent = Me
         LDG.Hide()
         DG.Hide()
