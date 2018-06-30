@@ -1,26 +1,25 @@
 ﻿Public Class DocGiaDTO
     Private strMaDG As String
     Private strTenDG As String
-    Private iMaLDG As Integer
+    Private strMaLDG As String
     Private dateNgaySinh As DateTime
     Private strDiaChi As String
     Private strEmail As String
     Private dateNgayLapThe As DateTime
-    'Private strNguoiLapThe As String
     Private dateNgayHetHan As DateTime
     Private strGioiTinh As String
     Public Sub New()
     End Sub
 
-    Public Sub New(strMaDG As Integer, strTenDG As String, iMaLDG As Integer, dateNgaySinh As DateTime, strDiaChi As String, strEmail As String, dateNgayLapThe As DateTime, dateNgayHetHan As DateTime, strGioiTinh As String)
+    Public Sub New(strMaDG As Integer, strTenDG As String, strTenLDG As String, dateNgaySinh As DateTime, strDiaChi As String, strEmail As String, dateNgayLapThe As DateTime, dateNgayHetHan As DateTime, strGioiTinh As String)
         Me.strMaDG = strMaDG
         Me.strTenDG = strTenDG
-        Me.iMaLDG = iMaLDG
+        Me.strMaLDG = strMaLDG
+        Me.strMaLDG = strTenLDG
         Me.dateNgaySinh = dateNgaySinh
         Me.strDiaChi = strDiaChi
         Me.strEmail = strEmail
         Me.dateNgayLapThe = dateNgayLapThe
-        ' Me.strNguoiLapThe = strNguoiLapThe
         Me.dateNgayHetHan = dateNgayHetHan
         Me.strGioiTinh = strGioiTinh
 
@@ -42,12 +41,12 @@
             strTenDG = value
         End Set
     End Property
-    Public Property MaLDG As Integer
+    Public Property MaLDG As String
         Get
-            Return iMaLDG
+            Return strMaLDG
         End Get
-        Set(value As Integer)
-            iMaLDG = value
+        Set(value As String)
+            strMaLDG = value
         End Set
     End Property
     Public Property NgaySinh() As DateTime
@@ -83,14 +82,6 @@
             dateNgayLapThe = value
         End Set
     End Property
-    ' Public Property NguoiLapThe() As String
-    'Get
-    'Return strNguoiLapThe
-    'End Get
-    'Set(value As String)
-    '       strNguoiLapThe = value
-    'End Set
-    'End Property
     Public Property NgayHetHan() As DateTime
         Get
             Return dateNgayHetHan
