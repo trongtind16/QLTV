@@ -1,94 +1,99 @@
 ﻿Public Class Form1
-    Dim LDG As LoaiDocGiaGUI = New LoaiDocGiaGUI()
-    Dim DG As DocGiaGUI = New DocGiaGUI()
-    Dim QD As QuyDinhGUI = New QuyDinhGUI()
-    Dim TLS As TheLoaiSachGUI = New TheLoaiSachGUI()
-    Dim TTS As TinhTrangSachGUI = New TinhTrangSachGUI()
-    Dim S As SachGUI = New SachGUI()
-    Dim QLPM As QuanLyPhieuMuonGUI = New QuanLyPhieuMuonGUI()
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
+        LoaiDocGiaGUI.MdiParent = Me
 
-        LDG.MdiParent = Me
-        LDG.Hide()
-        DG.Hide()
-        QD.Hide()
-        TLS.Hide()
-        TTS.Hide()
-        S.Hide()
-        QLPM.Hide()
-        LDG.Show()
+        LoaiDocGiaGUI.Hide()
+        DocGiaGUI.Hide()
+        QuyDinhGUI.Hide()
+        TheLoaiSachGUI.Hide()
+        TinhTrangSachGUI.Hide()
+        SachGUI.Hide()
+        QuanLyPhieuMuonGUI.Hide()
+
+        LoaiDocGiaGUI.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton2.Click
-        DG.MdiParent = Me
-        LDG.Hide()
-        DG.Hide()
-        QD.Hide()
-        TLS.Hide()
-        TTS.Hide()
-        S.Hide()
-        QLPM.Hide()
-        DG.Show()
+        DocGiaGUI.MdiParent = Me
+
+        LoaiDocGiaGUI.Hide()
+        DocGiaGUI.Hide()
+        QuyDinhGUI.Hide()
+        TheLoaiSachGUI.Hide()
+        TinhTrangSachGUI.Hide()
+        SachGUI.Hide()
+        QuanLyPhieuMuonGUI.Hide()
+
+        DocGiaGUI.Show()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
-        QD.MdiParent = Me
-        LDG.Hide()
-        DG.Hide()
-        QD.Hide()
-        TLS.Hide()
-        TTS.Hide()
-        S.Hide()
-        QLPM.Hide()
-        QD.Show()
+        QuyDinhGUI.MdiParent = Me
+
+        LoaiDocGiaGUI.Hide()
+        DocGiaGUI.Hide()
+        QuyDinhGUI.Hide()
+        TheLoaiSachGUI.Hide()
+        TinhTrangSachGUI.Hide()
+        SachGUI.Hide()
+        QuanLyPhieuMuonGUI.Hide()
+
+        QuyDinhGUI.Show()
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton4.Click
-        TLS.MdiParent = Me
-        LDG.Hide()
-        DG.Hide()
-        QD.Hide()
-        TLS.Hide()
-        TTS.Hide()
-        S.Hide()
-        QLPM.Hide()
-        TLS.Show()
+        TheLoaiSachGUI.MdiParent = Me
+
+        LoaiDocGiaGUI.Hide()
+        DocGiaGUI.Hide()
+        QuyDinhGUI.Hide()
+        TheLoaiSachGUI.Hide()
+        TinhTrangSachGUI.Hide()
+        SachGUI.Hide()
+        QuanLyPhieuMuonGUI.Hide()
+
+        TheLoaiSachGUI.Show()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton5.Click
-        TTS.MdiParent = Me
-        LDG.Hide()
-        DG.Hide()
-        QD.Hide()
-        TLS.Hide()
-        TTS.Hide()
-        S.Hide()
-        QLPM.Hide()
-        TTS.Show()
+        TinhTrangSachGUI.MdiParent = Me
+
+        LoaiDocGiaGUI.Hide()
+        DocGiaGUI.Hide()
+        QuyDinhGUI.Hide()
+        TheLoaiSachGUI.Hide()
+        TinhTrangSachGUI.Hide()
+        SachGUI.Hide()
+        QuanLyPhieuMuonGUI.Hide()
+
+        TinhTrangSachGUI.Show()
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton6.Click
-        S.MdiParent = Me
-        LDG.Hide()
-        DG.Hide()
-        QD.Hide()
-        TLS.Hide()
-        TTS.Hide()
-        S.Hide()
-        QLPM.Hide()
-        S.Show()
+        SachGUI.MdiParent = Me
+
+        LoaiDocGiaGUI.Hide()
+        DocGiaGUI.Hide()
+        QuyDinhGUI.Hide()
+        TheLoaiSachGUI.Hide()
+        TinhTrangSachGUI.Hide()
+        SachGUI.Hide()
+        QuanLyPhieuMuonGUI.Hide()
+
+        SachGUI.Show()
     End Sub
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton7.Click
-        QLPM.MdiParent = Me
-        LDG.Hide()
-        DG.Hide()
-        QD.Hide()
-        TLS.Hide()
-        TTS.Hide()
-        S.Hide()
-        QLPM.Hide()
-        QLPM.Show()
+        QuanLyPhieuMuonGUI.MdiParent = Me
+
+        LoaiDocGiaGUI.Hide()
+        DocGiaGUI.Hide()
+        QuyDinhGUI.Hide()
+        TheLoaiSachGUI.Hide()
+        TinhTrangSachGUI.Hide()
+        SachGUI.Hide()
+        QuanLyPhieuMuonGUI.Hide()
+
+        QuanLyPhieuMuonGUI.Show()
     End Sub
 
     Private Sub BunifuImageButton2_Click(sender As Object, e As EventArgs) Handles BunifuImageButton2.Click

@@ -75,7 +75,7 @@ Partial Class QuanLyPhieuMuonGUI
         Me.dtpNgayHenTra.Enabled = False
         Me.dtpNgayHenTra.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpNgayHenTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpNgayHenTra.Location = New System.Drawing.Point(735, 185)
+        Me.dtpNgayHenTra.Location = New System.Drawing.Point(650, 185)
         Me.dtpNgayHenTra.Margin = New System.Windows.Forms.Padding(4)
         Me.dtpNgayHenTra.Name = "dtpNgayHenTra"
         Me.dtpNgayHenTra.Size = New System.Drawing.Size(269, 27)
@@ -87,7 +87,7 @@ Partial Class QuanLyPhieuMuonGUI
         Me.dtpNgayMuon.Enabled = False
         Me.dtpNgayMuon.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpNgayMuon.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpNgayMuon.Location = New System.Drawing.Point(735, 139)
+        Me.dtpNgayMuon.Location = New System.Drawing.Point(650, 139)
         Me.dtpNgayMuon.Margin = New System.Windows.Forms.Padding(4)
         Me.dtpNgayMuon.Name = "dtpNgayMuon"
         Me.dtpNgayMuon.Size = New System.Drawing.Size(269, 27)
@@ -96,7 +96,7 @@ Partial Class QuanLyPhieuMuonGUI
         'txtTinhTrangPhieuMuon
         '
         Me.txtTinhTrangPhieuMuon.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTinhTrangPhieuMuon.Location = New System.Drawing.Point(296, 187)
+        Me.txtTinhTrangPhieuMuon.Location = New System.Drawing.Point(237, 187)
         Me.txtTinhTrangPhieuMuon.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTinhTrangPhieuMuon.Name = "txtTinhTrangPhieuMuon"
         Me.txtTinhTrangPhieuMuon.ReadOnly = True
@@ -106,7 +106,7 @@ Partial Class QuanLyPhieuMuonGUI
         'txtTenSach
         '
         Me.txtTenSach.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTenSach.Location = New System.Drawing.Point(735, 91)
+        Me.txtTenSach.Location = New System.Drawing.Point(650, 91)
         Me.txtTenSach.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTenSach.Name = "txtTenSach"
         Me.txtTenSach.ReadOnly = True
@@ -116,7 +116,7 @@ Partial Class QuanLyPhieuMuonGUI
         'txtMaS
         '
         Me.txtMaS.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMaS.Location = New System.Drawing.Point(735, 46)
+        Me.txtMaS.Location = New System.Drawing.Point(650, 46)
         Me.txtMaS.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMaS.Name = "txtMaS"
         Me.txtMaS.ReadOnly = True
@@ -126,7 +126,7 @@ Partial Class QuanLyPhieuMuonGUI
         'txtTenDocGia
         '
         Me.txtTenDocGia.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTenDocGia.Location = New System.Drawing.Point(296, 139)
+        Me.txtTenDocGia.Location = New System.Drawing.Point(237, 143)
         Me.txtTenDocGia.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTenDocGia.Name = "txtTenDocGia"
         Me.txtTenDocGia.ReadOnly = True
@@ -136,7 +136,7 @@ Partial Class QuanLyPhieuMuonGUI
         'txtMaDG
         '
         Me.txtMaDG.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMaDG.Location = New System.Drawing.Point(296, 91)
+        Me.txtMaDG.Location = New System.Drawing.Point(237, 95)
         Me.txtMaDG.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMaDG.Name = "txtMaDG"
         Me.txtMaDG.ReadOnly = True
@@ -146,7 +146,7 @@ Partial Class QuanLyPhieuMuonGUI
         'txtMaPhieu
         '
         Me.txtMaPhieu.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMaPhieu.Location = New System.Drawing.Point(296, 44)
+        Me.txtMaPhieu.Location = New System.Drawing.Point(237, 50)
         Me.txtMaPhieu.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMaPhieu.Name = "txtMaPhieu"
         Me.txtMaPhieu.ReadOnly = True
@@ -156,7 +156,7 @@ Partial Class QuanLyPhieuMuonGUI
         'btPhieuMuonSach
         '
         Me.btPhieuMuonSach.ForeColor = System.Drawing.Color.Black
-        Me.btPhieuMuonSach.Location = New System.Drawing.Point(1031, 146)
+        Me.btPhieuMuonSach.Location = New System.Drawing.Point(946, 146)
         Me.btPhieuMuonSach.Margin = New System.Windows.Forms.Padding(4)
         Me.btPhieuMuonSach.Name = "btPhieuMuonSach"
         Me.btPhieuMuonSach.Size = New System.Drawing.Size(291, 66)
@@ -171,7 +171,7 @@ Partial Class QuanLyPhieuMuonGUI
         Me.btthoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btthoat.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btthoat.ForeColor = System.Drawing.Color.Black
-        Me.btthoat.Location = New System.Drawing.Point(1191, 46)
+        Me.btthoat.Location = New System.Drawing.Point(1106, 46)
         Me.btthoat.Margin = New System.Windows.Forms.Padding(4)
         Me.btthoat.Name = "btthoat"
         Me.btthoat.Size = New System.Drawing.Size(131, 54)
@@ -188,7 +188,7 @@ Partial Class QuanLyPhieuMuonGUI
         Me.btthem.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btthem.ForeColor = System.Drawing.Color.Black
         Me.btthem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btthem.Location = New System.Drawing.Point(1031, 46)
+        Me.btthem.Location = New System.Drawing.Point(946, 46)
         Me.btthem.Margin = New System.Windows.Forms.Padding(4)
         Me.btthem.Name = "btthem"
         Me.btthem.Size = New System.Drawing.Size(131, 53)
@@ -201,7 +201,7 @@ Partial Class QuanLyPhieuMuonGUI
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(591, 187)
+        Me.Label7.Location = New System.Drawing.Point(506, 190)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(112, 20)
@@ -212,7 +212,7 @@ Partial Class QuanLyPhieuMuonGUI
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(33, 192)
+        Me.Label8.Location = New System.Drawing.Point(33, 194)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(164, 20)
@@ -225,10 +225,10 @@ Partial Class QuanLyPhieuMuonGUI
         Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Button2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(1200, 268)
+        Me.Button2.Location = New System.Drawing.Point(1052, 279)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(215, 82)
+        Me.Button2.Size = New System.Drawing.Size(215, 71)
         Me.Button2.TabIndex = 13
         Me.Button2.Text = "Trả Sách"
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -238,7 +238,7 @@ Partial Class QuanLyPhieuMuonGUI
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(591, 143)
+        Me.Label6.Location = New System.Drawing.Point(506, 146)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(100, 20)
@@ -249,7 +249,7 @@ Partial Class QuanLyPhieuMuonGUI
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(591, 101)
+        Me.Label5.Location = New System.Drawing.Point(506, 98)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(78, 20)
@@ -260,7 +260,7 @@ Partial Class QuanLyPhieuMuonGUI
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(595, 49)
+        Me.Label4.Location = New System.Drawing.Point(506, 53)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(75, 20)
@@ -271,7 +271,7 @@ Partial Class QuanLyPhieuMuonGUI
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(33, 139)
+        Me.Label3.Location = New System.Drawing.Point(33, 150)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(100, 20)
@@ -282,7 +282,7 @@ Partial Class QuanLyPhieuMuonGUI
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(33, 96)
+        Me.Label2.Location = New System.Drawing.Point(33, 102)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(97, 20)
@@ -293,7 +293,7 @@ Partial Class QuanLyPhieuMuonGUI
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(33, 48)
+        Me.Label1.Location = New System.Drawing.Point(33, 57)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(82, 20)
@@ -303,12 +303,12 @@ Partial Class QuanLyPhieuMuonGUI
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Segoe UI", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(397, 279)
+        Me.Label9.Location = New System.Drawing.Point(430, 289)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(457, 41)
+        Me.Label9.Size = New System.Drawing.Size(460, 41)
         Me.Label9.TabIndex = 12
         Me.Label9.Text = "Thông Tin Chi Tiết Phiếu Mượn"
         '
@@ -335,13 +335,13 @@ Partial Class QuanLyPhieuMuonGUI
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(32, 11)
+        Me.GroupBox1.Location = New System.Drawing.Point(13, 13)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox1.Size = New System.Drawing.Size(1368, 252)
+        Me.GroupBox1.Size = New System.Drawing.Size(1254, 264)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Thông Tin Mượn Sách"
@@ -352,10 +352,10 @@ Partial Class QuanLyPhieuMuonGUI
         Me.dtpNgayTra.Enabled = False
         Me.dtpNgayTra.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpNgayTra.Location = New System.Drawing.Point(735, 224)
+        Me.dtpNgayTra.Location = New System.Drawing.Point(650, 224)
         Me.dtpNgayTra.Margin = New System.Windows.Forms.Padding(4)
         Me.dtpNgayTra.Name = "dtpNgayTra"
-        Me.dtpNgayTra.Size = New System.Drawing.Size(275, 27)
+        Me.dtpNgayTra.Size = New System.Drawing.Size(269, 27)
         Me.dtpNgayTra.TabIndex = 59
         Me.dtpNgayTra.Value = New Date(2018, 5, 17, 0, 0, 0, 0)
         '
@@ -363,7 +363,7 @@ Partial Class QuanLyPhieuMuonGUI
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(595, 230)
+        Me.Label10.Location = New System.Drawing.Point(506, 231)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(80, 20)
@@ -375,11 +375,11 @@ Partial Class QuanLyPhieuMuonGUI
         Me.dgvChiTietPhieuMuon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvChiTietPhieuMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvChiTietPhieuMuon.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaPhieu, Me.MaDG, Me.TenDG, Me.MaSach, Me.TenSach, Me.NgayMuon, Me.NgayHenTra, Me.NgayTra, Me.TinhTrangPhieuMuon})
-        Me.dgvChiTietPhieuMuon.Location = New System.Drawing.Point(-17, 358)
+        Me.dgvChiTietPhieuMuon.Location = New System.Drawing.Point(13, 358)
         Me.dgvChiTietPhieuMuon.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvChiTietPhieuMuon.Name = "dgvChiTietPhieuMuon"
         Me.dgvChiTietPhieuMuon.ReadOnly = True
-        Me.dgvChiTietPhieuMuon.Size = New System.Drawing.Size(1459, 455)
+        Me.dgvChiTietPhieuMuon.Size = New System.Drawing.Size(1254, 442)
         Me.dgvChiTietPhieuMuon.TabIndex = 10
         '
         'MaPhieu
@@ -480,7 +480,7 @@ Partial Class QuanLyPhieuMuonGUI
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.ClientSize = New System.Drawing.Size(1443, 922)
+        Me.ClientSize = New System.Drawing.Size(1281, 811)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.GroupBox1)

@@ -22,44 +22,25 @@ Partial Class TheLoaiSachGUI
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnXoa = New System.Windows.Forms.Button()
-        Me.btnCapNhat = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TheLoaiSachGUI))
         Me.txtMaLoai = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtTenLoai = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.dgvDanhSachTLS = New System.Windows.Forms.DataGridView()
         Me.MaTLS = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TenTLS = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.btnThem = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btxoa = New System.Windows.Forms.Button()
+        Me.btsua = New System.Windows.Forms.Button()
+        Me.btthoat = New System.Windows.Forms.Button()
+        Me.btthem = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         CType(Me.dgvDanhSachTLS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'btnXoa
-        '
-        Me.btnXoa.Location = New System.Drawing.Point(329, 373)
-        Me.btnXoa.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnXoa.Name = "btnXoa"
-        Me.btnXoa.Size = New System.Drawing.Size(100, 28)
-        Me.btnXoa.TabIndex = 46
-        Me.btnXoa.Text = "Xóa"
-        Me.btnXoa.UseVisualStyleBackColor = True
-        '
-        'btnCapNhat
-        '
-        Me.btnCapNhat.Location = New System.Drawing.Point(169, 373)
-        Me.btnCapNhat.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnCapNhat.Name = "btnCapNhat"
-        Me.btnCapNhat.Size = New System.Drawing.Size(100, 28)
-        Me.btnCapNhat.TabIndex = 44
-        Me.btnCapNhat.Text = "Cập Nhật"
-        Me.btnCapNhat.UseVisualStyleBackColor = True
-        '
         'txtMaLoai
         '
-        Me.txtMaLoai.Location = New System.Drawing.Point(169, 245)
+        Me.txtMaLoai.Location = New System.Drawing.Point(239, 265)
         Me.txtMaLoai.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMaLoai.Name = "txtMaLoai"
         Me.txtMaLoai.ReadOnly = True
@@ -70,16 +51,18 @@ Partial Class TheLoaiSachGUI
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(60, 254)
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(87, 267)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(62, 17)
+        Me.Label3.Size = New System.Drawing.Size(68, 20)
         Me.Label3.TabIndex = 42
         Me.Label3.Text = "Mã Loại:"
         '
         'txtTenLoai
         '
-        Me.txtTenLoai.Location = New System.Drawing.Point(169, 303)
+        Me.txtTenLoai.Location = New System.Drawing.Point(239, 309)
         Me.txtTenLoai.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTenLoai.Name = "txtTenLoai"
         Me.txtTenLoai.Size = New System.Drawing.Size(295, 22)
@@ -88,39 +71,25 @@ Partial Class TheLoaiSachGUI
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(60, 311)
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(87, 311)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(68, 17)
+        Me.Label2.Size = New System.Drawing.Size(71, 20)
         Me.Label2.TabIndex = 40
         Me.Label2.Text = "Tên Loại:"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 10)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(163, 17)
-        Me.Label1.TabIndex = 39
-        Me.Label1.Text = "Danh sách Loại Đọc giả:"
-        '
         'dgvDanhSachTLS
         '
-        Me.dgvDanhSachTLS.AllowUserToAddRows = False
-        Me.dgvDanhSachTLS.AllowUserToDeleteRows = False
         Me.dgvDanhSachTLS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvDanhSachTLS.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.dgvDanhSachTLS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvDanhSachTLS.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaTLS, Me.TenTLS})
-        Me.dgvDanhSachTLS.Location = New System.Drawing.Point(16, 30)
+        Me.dgvDanhSachTLS.Location = New System.Drawing.Point(34, 60)
         Me.dgvDanhSachTLS.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgvDanhSachTLS.MultiSelect = False
         Me.dgvDanhSachTLS.Name = "dgvDanhSachTLS"
         Me.dgvDanhSachTLS.ReadOnly = True
-        Me.dgvDanhSachTLS.RowHeadersVisible = False
-        Me.dgvDanhSachTLS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvDanhSachTLS.Size = New System.Drawing.Size(515, 185)
+        Me.dgvDanhSachTLS.Size = New System.Drawing.Size(533, 185)
         Me.dgvDanhSachTLS.TabIndex = 38
         '
         'MaTLS
@@ -137,41 +106,99 @@ Partial Class TheLoaiSachGUI
         Me.TenTLS.Name = "TenTLS"
         Me.TenTLS.ReadOnly = True
         '
-        'btnThem
+        'btxoa
         '
-        Me.btnThem.Location = New System.Drawing.Point(47, 373)
-        Me.btnThem.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnThem.Name = "btnThem"
-        Me.btnThem.Size = New System.Drawing.Size(100, 28)
-        Me.btnThem.TabIndex = 45
-        Me.btnThem.Text = "Thêm"
-        Me.btnThem.UseVisualStyleBackColor = True
+        Me.btxoa.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btxoa.BackgroundImage = CType(resources.GetObject("btxoa.BackgroundImage"), System.Drawing.Image)
+        Me.btxoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btxoa.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btxoa.ForeColor = System.Drawing.Color.Black
+        Me.btxoa.Location = New System.Drawing.Point(328, 375)
+        Me.btxoa.Margin = New System.Windows.Forms.Padding(4)
+        Me.btxoa.Name = "btxoa"
+        Me.btxoa.Size = New System.Drawing.Size(146, 57)
+        Me.btxoa.TabIndex = 105
+        Me.btxoa.Text = "Xóa"
+        Me.btxoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btxoa.UseVisualStyleBackColor = False
         '
-        'Button1
+        'btsua
         '
-        Me.Button1.Location = New System.Drawing.Point(444, 373)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 28)
-        Me.Button1.TabIndex = 47
-        Me.Button1.Text = "Thoát"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btsua.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btsua.BackgroundImage = CType(resources.GetObject("btsua.BackgroundImage"), System.Drawing.Image)
+        Me.btsua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btsua.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btsua.ForeColor = System.Drawing.Color.Black
+        Me.btsua.Location = New System.Drawing.Point(174, 373)
+        Me.btsua.Margin = New System.Windows.Forms.Padding(4)
+        Me.btsua.Name = "btsua"
+        Me.btsua.Size = New System.Drawing.Size(146, 59)
+        Me.btsua.TabIndex = 104
+        Me.btsua.Text = "Cập Nhật"
+        Me.btsua.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btsua.UseVisualStyleBackColor = False
+        '
+        'btthoat
+        '
+        Me.btthoat.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btthoat.BackgroundImage = CType(resources.GetObject("btthoat.BackgroundImage"), System.Drawing.Image)
+        Me.btthoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btthoat.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btthoat.ForeColor = System.Drawing.Color.Black
+        Me.btthoat.Location = New System.Drawing.Point(482, 376)
+        Me.btthoat.Margin = New System.Windows.Forms.Padding(4)
+        Me.btthoat.Name = "btthoat"
+        Me.btthoat.Size = New System.Drawing.Size(146, 56)
+        Me.btthoat.TabIndex = 103
+        Me.btthoat.Text = "Trở Về"
+        Me.btthoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btthoat.UseVisualStyleBackColor = False
+        '
+        'btthem
+        '
+        Me.btthem.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btthem.BackgroundImage = CType(resources.GetObject("btthem.BackgroundImage"), System.Drawing.Image)
+        Me.btthem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btthem.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btthem.ForeColor = System.Drawing.Color.Black
+        Me.btthem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btthem.Location = New System.Drawing.Point(20, 373)
+        Me.btthem.Margin = New System.Windows.Forms.Padding(4)
+        Me.btthem.Name = "btthem"
+        Me.btthem.Size = New System.Drawing.Size(146, 59)
+        Me.btthem.TabIndex = 102
+        Me.btthem.Text = "Thêm"
+        Me.btthem.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btthem.UseVisualStyleBackColor = False
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.GroupBox1.ForeColor = System.Drawing.Color.White
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(625, 347)
+        Me.GroupBox1.TabIndex = 106
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Danh Sách Loại Sách"
         '
         'TheLoaiSachGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(557, 423)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.btnXoa)
-        Me.Controls.Add(Me.btnCapNhat)
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.ClientSize = New System.Drawing.Size(650, 455)
+        Me.Controls.Add(Me.btxoa)
+        Me.Controls.Add(Me.btsua)
+        Me.Controls.Add(Me.btthoat)
+        Me.Controls.Add(Me.btthem)
         Me.Controls.Add(Me.txtMaLoai)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtTenLoai)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dgvDanhSachTLS)
-        Me.Controls.Add(Me.btnThem)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "TheLoaiSachGUI"
@@ -182,17 +209,16 @@ Partial Class TheLoaiSachGUI
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents btnXoa As Button
-    Friend WithEvents btnCapNhat As Button
     Friend WithEvents txtMaLoai As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents txtTenLoai As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
     Friend WithEvents dgvDanhSachTLS As DataGridView
-    Friend WithEvents btnThem As Button
     Friend WithEvents MaTLS As DataGridViewTextBoxColumn
     Friend WithEvents TenTLS As DataGridViewTextBoxColumn
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btxoa As Button
+    Friend WithEvents btsua As Button
+    Friend WithEvents btthoat As Button
+    Friend WithEvents btthem As Button
+    Friend WithEvents GroupBox1 As GroupBox
 End Class

@@ -26,22 +26,22 @@ Partial Class QuyDinhGUI
         Me.btnThoat = New System.Windows.Forms.Button()
         Me.btnCapNhat = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.xxxx = New System.Windows.Forms.Label()
-        Me.txtTuoiToiDa = New System.Windows.Forms.TextBox()
-        Me.label = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtHanSuDung = New System.Windows.Forms.TextBox()
         Me.txtTuoiToiThieu = New System.Windows.Forms.TextBox()
+        Me.txtHanSuDung = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.label = New System.Windows.Forms.Label()
+        Me.txtTuoiToiDa = New System.Windows.Forms.TextBox()
+        Me.xxxx = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtKCNXB = New System.Windows.Forms.TextBox()
         Me.txtSoLuongTheLoai = New System.Windows.Forms.TextBox()
+        Me.txtKCNXB = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtSachMuonToiDa = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.txtNgayMuonToiDa = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtSachMuonToiDa = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -56,7 +56,7 @@ Partial Class QuyDinhGUI
         Me.btnThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnThoat.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.btnThoat.ForeColor = System.Drawing.Color.Black
-        Me.btnThoat.Location = New System.Drawing.Point(397, 364)
+        Me.btnThoat.Location = New System.Drawing.Point(416, 328)
         Me.btnThoat.Margin = New System.Windows.Forms.Padding(4)
         Me.btnThoat.Name = "btnThoat"
         Me.btnThoat.Size = New System.Drawing.Size(157, 54)
@@ -72,7 +72,7 @@ Partial Class QuyDinhGUI
         Me.btnCapNhat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnCapNhat.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCapNhat.ForeColor = System.Drawing.Color.Black
-        Me.btnCapNhat.Location = New System.Drawing.Point(195, 364)
+        Me.btnCapNhat.Location = New System.Drawing.Point(214, 328)
         Me.btnCapNhat.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCapNhat.Name = "btnCapNhat"
         Me.btnCapNhat.Size = New System.Drawing.Size(167, 54)
@@ -100,33 +100,21 @@ Partial Class QuyDinhGUI
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Quy Định 1"
         '
-        'xxxx
+        'txtTuoiToiThieu
         '
-        Me.xxxx.AutoSize = True
-        Me.xxxx.Location = New System.Drawing.Point(24, 69)
-        Me.xxxx.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.xxxx.Name = "xxxx"
-        Me.xxxx.Size = New System.Drawing.Size(96, 23)
-        Me.xxxx.TabIndex = 14
-        Me.xxxx.Text = "Tuổi tối đa"
+        Me.txtTuoiToiThieu.Location = New System.Drawing.Point(161, 26)
+        Me.txtTuoiToiThieu.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtTuoiToiThieu.Name = "txtTuoiToiThieu"
+        Me.txtTuoiToiThieu.Size = New System.Drawing.Size(173, 29)
+        Me.txtTuoiToiThieu.TabIndex = 10
         '
-        'txtTuoiToiDa
+        'txtHanSuDung
         '
-        Me.txtTuoiToiDa.Location = New System.Drawing.Point(161, 69)
-        Me.txtTuoiToiDa.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtTuoiToiDa.Name = "txtTuoiToiDa"
-        Me.txtTuoiToiDa.Size = New System.Drawing.Size(173, 29)
-        Me.txtTuoiToiDa.TabIndex = 13
-        '
-        'label
-        '
-        Me.label.AutoSize = True
-        Me.label.Location = New System.Drawing.Point(24, 119)
-        Me.label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.label.Name = "label"
-        Me.label.Size = New System.Drawing.Size(111, 23)
-        Me.label.TabIndex = 11
-        Me.label.Text = "Hạn sử dụng"
+        Me.txtHanSuDung.Location = New System.Drawing.Point(161, 116)
+        Me.txtHanSuDung.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtHanSuDung.Name = "txtHanSuDung"
+        Me.txtHanSuDung.Size = New System.Drawing.Size(173, 29)
+        Me.txtHanSuDung.TabIndex = 9
         '
         'Label1
         '
@@ -138,21 +126,33 @@ Partial Class QuyDinhGUI
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Tuổi tối thiểu"
         '
-        'txtHanSuDung
+        'label
         '
-        Me.txtHanSuDung.Location = New System.Drawing.Point(161, 116)
-        Me.txtHanSuDung.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtHanSuDung.Name = "txtHanSuDung"
-        Me.txtHanSuDung.Size = New System.Drawing.Size(173, 29)
-        Me.txtHanSuDung.TabIndex = 9
+        Me.label.AutoSize = True
+        Me.label.Location = New System.Drawing.Point(24, 119)
+        Me.label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.label.Name = "label"
+        Me.label.Size = New System.Drawing.Size(111, 23)
+        Me.label.TabIndex = 11
+        Me.label.Text = "Hạn sử dụng"
         '
-        'txtTuoiToiThieu
+        'txtTuoiToiDa
         '
-        Me.txtTuoiToiThieu.Location = New System.Drawing.Point(161, 26)
-        Me.txtTuoiToiThieu.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtTuoiToiThieu.Name = "txtTuoiToiThieu"
-        Me.txtTuoiToiThieu.Size = New System.Drawing.Size(173, 29)
-        Me.txtTuoiToiThieu.TabIndex = 10
+        Me.txtTuoiToiDa.Location = New System.Drawing.Point(161, 69)
+        Me.txtTuoiToiDa.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtTuoiToiDa.Name = "txtTuoiToiDa"
+        Me.txtTuoiToiDa.Size = New System.Drawing.Size(173, 29)
+        Me.txtTuoiToiDa.TabIndex = 13
+        '
+        'xxxx
+        '
+        Me.xxxx.AutoSize = True
+        Me.xxxx.Location = New System.Drawing.Point(24, 69)
+        Me.xxxx.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.xxxx.Name = "xxxx"
+        Me.xxxx.Size = New System.Drawing.Size(96, 23)
+        Me.xxxx.TabIndex = 14
+        Me.xxxx.Text = "Tuổi tối đa"
         '
         'GroupBox2
         '
@@ -171,16 +171,23 @@ Partial Class QuyDinhGUI
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Quy Định 2"
         '
-        'Label7
+        'txtSoLuongTheLoai
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label7.Location = New System.Drawing.Point(19, 81)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(142, 20)
-        Me.Label7.TabIndex = 3
-        Me.Label7.Text = "Số Lượng Thể Loại:"
+        Me.txtSoLuongTheLoai.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtSoLuongTheLoai.Location = New System.Drawing.Point(181, 78)
+        Me.txtSoLuongTheLoai.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtSoLuongTheLoai.Name = "txtSoLuongTheLoai"
+        Me.txtSoLuongTheLoai.Size = New System.Drawing.Size(167, 27)
+        Me.txtSoLuongTheLoai.TabIndex = 1
+        '
+        'txtKCNXB
+        '
+        Me.txtKCNXB.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtKCNXB.Location = New System.Drawing.Point(181, 34)
+        Me.txtKCNXB.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtKCNXB.Name = "txtKCNXB"
+        Me.txtKCNXB.Size = New System.Drawing.Size(167, 27)
+        Me.txtKCNXB.TabIndex = 0
         '
         'Label4
         '
@@ -193,23 +200,16 @@ Partial Class QuyDinhGUI
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "KC Năm Xuất Bản :"
         '
-        'txtKCNXB
+        'Label7
         '
-        Me.txtKCNXB.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtKCNXB.Location = New System.Drawing.Point(181, 34)
-        Me.txtKCNXB.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtKCNXB.Name = "txtKCNXB"
-        Me.txtKCNXB.Size = New System.Drawing.Size(167, 27)
-        Me.txtKCNXB.TabIndex = 0
-        '
-        'txtSoLuongTheLoai
-        '
-        Me.txtSoLuongTheLoai.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtSoLuongTheLoai.Location = New System.Drawing.Point(181, 78)
-        Me.txtSoLuongTheLoai.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtSoLuongTheLoai.Name = "txtSoLuongTheLoai"
-        Me.txtSoLuongTheLoai.Size = New System.Drawing.Size(167, 27)
-        Me.txtSoLuongTheLoai.TabIndex = 1
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label7.Location = New System.Drawing.Point(19, 81)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(142, 20)
+        Me.Label7.TabIndex = 3
+        Me.Label7.Text = "Số Lượng Thể Loại:"
         '
         'GroupBox3
         '
@@ -223,30 +223,19 @@ Partial Class QuyDinhGUI
         Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox3.Size = New System.Drawing.Size(749, 87)
+        Me.GroupBox3.Size = New System.Drawing.Size(767, 87)
         Me.GroupBox3.TabIndex = 4
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Quy Định 3"
         '
-        'Label5
+        'txtNgayMuonToiDa
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label5.Location = New System.Drawing.Point(421, 34)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(140, 20)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Số Sách Mượn TĐ :"
-        '
-        'txtSachMuonToiDa
-        '
-        Me.txtSachMuonToiDa.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtSachMuonToiDa.Location = New System.Drawing.Point(579, 34)
-        Me.txtSachMuonToiDa.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtSachMuonToiDa.Name = "txtSachMuonToiDa"
-        Me.txtSachMuonToiDa.Size = New System.Drawing.Size(172, 27)
-        Me.txtSachMuonToiDa.TabIndex = 3
+        Me.txtNgayMuonToiDa.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtNgayMuonToiDa.Location = New System.Drawing.Point(176, 34)
+        Me.txtNgayMuonToiDa.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtNgayMuonToiDa.Name = "txtNgayMuonToiDa"
+        Me.txtNgayMuonToiDa.Size = New System.Drawing.Size(172, 27)
+        Me.txtNgayMuonToiDa.TabIndex = 0
         '
         'Label3
         '
@@ -259,14 +248,25 @@ Partial Class QuyDinhGUI
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Số Ngày Mượn :"
         '
-        'txtNgayMuonToiDa
+        'txtSachMuonToiDa
         '
-        Me.txtNgayMuonToiDa.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtNgayMuonToiDa.Location = New System.Drawing.Point(176, 34)
-        Me.txtNgayMuonToiDa.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtNgayMuonToiDa.Name = "txtNgayMuonToiDa"
-        Me.txtNgayMuonToiDa.Size = New System.Drawing.Size(172, 27)
-        Me.txtNgayMuonToiDa.TabIndex = 0
+        Me.txtSachMuonToiDa.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtSachMuonToiDa.Location = New System.Drawing.Point(579, 34)
+        Me.txtSachMuonToiDa.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtSachMuonToiDa.Name = "txtSachMuonToiDa"
+        Me.txtSachMuonToiDa.Size = New System.Drawing.Size(172, 27)
+        Me.txtSachMuonToiDa.TabIndex = 3
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label5.Location = New System.Drawing.Point(421, 34)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(140, 20)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = "Số Sách Mượn TĐ :"
         '
         'Panel2
         '
@@ -275,10 +275,10 @@ Partial Class QuyDinhGUI
         Me.Panel2.Controls.Add(Me.GroupBox2)
         Me.Panel2.Controls.Add(Me.GroupBox1)
         Me.Panel2.ForeColor = System.Drawing.Color.White
-        Me.Panel2.Location = New System.Drawing.Point(16, 15)
+        Me.Panel2.Location = New System.Drawing.Point(17, 13)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(781, 295)
+        Me.Panel2.Size = New System.Drawing.Size(785, 295)
         Me.Panel2.TabIndex = 49
         '
         'QuyDinhGUI
@@ -286,9 +286,9 @@ Partial Class QuyDinhGUI
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.ClientSize = New System.Drawing.Size(829, 446)
-        Me.Controls.Add(Me.btnThoat)
+        Me.ClientSize = New System.Drawing.Size(820, 398)
         Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.btnThoat)
         Me.Controls.Add(Me.btnCapNhat)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)

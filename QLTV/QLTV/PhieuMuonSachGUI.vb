@@ -21,7 +21,7 @@ Public Class PhieuMuonSachGUI
         End Try
     End Sub
 
-    Private Sub btnNhap_Click(sender As Object, e As EventArgs) Handles btnNhap.Click
+    Private Sub btnNhap_Click(sender As Object, e As EventArgs) Handles btthem.Click
         Dim pms As PhieuMuonSachDTO
         pms = New PhieuMuonSachDTO()
         '1. Mapping data from GUI control
@@ -130,7 +130,7 @@ Public Class PhieuMuonSachGUI
         dgvlistSach.AllowUserToAddRows = False
         dgvlistSach.DataSource = listSach
     End Sub
-    Private Sub cbMaDG_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbMaDG.SelectedIndexChanged
+    Private Sub cbMaDG_SelectedIndexChanged(sender As Object, e As EventArgs)
         Connect()
         If con.State = ConnectionState.Closed Then
             con.Open()
@@ -197,7 +197,7 @@ Public Class PhieuMuonSachGUI
         Me.txtTimKiem.Text = ""
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnThoat_Click(sender As Object, e As EventArgs) Handles btthoat.Click
         Me.Hide()
     End Sub
 End Class

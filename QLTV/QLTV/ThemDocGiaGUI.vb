@@ -134,7 +134,7 @@ Public Class ThemDocGiaGUI
 
     End Sub
 
-    Private Sub btnThoat_Click(sender As Object, e As EventArgs) Handles btnThoat.Click
+    Private Sub btnThoat_Click(sender As Object, e As EventArgs) Handles btthoat.Click
         Me.Hide()
     End Sub
 End Class

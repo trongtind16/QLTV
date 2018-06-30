@@ -41,7 +41,7 @@ Public Class TinhTrangSachGUI
         End If
 
     End Sub
-    Private Sub btnCapNhat_Click(sender As Object, e As EventArgs) Handles btnCapNhat.Click
+    Private Sub btnCapNhat_Click(sender As Object, e As EventArgs) Handles btsua.Click
         Dim currentRowIndex As Integer = dgvDanhSachTTS.CurrentCellAddress.Y 'current row selected
         If (-1 < currentRowIndex And currentRowIndex < dgvDanhSachTTS.RowCount) Then
             Try
@@ -82,7 +82,7 @@ Public Class TinhTrangSachGUI
 
     End Sub
 
-    Private Sub btnThoat_Click(sender As Object, e As EventArgs) Handles btnThoat.Click
+    Private Sub btnThoat_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
     End Sub
 End Class

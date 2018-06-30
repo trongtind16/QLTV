@@ -41,7 +41,7 @@ Public Class TheLoaiSachGUI
         End If
 
     End Sub
-    Private Sub btnCapNhat_Click(sender As Object, e As EventArgs) Handles btnCapNhat.Click
+    Private Sub btnCapNhat_Click(sender As Object, e As EventArgs) Handles btsua.Click
         Dim currentRowIndex As Integer = dgvDanhSachTLS.CurrentCellAddress.Y 'current row selected
         If (-1 < currentRowIndex And currentRowIndex < dgvDanhSachTLS.RowCount) Then
             Try
@@ -81,7 +81,7 @@ Public Class TheLoaiSachGUI
         End If
 
     End Sub
-    Private Sub btnXoa_Click(sender As Object, e As EventArgs) Handles btnXoa.Click
+    Private Sub btnXoa_Click(sender As Object, e As EventArgs) Handles btxoa.Click
         ' Get the current cell location.
         Dim currentRowIndex As Integer = dgvDanhSachTLS.CurrentCellAddress.Y 'current row selected
 
@@ -122,11 +122,11 @@ Public Class TheLoaiSachGUI
         End If
     End Sub
 
-    Private Sub btnThem_Click(sender As Object, e As EventArgs) Handles btnThem.Click
+    Private Sub btnThem_Click(sender As Object, e As EventArgs) Handles btthem.Click
         ThemTheLoaiSachGUI.Show()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnThoat_Click(sender As Object, e As EventArgs) Handles btthoat.Click
         Me.Hide()
     End Sub
 End Class

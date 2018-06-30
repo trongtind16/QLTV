@@ -298,7 +298,7 @@ Partial Class Form1
         Me.SideMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.SideMenu.Location = New System.Drawing.Point(0, 0)
         Me.SideMenu.Name = "SideMenu"
-        Me.SideMenu.Size = New System.Drawing.Size(64, 728)
+        Me.SideMenu.Size = New System.Drawing.Size(64, 777)
         Me.SideMenu.TabIndex = 4
         '
         'BunifuFlatButton7
@@ -383,7 +383,7 @@ Partial Class Form1
         Me.Header.Dock = System.Windows.Forms.DockStyle.Top
         Me.Header.Location = New System.Drawing.Point(64, 0)
         Me.Header.Name = "Header"
-        Me.Header.Size = New System.Drawing.Size(1413, 19)
+        Me.Header.Size = New System.Drawing.Size(1486, 19)
         Me.Header.TabIndex = 7
         '
         'PictureBox1
@@ -422,7 +422,7 @@ Partial Class Form1
         Me.PanelAnimator2.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuImageButton2.Image = CType(resources.GetObject("BunifuImageButton2.Image"), System.Drawing.Image)
         Me.BunifuImageButton2.ImageActive = Nothing
-        Me.BunifuImageButton2.Location = New System.Drawing.Point(1133, 3)
+        Me.BunifuImageButton2.Location = New System.Drawing.Point(1203, 3)
         Me.BunifuImageButton2.Name = "BunifuImageButton2"
         Me.BunifuImageButton2.Size = New System.Drawing.Size(40, 40)
         Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -439,7 +439,7 @@ Partial Class Form1
         Me.PanelAnimator2.SetDecoration(Me.Header2, BunifuAnimatorNS.DecorationType.None)
         Me.Header2.Location = New System.Drawing.Point(292, 19)
         Me.Header2.Name = "Header2"
-        Me.Header2.Size = New System.Drawing.Size(1185, 43)
+        Me.Header2.Size = New System.Drawing.Size(1246, 43)
         Me.Header2.TabIndex = 8
         '
         'Header3
@@ -449,7 +449,7 @@ Partial Class Form1
         Me.Header3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Header3.Location = New System.Drawing.Point(64, 19)
         Me.Header3.Name = "Header3"
-        Me.Header3.Size = New System.Drawing.Size(1413, 43)
+        Me.Header3.Size = New System.Drawing.Size(1486, 43)
         Me.Header3.TabIndex = 9
         '
         'BunifuDragControl1
@@ -499,7 +499,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1477, 728)
+        Me.ClientSize = New System.Drawing.Size(1550, 777)
         Me.Controls.Add(Me.Header2)
         Me.Controls.Add(Me.Header3)
         Me.Controls.Add(Me.Header)

@@ -41,7 +41,7 @@ Public Class LoaiDocGiaGUI
         End If
 
     End Sub
-    Private Sub btnCapNhat_Click(sender As Object, e As EventArgs) Handles btnCapNhat.Click
+    Private Sub btnCapNhat_Click(sender As Object, e As EventArgs) Handles btsua.Click
         Dim currentRowIndex As Integer = dgvDanhSachTLS.CurrentCellAddress.Y 'current row selected
         If (-1 < currentRowIndex And currentRowIndex < dgvDanhSachTLS.RowCount) Then
             Try
@@ -81,52 +81,8 @@ Public Class LoaiDocGiaGUI
         End If
 
     End Sub
-    Private Sub btnXoa_Click(sender As Object, e As EventArgs) Handles btnXoa.Click
-        ' Get the current cell location.
-        Dim currentRowIndex As Integer = dgvDanhSachTLS.CurrentCellAddress.Y 'current row selected
 
-
-        'Verify that indexing OK
-        If (-1 < currentRowIndex And currentRowIndex < dgvDanhSachTLS.RowCount) Then
-            Select Case MsgBox("Bạn có thực sự muốn xóa loại Đọc giả có mã: " + txtMaLoai.Text, MsgBoxStyle.YesNo, "Information")
-                Case MsgBoxResult.Yes
-                    Try
-
-                        '1. Delete from DB
-                        Dim result As Result
-                        result = ldgBus.delete(Convert.ToInt32(txtMaLoai.Text))
-                        If (result.FlagResult = True) Then
-
-                            ' Re-Load LoaiHocSinh list
-                            loadListLoaiDocGia()
-
-                            ' Hightlight the next row on table
-                            If (currentRowIndex >= dgvDanhSachTLS.Rows.Count) Then
-                                currentRowIndex = currentRowIndex - 1
-                            End If
-                            If (currentRowIndex >= 0) Then
-                                dgvDanhSachTLS.Rows(currentRowIndex).Selected = True
-                            End If
-                            MessageBox.Show("Xóa Loại Đọc Giả thành công.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                        Else
-                            MessageBox.Show("Xóa Loại Đọc giả không thành công.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                            System.Console.WriteLine(result.SystemMessage)
-                        End If
-                    Catch ex As Exception
-                        Console.WriteLine(ex.StackTrace)
-                    End Try
-                Case MsgBoxResult.No
-                    Return
-            End Select
-
-        End If
-    End Sub
-
-    Private Sub btnThem_Click(sender As Object, e As EventArgs) Handles btnThem.Click
-        ThemLoaiDocGiaGUI.Show()
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnThoat_Click(sender As Object, e As EventArgs) Handles btthoat.Click
         Me.Hide()
     End Sub
 End Class

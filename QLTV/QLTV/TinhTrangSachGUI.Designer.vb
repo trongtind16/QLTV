@@ -22,42 +22,23 @@ Partial Class TinhTrangSachGUI
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnThoat = New System.Windows.Forms.Button()
-        Me.btnCapNhat = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TinhTrangSachGUI))
         Me.txtMaLoai = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtTenLoai = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.dgvDanhSachTTS = New System.Windows.Forms.DataGridView()
         Me.MaTTS = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TenTTS = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btsua = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         CType(Me.dgvDanhSachTTS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'btnThoat
-        '
-        Me.btnThoat.Location = New System.Drawing.Point(347, 380)
-        Me.btnThoat.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnThoat.Name = "btnThoat"
-        Me.btnThoat.Size = New System.Drawing.Size(100, 28)
-        Me.btnThoat.TabIndex = 55
-        Me.btnThoat.Text = "Thoát"
-        Me.btnThoat.UseVisualStyleBackColor = True
-        '
-        'btnCapNhat
-        '
-        Me.btnCapNhat.Location = New System.Drawing.Point(187, 380)
-        Me.btnCapNhat.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnCapNhat.Name = "btnCapNhat"
-        Me.btnCapNhat.Size = New System.Drawing.Size(100, 28)
-        Me.btnCapNhat.TabIndex = 53
-        Me.btnCapNhat.Text = "Cập Nhật"
-        Me.btnCapNhat.UseVisualStyleBackColor = True
-        '
         'txtMaLoai
         '
-        Me.txtMaLoai.Location = New System.Drawing.Point(187, 252)
+        Me.txtMaLoai.Location = New System.Drawing.Point(194, 278)
         Me.txtMaLoai.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMaLoai.Name = "txtMaLoai"
         Me.txtMaLoai.ReadOnly = True
@@ -68,16 +49,18 @@ Partial Class TinhTrangSachGUI
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(77, 261)
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(84, 280)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(62, 17)
+        Me.Label3.Size = New System.Drawing.Size(68, 20)
         Me.Label3.TabIndex = 51
         Me.Label3.Text = "Mã Loại:"
         '
         'txtTenLoai
         '
-        Me.txtTenLoai.Location = New System.Drawing.Point(187, 310)
+        Me.txtTenLoai.Location = New System.Drawing.Point(194, 336)
         Me.txtTenLoai.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTenLoai.Name = "txtTenLoai"
         Me.txtTenLoai.Size = New System.Drawing.Size(295, 22)
@@ -86,38 +69,25 @@ Partial Class TinhTrangSachGUI
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(77, 319)
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(84, 338)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(68, 17)
+        Me.Label2.Size = New System.Drawing.Size(71, 20)
         Me.Label2.TabIndex = 49
         Me.Label2.Text = "Tên Loại:"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(29, 17)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(163, 17)
-        Me.Label1.TabIndex = 48
-        Me.Label1.Text = "Danh sách Loại Đọc giả:"
-        '
         'dgvDanhSachTTS
         '
-        Me.dgvDanhSachTTS.AllowUserToAddRows = False
-        Me.dgvDanhSachTTS.AllowUserToDeleteRows = False
         Me.dgvDanhSachTTS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvDanhSachTTS.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.dgvDanhSachTTS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvDanhSachTTS.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaTTS, Me.TenTTS})
-        Me.dgvDanhSachTTS.Location = New System.Drawing.Point(33, 37)
+        Me.dgvDanhSachTTS.Location = New System.Drawing.Point(40, 63)
         Me.dgvDanhSachTTS.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgvDanhSachTTS.MultiSelect = False
         Me.dgvDanhSachTTS.Name = "dgvDanhSachTTS"
         Me.dgvDanhSachTTS.ReadOnly = True
-        Me.dgvDanhSachTTS.RowHeadersVisible = False
-        Me.dgvDanhSachTTS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvDanhSachTTS.Size = New System.Drawing.Size(515, 185)
         Me.dgvDanhSachTTS.TabIndex = 47
         '
@@ -135,19 +105,64 @@ Partial Class TinhTrangSachGUI
         Me.TenTTS.Name = "TenTTS"
         Me.TenTTS.ReadOnly = True
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.Button1.ForeColor = System.Drawing.Color.Black
+        Me.Button1.Location = New System.Drawing.Point(349, 391)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(140, 57)
+        Me.Button1.TabIndex = 57
+        Me.Button1.Text = "Trở Về"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'btsua
+        '
+        Me.btsua.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btsua.BackgroundImage = CType(resources.GetObject("btsua.BackgroundImage"), System.Drawing.Image)
+        Me.btsua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btsua.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btsua.ForeColor = System.Drawing.Color.Black
+        Me.btsua.Location = New System.Drawing.Point(114, 391)
+        Me.btsua.Margin = New System.Windows.Forms.Padding(4)
+        Me.btsua.Name = "btsua"
+        Me.btsua.Size = New System.Drawing.Size(140, 59)
+        Me.btsua.TabIndex = 105
+        Me.btsua.Text = "Cập Nhật"
+        Me.btsua.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btsua.UseVisualStyleBackColor = False
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.GroupBox1.ForeColor = System.Drawing.Color.White
+        Me.GroupBox1.Location = New System.Drawing.Point(13, 13)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(559, 371)
+        Me.GroupBox1.TabIndex = 106
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Danh Sách Tình Trạng Sách"
+        '
         'TinhTrangSachGUI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(584, 443)
-        Me.Controls.Add(Me.btnThoat)
-        Me.Controls.Add(Me.btnCapNhat)
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.ClientSize = New System.Drawing.Size(593, 465)
+        Me.Controls.Add(Me.btsua)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txtMaLoai)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtTenLoai)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dgvDanhSachTTS)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "TinhTrangSachGUI"
@@ -158,15 +173,14 @@ Partial Class TinhTrangSachGUI
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents btnThoat As Button
-    Friend WithEvents btnCapNhat As Button
     Friend WithEvents txtMaLoai As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents txtTenLoai As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
     Friend WithEvents dgvDanhSachTTS As DataGridView
     Friend WithEvents MaTTS As DataGridViewTextBoxColumn
     Friend WithEvents TenTTS As DataGridViewTextBoxColumn
+    Friend WithEvents Button1 As Button
+    Friend WithEvents btsua As Button
+    Friend WithEvents GroupBox1 As GroupBox
 End Class

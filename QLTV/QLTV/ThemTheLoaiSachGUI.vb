@@ -5,7 +5,7 @@ Imports Utility
 Public Class ThemTheLoaiSachGUI
     Private tlsBus As TheLoaiSachBUS
 
-    Private Sub btnNhap_Click(sender As Object, e As EventArgs) Handles btnThem.Click
+    Private Sub btnNhap_Click(sender As Object, e As EventArgs) Handles btnNhap.Click
 
         Dim tls As TheLoaiSachDTO
         tls = New TheLoaiSachDTO()
@@ -60,7 +60,7 @@ Public Class ThemTheLoaiSachGUI
 
     End Sub
 
-    Private Sub btnThoat_Click(sender As Object, e As EventArgs) Handles btnThoat.Click
+    Private Sub btnThoat_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
     End Sub
 End Class

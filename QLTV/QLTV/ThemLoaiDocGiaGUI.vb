@@ -6,7 +6,7 @@ Public Class ThemLoaiDocGiaGUI
 
     Private ldgBus As LoaiDocGiaBUS
 
-    Private Sub btnNhap_Click(sender As Object, e As EventArgs) Handles btnThem.Click
+    Private Sub btnNhap_Click(sender As Object, e As EventArgs) Handles btnNhap.Click
 
         Dim ldg As LoaiDocGiaDTO
         ldg = New LoaiDocGiaDTO()
@@ -61,7 +61,7 @@ Public Class ThemLoaiDocGiaGUI
 
     End Sub
 
-    Private Sub btnThoat_Click(sender As Object, e As EventArgs) Handles btnThoat.Click
+    Private Sub btnThoat_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
     End Sub
 End Class

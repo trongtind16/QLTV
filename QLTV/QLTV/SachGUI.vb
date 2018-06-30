@@ -185,7 +185,7 @@ Public Class SachGUI
         End Try
     End Sub
 
-    Private Sub btnTimKiem_Click(sender As Object, e As EventArgs) Handles bttimkiem.Click
+    Private Sub btnTimKiem_Click(sender As Object, e As EventArgs) Handles  btnTimKiem.Click
         Connect()
         If con.State = ConnectionState.Closed Then
             con.Open()
@@ -236,7 +236,7 @@ Public Class SachGUI
         End If
     End Sub
 
-    Private Sub txthuy_Click(sender As Object, e As EventArgs) Handles txthuy.Click
+    Private Sub txthuy_Click(sender As Object, e As EventArgs) Handles  btnHuy.Click
         loadListSach()
         Me.cbDoiTuong.Text = "Chọn..."
         Me.txtTimKiem.Text = ""
