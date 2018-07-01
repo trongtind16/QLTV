@@ -15,7 +15,7 @@ Public Class SachGUI
     Dim listQuyDinh = New List(Of QuyDinhDTO)
     Dim resul As Result
     Private con As SqlConnection
-    Private Sub SachGUI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Public Sub LoadSachGUI_Load()
         sBUS = New SachBUS()
         tlsBUS = New TheLoaiSachBUS()
         ttsBUS = New TinhTrangSachBUS()
@@ -32,7 +32,7 @@ Public Class SachGUI
         cbDoiTuong.Text = "Chọn..."
         ''
         cbTheLoai.DataSource = New BindingSource(listTheLoaiSach, String.Empty)
-        cbTheLoai.DisplayMember = "MaTLS"
+        cbTheLoai.DisplayMember = "TenTLS"
         cbTheLoai.ValueMember = "MaTLS"
         ''
         Dim listTinhTrangSach = New List(Of TinhTrangSachDTO)
@@ -43,9 +43,12 @@ Public Class SachGUI
             Return
         End If
         cbTinhTrang.DataSource = New BindingSource(listTinhTrangSach, String.Empty)
-        cbTinhTrang.DisplayMember = "MaTTS"
+        cbTinhTrang.DisplayMember = "TenTTS"
         cbTinhTrang.ValueMember = "MaTTS"
 
+    End Sub
+    Private Sub SachGUI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadSachGUI_Load()
     End Sub
     Public Sub loadListSach()
         Dim listSach = New List(Of SachDTO)
@@ -96,12 +99,12 @@ Public Class SachGUI
                 '1. Mapping data from GUI control
                 sach.MaSach = txtMaSach.Text
                 sach.TenSach = txtTenSach.Text
-                sach.MaTLS = cbTheLoai.SelectedValue
+                sach.MaTLS = Convert.ToInt32(cbTheLoai.SelectedValue)
                 sach.TenTG = txtTacGia.Text
                 sach.NXB = txtNhaXuatBan.Text
                 sach.NamXB = txtNamXuatBan.Text
                 sach.NgayNhap = dtpNgayNhap.Value
-                sach.MaTTS = cbTinhTrang.SelectedValue
+                sach.MaTTS = Convert.ToInt32(cbTinhTrang.SelectedValue)
                 sach.TriGia = txtTriGia.Text
                 '2. Business .....
                 If (sBUS.isValidName(sach) = False) Then

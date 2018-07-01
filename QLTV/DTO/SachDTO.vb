@@ -1,25 +1,25 @@
 ﻿Public Class SachDTO
     Private strMaSach As String
     Private strTenSach As String
-    Private iMaTLS As Integer
+    Private strMaTLS As String
     Private strTenTG As String
     Private strNXB As String
     Private iNamXB As String
     Private dateNgayNhap As DateTime
-    Private iMaTTS As Integer
+    Private strMaTTS As String
     Private iTriGia As String
 
     Public Sub New()
     End Sub
-    Public Sub New(strMaSach As String, strTenSach As String, iMaTLS As Integer, strTenTG As String, strNXB As String, iNamXB As String, dateNgayNhap As DateTime, iMaTTS As Integer, iTriGia As String)
+    Public Sub New(strMaSach As String, strTenSach As String, strMaTLS As String, strTenTG As String, strNXB As String, iNamXB As String, dateNgayNhap As DateTime, strMaTTS As String, iTriGia As String)
         Me.strMaSach = strMaSach
         Me.strTenSach = strTenSach
-        Me.iMaTLS = iMaTLS
+        Me.strMaTLS = strMaTLS
         Me.strTenTG = strTenTG
         Me.strNXB = strNXB
         Me.iNamXB = iNamXB
         Me.dateNgayNhap = dateNgayNhap
-        Me.iMaTTS = iMaTTS
+        Me.strMaTTS = strMaTTS
         Me.iTriGia = iTriGia
 
 
@@ -43,12 +43,12 @@
         End Set
     End Property
 
-    Public Property MaTLS() As Integer
+    Public Property MaTLS() As String
         Get
-            Return iMaTLS
+            Return strMaTLS
         End Get
-        Set(value As Integer)
-            iMaTLS = value
+        Set(value As String)
+            strMaTLS = value
         End Set
     End Property
 
@@ -97,12 +97,12 @@
         End Set
     End Property
 
-    Public Property MaTTS() As Integer
+    Public Property MaTTS() As String
         Get
-            Return iMaTTS
+            Return strMaTTS
         End Get
-        Set(value As Integer)
-            iMaTTS = value
+        Set(value As String)
+            strMaTTS = value
         End Set
     End Property
 End Class

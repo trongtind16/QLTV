@@ -197,8 +197,8 @@ Public Class SachDAL
     Public Function selectAll(ByRef listS As List(Of SachDTO)) As Result
 
         Dim query As String = String.Empty
-        query &= "SELECT [MaSach],[TenSach],[MaTLS],[TenTG],[NXB],[NamXB],[NgayNhap],[MaTTS],[TriGia]"
-        query &= "FROM [Sach]"
+        query &= "SELECT [MaSach],[TenSach],[TenTLS],[TenTG],[NXB],[NamXB],[NgayNhap],[TenTTS],[TriGia]"
+        query &= "FROM [Sach],[TheLoaiSach],[TinhTrangSach] WHERE [Sach].[MaTLS] = [TheLoaiSach].[MaTLS] AND [Sach].[MaTTS] = [TinhTrangSach].[MaTTS] "
         Using conn As New SqlConnection(connectionString)
             Using comm As New SqlCommand()
                 With comm
@@ -213,7 +213,7 @@ Public Class SachDAL
                     If reader.HasRows = True Then
                         listS.Clear()
                         While reader.Read()
-                            listS.Add(New SachDTO(reader("MaSach"), reader("TenSach"), reader("MaTLS"), reader("TenTG"), reader("NXB"), reader("NamXB"), reader("NgayNhap"), reader("MaTTS"), reader("TriGia")))
+                            listS.Add(New SachDTO(reader("MaSach"), reader("TenSach"), reader("TenTLS"), reader("TenTG"), reader("NXB"), reader("NamXB"), reader("NgayNhap"), reader("TenTTS"), reader("TriGia")))
                         End While
                     End If
 

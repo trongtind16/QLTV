@@ -3,12 +3,17 @@ Imports System.Data.SqlClient
 Imports BUS
 Imports DTO
 Imports Utility
-Public Class QuanLyPhieuMuonGUI
+Public Class PhieuTraSachGUI
     Private pmsBUS As PhieuMuonSachBUS
+    Dim pms As PhieuMuonSachDTO
+    Dim qdBus As QuyDinhBUS
+    Dim qdDTO As QuyDinhDTO
+    Dim listQuyDinh = New List(Of QuyDinhDTO)
+    Dim resul As Result
 
-    Private Sub PhieuMuonSach_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub PhieuTraSach_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         pmsBUS = New PhieuMuonSachBUS()
-        loadListPhieuMuonSach()
+        loadListPhieuTraSach()
     End Sub
     Private con As SqlConnection
     Private Sub connect()
@@ -19,19 +24,10 @@ Public Class QuanLyPhieuMuonGUI
             MessageBox.Show("Kết Nối Không Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End Try
     End Sub
-    Public Sub loadListPhieuMuonSach()
-        connect()
-
-        If con.State = ConnectionState.Closed Then
-            con.Open()
-        End If
-        Dim SQL = "UPDATE MuonTraSach SET TinhTrangPhieuMuon = N'Quá Hạn' WHERE NgayTra < GetDate() AND TinhTrangPhieuMuon = N'Đang Mượn'"
-        Dim Adapter As New SqlClient.SqlDataAdapter(SQL, con)
-        Dim DATA As New DataSet
-        Adapter.Fill(DATA, "MuonTraSach")
-        Dim listPhieuMuonSach = New List(Of PhieuMuonSachDTO)
+    Public Sub loadListPhieuTraSach()
+        Dim listPhieuTraSach = New List(Of PhieuMuonSachDTO)
         Dim result As Result
-        result = pmsBUS.selectAll(listPhieuMuonSach)
+        result = pmsBUS.selectAll(listPhieuTraSach)
         If (result.FlagResult = False) Then
             MessageBox.Show("Lấy danh sách Phiếu Mượn không thành công.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             System.Console.WriteLine(result.SystemMessage)
@@ -40,7 +36,7 @@ Public Class QuanLyPhieuMuonGUI
         ''
         dgvChiTietPhieuMuon.AutoGenerateColumns = False
         dgvChiTietPhieuMuon.AllowUserToAddRows = False
-        dgvChiTietPhieuMuon.DataSource = listPhieuMuonSach
+        dgvChiTietPhieuMuon.DataSource = listPhieuTraSach
     End Sub
     Private Sub dgvChiTietPhieuMuon_SelectionChanged(sender As Object, e As EventArgs) Handles dgvChiTietPhieuMuon.SelectionChanged
         Dim currentRowIndex As Integer = dgvChiTietPhieuMuon.CurrentCellAddress.Y
@@ -51,7 +47,7 @@ Public Class QuanLyPhieuMuonGUI
                 txtMaPhieu.Text = PhieuMuon.MaPhieu
                 txtMaDG.Text = PhieuMuon.MaDG
                 txtTenDocGia.Text = PhieuMuon.TenDG
-                txtMaS.Text = PhieuMuon.MaSach
+                txtMaSach.Text = PhieuMuon.MaSach
                 txtTenSach.Text = PhieuMuon.TenSach
                 dtpNgayMuon.Text = PhieuMuon.NgayMuon
                 dtpNgayHenTra.Text = PhieuMuon.NgayHenTra
@@ -62,10 +58,6 @@ Public Class QuanLyPhieuMuonGUI
             End Try
         End If
     End Sub
-    Private Sub btthem_Click(sender As Object, e As EventArgs) Handles btthem.Click
-        PhieuMuonSachGUI.LoadPhieuMuonGUI_Load()
-        PhieuMuonSachGUI.Show()
-    End Sub
 
 
 
@@ -74,7 +66,23 @@ Public Class QuanLyPhieuMuonGUI
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        loadListPhieuMuonSach()
-        PhieuTraSachGUI.Show()
+        MessageBox.Show("Thêm Phiếu Mượn thành công.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+        connect()
+            If con.State = ConnectionState.Closed Then
+                con.Open()
+            End If
+            Dim MS = Me.txtMaSach.Text
+            Dim SQL1 = "UPDATE Sach SET MaTTS = 1 WHERE MaSach = N'" + MS + "'"
+            Dim Adapter1 As New SqlClient.SqlDataAdapter(SQL1, con)
+            Dim DATA1 As New DataSet
+            Adapter1.Fill(DATA1, "Sach")
+        Dim MPM = Me.txtMaPhieu.Text.Trim()
+        Dim SQL2 = "UPDATE MuonTraSach SET TinhTrangPhieuMuon = N'Đã Trả' WHERE MaPhieu = N'" + MPM + "'"
+        Dim Adapter2 As New SqlClient.SqlDataAdapter(SQL2, con)
+            Dim DATA2 As New DataSet
+            Adapter2.Fill(DATA2, "MuonTraSach")
+            loadListPhieuTraSach()
+        QuanLyPhieuMuonGUI.loadListPhieuMuonSach()
     End Sub
 End Class

@@ -8,7 +8,7 @@ Public Class ThemDocGiaGUI
     Private ldgBus As LoaiDocGiaBUS
     ''
     Dim docgia As DocGiaDTO
-    Dim qd As QuyDinhDTO
+    ' Dim qd As QuyDinhDTO
     '''
     Dim qdBus As QuyDinhBUS
     Dim quydinh As QuyDinhDTO
@@ -38,9 +38,6 @@ Public Class ThemDocGiaGUI
         docgia.NgayLapThe = dtpNgayLapThe.Value
         dtpNgayHetHan.Value = dtpNgayLapThe.Value.AddMonths(hsd)
         docgia.NgayHetHan = dtpNgayHetHan.Value
-
-
-
         '2. Business .....
         If (dgBus.isValidName(docgia) = False) Then
             MessageBox.Show("Họ tên Đọc giả không đúng", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -64,26 +61,9 @@ Public Class ThemDocGiaGUI
         result = dgBus.insert(docgia)
         If (result.FlagResult = True) Then
             MessageBox.Show("Thêm Độc Giả thành công.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
-            ' Get Next ID
-            Dim nextID As Integer
-            result = dgBus.getNextID(nextID)
-            If (result.FlagResult = True) Then
-
-
-            Else
-                MessageBox.Show("Lấy ID kế tiếp của Độc Giả không thành công.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                System.Console.WriteLine(result.SystemMessage)
-            End If
-            txtMaDG.Text = nextID.ToString()
-            txtTenDG.Text = String.Empty
-            txtEmail.Text = String.Empty
-            txtDiaChi.Text = String.Empty
-            cbGioiTinh.SelectedIndex = -1
-            cbLoaiDG.SelectedIndex = -1
             DocGiaGUI.loadListDocGia()
-            'docgia.LoaiDocGia = Convert.ToInt32(cbLoaiDG.SelectedValue)
 
+            Me.Close()
         Else
             MessageBox.Show("Thêm loại Độc Giả không thành công.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             System.Console.WriteLine(result.SystemMessage)
@@ -109,6 +89,7 @@ Public Class ThemDocGiaGUI
         cbLoaiDG.DataSource = New BindingSource(listLoaiDocGia, String.Empty)
         cbLoaiDG.DisplayMember = "TenLDG"
         cbLoaiDG.ValueMember = "MaLDG"
+        cbLoaiDG.SelectedIndex = -1
 
 
         'set MSSH auto
@@ -120,6 +101,7 @@ Public Class ThemDocGiaGUI
             MessageBox.Show("Lấy ID kế tiếp của Loại học sinh không thành công.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             System.Console.WriteLine(result.SystemMessage)
         End If
+        dtpNgayLapThe.Value = DateTime.Now
 
     End Sub
 

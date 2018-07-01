@@ -146,3 +146,4 @@ C:\Users\USER\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.vbproj.CopyComplete
 C:\Users\USER\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.exe
 C:\Users\USER\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.xml
 C:\Users\USER\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.pdb
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\QLTV\obj\Debug\QLTV.PhieuTraSachGUI.resources

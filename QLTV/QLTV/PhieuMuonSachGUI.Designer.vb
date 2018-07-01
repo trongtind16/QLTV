@@ -30,7 +30,25 @@ Partial Class PhieuMuonSachGUI
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+<<<<<<< HEAD
+        Me.btnNhap = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cbMaDG = New System.Windows.Forms.ComboBox()
+        Me.txtMaPhieu = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtTenDG = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtTenSach = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.dtpHSD = New System.Windows.Forms.DateTimePicker()
+=======
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PhieuMuonSachGUI))
+>>>>>>> d4bb5c65157570417e473dd445a6570dcdc3eff7
         Me.dgvlistSach = New System.Windows.Forms.DataGridView()
         Me.MaSach = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TenSach = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -45,6 +63,15 @@ Partial Class PhieuMuonSachGUI
         Me.btthem = New System.Windows.Forms.Button()
         Me.btnTimKiem = New System.Windows.Forms.Button()
         Me.btnHuy = New System.Windows.Forms.Button()
+<<<<<<< HEAD
+        Me.txtTimKiem = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.dtpNgayTra = New System.Windows.Forms.DateTimePicker()
+        Me.dtpNgayHenTra = New System.Windows.Forms.DateTimePicker()
+        Me.dtpNgayMuon = New System.Windows.Forms.DateTimePicker()
+        Me.txtSachDaMuon = New System.Windows.Forms.TextBox()
+        Me.txtTinhTrangSach = New System.Windows.Forms.TextBox()
+=======
         Me.btthoat = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dtpHSD = New System.Windows.Forms.DateTimePicker()
@@ -66,21 +93,165 @@ Partial Class PhieuMuonSachGUI
         Me.dtpNgayHenTra = New System.Windows.Forms.DateTimePicker()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+>>>>>>> d4bb5c65157570417e473dd445a6570dcdc3eff7
         CType(Me.dgvlistSach, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
+<<<<<<< HEAD
+        'btnNhap
+        '
+        Me.btnNhap.Location = New System.Drawing.Point(299, 110)
+        Me.btnNhap.Name = "btnNhap"
+        Me.btnNhap.Size = New System.Drawing.Size(75, 23)
+        Me.btnNhap.TabIndex = 0
+        Me.btnNhap.Text = "Thêm"
+        Me.btnNhap.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 36)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(82, 13)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Mã Phiếu Mượn"
+        '
+        'cbMaDG
+        '
+        Me.cbMaDG.FormattingEnabled = True
+        Me.cbMaDG.Location = New System.Drawing.Point(121, 74)
+        Me.cbMaDG.Name = "cbMaDG"
+        Me.cbMaDG.Size = New System.Drawing.Size(121, 21)
+        Me.cbMaDG.TabIndex = 2
+        '
+        'txtMaPhieu
+        '
+        Me.txtMaPhieu.Enabled = False
+        Me.txtMaPhieu.Location = New System.Drawing.Point(121, 33)
+        Me.txtMaPhieu.Name = "txtMaPhieu"
+        Me.txtMaPhieu.Size = New System.Drawing.Size(121, 20)
+        Me.txtMaPhieu.TabIndex = 3
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(12, 82)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(64, 13)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Mã Đọc Giả"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(12, 110)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(68, 13)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "Tên Độc Giả"
+        '
+        'txtTenDG
+        '
+        Me.txtTenDG.Location = New System.Drawing.Point(121, 107)
+        Me.txtTenDG.Name = "txtTenDG"
+        Me.txtTenDG.Size = New System.Drawing.Size(121, 20)
+        Me.txtTenDG.TabIndex = 3
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(638, 29)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(50, 13)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "Mã Sách"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(638, 61)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(54, 13)
+        Me.Label5.TabIndex = 1
+        Me.Label5.Text = "Tên Sách"
+        '
+        'txtTenSach
+        '
+        Me.txtTenSach.Enabled = False
+        Me.txtTenSach.Location = New System.Drawing.Point(747, 58)
+        Me.txtTenSach.Name = "txtTenSach"
+        Me.txtTenSach.Size = New System.Drawing.Size(121, 20)
+        Me.txtTenSach.TabIndex = 3
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(284, 32)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(62, 13)
+        Me.Label6.TabIndex = 1
+        Me.Label6.Text = "Ngày Mượn"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(284, 60)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(74, 13)
+        Me.Label7.TabIndex = 1
+        Me.Label7.Text = "Ngày Hẹn Trả"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(284, 88)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(51, 13)
+        Me.Label8.TabIndex = 1
+        Me.Label8.Text = "Ngày Trả"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(12, 150)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(52, 13)
+        Me.Label10.TabIndex = 1
+        Me.Label10.Text = "HSD Thẻ"
+        '
+        'dtpHSD
+        '
+        Me.dtpHSD.CustomFormat = "dd/MM/yyyy"
+        Me.dtpHSD.Enabled = False
+        Me.dtpHSD.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpHSD.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpHSD.Location = New System.Drawing.Point(121, 150)
+        Me.dtpHSD.Name = "dtpHSD"
+        Me.dtpHSD.Size = New System.Drawing.Size(137, 22)
+        Me.dtpHSD.TabIndex = 35
+        Me.dtpHSD.Value = New Date(1999, 1, 1, 0, 0, 0, 0)
+        '
+=======
+>>>>>>> d4bb5c65157570417e473dd445a6570dcdc3eff7
         'dgvlistSach
         '
         Me.dgvlistSach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvlistSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvlistSach.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaSach, Me.TenSach, Me.MaTTS, Me.TriGia, Me.MaTLS, Me.TenTG, Me.NamXB, Me.NXB})
+<<<<<<< HEAD
+        Me.dgvlistSach.Location = New System.Drawing.Point(12, 179)
+        Me.dgvlistSach.Name = "dgvlistSach"
+        Me.dgvlistSach.ReadOnly = True
+        Me.dgvlistSach.Size = New System.Drawing.Size(1098, 273)
+=======
         Me.dgvlistSach.Location = New System.Drawing.Point(13, 368)
         Me.dgvlistSach.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvlistSach.Name = "dgvlistSach"
         Me.dgvlistSach.ReadOnly = True
         Me.dgvlistSach.Size = New System.Drawing.Size(1102, 310)
+>>>>>>> d4bb5c65157570417e473dd445a6570dcdc3eff7
         Me.dgvlistSach.TabIndex = 59
         '
         'MaSach
@@ -173,14 +344,29 @@ Partial Class PhieuMuonSachGUI
         Me.NXB.Name = "NXB"
         Me.NXB.ReadOnly = True
         '
+<<<<<<< HEAD
+        'txtMaSach
+        '
+        Me.txtMaSach.Enabled = False
+        Me.txtMaSach.Location = New System.Drawing.Point(747, 29)
+        Me.txtMaSach.Name = "txtMaSach"
+        Me.txtMaSach.Size = New System.Drawing.Size(121, 20)
+        Me.txtMaSach.TabIndex = 3
+        '
+=======
+>>>>>>> d4bb5c65157570417e473dd445a6570dcdc3eff7
         'cbDoiTuong
         '
         Me.cbDoiTuong.FormattingEnabled = True
         Me.cbDoiTuong.Items.AddRange(New Object() {"Mã Sách", "Tên Sách", "Tác Giả"})
+<<<<<<< HEAD
+        Me.cbDoiTuong.Location = New System.Drawing.Point(329, 152)
+=======
         Me.cbDoiTuong.Location = New System.Drawing.Point(233, 322)
         Me.cbDoiTuong.Margin = New System.Windows.Forms.Padding(4)
+>>>>>>> d4bb5c65157570417e473dd445a6570dcdc3eff7
         Me.cbDoiTuong.Name = "cbDoiTuong"
-        Me.cbDoiTuong.Size = New System.Drawing.Size(160, 24)
+        Me.cbDoiTuong.Size = New System.Drawing.Size(121, 21)
         Me.cbDoiTuong.TabIndex = 2
         '
         'txtTimKiem
@@ -211,6 +397,23 @@ Partial Class PhieuMuonSachGUI
         '
         'btnTimKiem
         '
+<<<<<<< HEAD
+        Me.btnTimKiem.Location = New System.Drawing.Point(601, 149)
+        Me.btnTimKiem.Name = "btnTimKiem"
+        Me.btnTimKiem.Size = New System.Drawing.Size(75, 23)
+        Me.btnTimKiem.TabIndex = 0
+        Me.btnTimKiem.Text = "Thêm"
+        Me.btnTimKiem.UseVisualStyleBackColor = True
+        '
+        'btnHuy
+        '
+        Me.btnHuy.Location = New System.Drawing.Point(693, 152)
+        Me.btnHuy.Name = "btnHuy"
+        Me.btnHuy.Size = New System.Drawing.Size(75, 23)
+        Me.btnHuy.TabIndex = 0
+        Me.btnHuy.Text = "Thêm"
+        Me.btnHuy.UseVisualStyleBackColor = True
+=======
         Me.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnTimKiem.BackgroundImage = CType(resources.GetObject("btnTimKiem.BackgroundImage"), System.Drawing.Image)
         Me.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
@@ -269,9 +472,17 @@ Partial Class PhieuMuonSachGUI
         Me.GroupBox2.TabIndex = 97
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Chức Năng"
+>>>>>>> d4bb5c65157570417e473dd445a6570dcdc3eff7
         '
         'dtpHSD
         '
+<<<<<<< HEAD
+        Me.txtTimKiem.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTimKiem.Location = New System.Drawing.Point(456, 153)
+        Me.txtTimKiem.Name = "txtTimKiem"
+        Me.txtTimKiem.Size = New System.Drawing.Size(156, 23)
+        Me.txtTimKiem.TabIndex = 60
+=======
         Me.dtpHSD.CustomFormat = "dd/MM/yyyy"
         Me.dtpHSD.Enabled = False
         Me.dtpHSD.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -417,6 +628,7 @@ Partial Class PhieuMuonSachGUI
         Me.cbMaDG.Name = "cbMaDG"
         Me.cbMaDG.Size = New System.Drawing.Size(188, 24)
         Me.cbMaDG.TabIndex = 108
+>>>>>>> d4bb5c65157570417e473dd445a6570dcdc3eff7
         '
         'Label4
         '
@@ -454,6 +666,14 @@ Partial Class PhieuMuonSachGUI
         '
         'Label7
         '
+<<<<<<< HEAD
+        Me.Button1.Location = New System.Drawing.Point(821, 123)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 61
+        Me.Button1.Text = "Thêm"
+        Me.Button1.UseVisualStyleBackColor = True
+=======
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Label7.Location = New System.Drawing.Point(384, 96)
@@ -476,11 +696,72 @@ Partial Class PhieuMuonSachGUI
         Me.GroupBox1.TabIndex = 117
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Thông Tin Phiếu Mượn Sách"
+>>>>>>> d4bb5c65157570417e473dd445a6570dcdc3eff7
+        '
+        'dtpNgayTra
+        '
+        Me.dtpNgayTra.CustomFormat = "dd/MM/yyyy"
+        Me.dtpNgayTra.Enabled = False
+        Me.dtpNgayTra.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpNgayTra.Location = New System.Drawing.Point(386, 86)
+        Me.dtpNgayTra.Name = "dtpNgayTra"
+        Me.dtpNgayTra.Size = New System.Drawing.Size(137, 22)
+        Me.dtpNgayTra.TabIndex = 62
+        Me.dtpNgayTra.Value = New Date(1999, 1, 1, 0, 0, 0, 0)
+        '
+        'dtpNgayHenTra
+        '
+        Me.dtpNgayHenTra.CustomFormat = "dd/MM/yyyy"
+        Me.dtpNgayHenTra.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpNgayHenTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpNgayHenTra.Location = New System.Drawing.Point(386, 58)
+        Me.dtpNgayHenTra.Name = "dtpNgayHenTra"
+        Me.dtpNgayHenTra.Size = New System.Drawing.Size(137, 22)
+        Me.dtpNgayHenTra.TabIndex = 63
+        Me.dtpNgayHenTra.Value = New Date(1999, 1, 1, 0, 0, 0, 0)
+        '
+        'dtpNgayMuon
+        '
+        Me.dtpNgayMuon.CustomFormat = "dd/MM/yyyy"
+        Me.dtpNgayMuon.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpNgayMuon.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpNgayMuon.Location = New System.Drawing.Point(396, 29)
+        Me.dtpNgayMuon.Name = "dtpNgayMuon"
+        Me.dtpNgayMuon.Size = New System.Drawing.Size(137, 22)
+        Me.dtpNgayMuon.TabIndex = 64
+        Me.dtpNgayMuon.Value = New Date(1999, 1, 1, 0, 0, 0, 0)
+        '
+        'txtSachDaMuon
+        '
+        Me.txtSachDaMuon.Enabled = False
+        Me.txtSachDaMuon.Location = New System.Drawing.Point(412, 114)
+        Me.txtSachDaMuon.Name = "txtSachDaMuon"
+        Me.txtSachDaMuon.Size = New System.Drawing.Size(121, 20)
+        Me.txtSachDaMuon.TabIndex = 3
+        '
+        'txtTinhTrangSach
+        '
+        Me.txtTinhTrangSach.Enabled = False
+        Me.txtTinhTrangSach.Location = New System.Drawing.Point(747, 97)
+        Me.txtTinhTrangSach.Name = "txtTinhTrangSach"
+        Me.txtTinhTrangSach.Size = New System.Drawing.Size(121, 20)
+        Me.txtTinhTrangSach.TabIndex = 3
         '
         'PhieuMuonSachGUI
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+<<<<<<< HEAD
+        Me.ClientSize = New System.Drawing.Size(1040, 450)
+        Me.Controls.Add(Me.dtpNgayMuon)
+        Me.Controls.Add(Me.dtpNgayHenTra)
+        Me.Controls.Add(Me.dtpNgayTra)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.txtTimKiem)
+        Me.Controls.Add(Me.dgvlistSach)
+        Me.Controls.Add(Me.dtpHSD)
+=======
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(1133, 691)
         Me.Controls.Add(Me.btnHuy)
@@ -494,7 +775,10 @@ Partial Class PhieuMuonSachGUI
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtMaPhieu)
         Me.Controls.Add(Me.Label2)
+>>>>>>> d4bb5c65157570417e473dd445a6570dcdc3eff7
         Me.Controls.Add(Me.txtMaSach)
+        Me.Controls.Add(Me.txtTinhTrangSach)
+        Me.Controls.Add(Me.txtSachDaMuon)
         Me.Controls.Add(Me.txtTenSach)
         Me.Controls.Add(Me.cbMaDG)
         Me.Controls.Add(Me.Label4)
@@ -507,7 +791,6 @@ Partial Class PhieuMuonSachGUI
         Me.Controls.Add(Me.GroupBox1)
         Me.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "PhieuMuonSachGUI"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PhieuMuonSachGUI"
@@ -519,6 +802,25 @@ Partial Class PhieuMuonSachGUI
         Me.PerformLayout()
 
     End Sub
+<<<<<<< HEAD
+
+    Friend WithEvents btnNhap As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents cbMaDG As ComboBox
+    Friend WithEvents txtMaPhieu As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtTenDG As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents txtTenSach As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents dtpHSD As DateTimePicker
+=======
+>>>>>>> d4bb5c65157570417e473dd445a6570dcdc3eff7
     Friend WithEvents dgvlistSach As DataGridView
     Friend WithEvents MaSach As DataGridViewTextBoxColumn
     Friend WithEvents TenSach As DataGridViewTextBoxColumn
@@ -533,6 +835,15 @@ Partial Class PhieuMuonSachGUI
     Friend WithEvents btthem As Button
     Friend WithEvents btnTimKiem As Button
     Friend WithEvents btnHuy As Button
+<<<<<<< HEAD
+    Friend WithEvents txtTimKiem As TextBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents dtpNgayTra As DateTimePicker
+    Friend WithEvents dtpNgayHenTra As DateTimePicker
+    Friend WithEvents dtpNgayMuon As DateTimePicker
+    Friend WithEvents txtSachDaMuon As TextBox
+    Friend WithEvents txtTinhTrangSach As TextBox
+=======
     Friend WithEvents btthoat As Button
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents dtpHSD As DateTimePicker
@@ -554,4 +865,5 @@ Partial Class PhieuMuonSachGUI
     Friend WithEvents dtpNgayHenTra As DateTimePicker
     Friend WithEvents Label7 As Label
     Friend WithEvents GroupBox1 As GroupBox
+>>>>>>> d4bb5c65157570417e473dd445a6570dcdc3eff7
 End Class

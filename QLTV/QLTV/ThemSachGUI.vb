@@ -25,12 +25,12 @@ Public Class ThemSachGUI
         '1. Mapping data from GUI control
         sach.MaSach = txtMaSach.Text
         sach.TenSach = txtTenSach.Text
-        sach.MaTLS = cbTheLoai.Text
+        sach.MaTLS = Convert.ToInt32(cbTheLoai.SelectedValue)
         sach.TenTG = txtTacGia.Text
         sach.NXB = txtNhaXuatBan.Text
         sach.NamXB = txtNamXuatBan.Text
         sach.NgayNhap = dtpNgayNhap.Value
-        sach.MaTTS = cbTinhTrang.Text
+        sach.MaTTS = Convert.ToInt32(cbTinhTrang.SelectedValue)
         sach.TriGia = txtTriGia.Text
 
         '2. Business .....
@@ -70,7 +70,7 @@ Public Class ThemSachGUI
             MessageBox.Show("Thêm Sách không thành công.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             System.Console.WriteLine(result.SystemMessage)
         End If
-        Me.Close()
+        Me.Hide()
     End Sub
 
 
@@ -100,7 +100,7 @@ Public Class ThemSachGUI
             Return
         End If
         cbTheLoai.DataSource = New BindingSource(listTheLoaiSach, String.Empty)
-        cbTheLoai.DisplayMember = "MaTLS"
+        cbTheLoai.DisplayMember = "TenTLS"
         cbTheLoai.ValueMember = "MaTLS"
         cbTheLoai.SelectedIndex = -1
         ''
@@ -112,9 +112,9 @@ Public Class ThemSachGUI
             Return
         End If
         cbTinhTrang.DataSource = New BindingSource(listTinhTrangSach, String.Empty)
-        cbTinhTrang.DisplayMember = "MaTTS"
+        cbTinhTrang.DisplayMember = "TenTTS"
         cbTinhTrang.ValueMember = "MaTTS"
-        cbTinhTrang.SelectedIndex = -1
+        'cbTinhTrang.SelectedIndex = -1
 
         ''
         dtpNgayNhap.Value = DateTime.Now.ToString("MM/dd/yyyy")

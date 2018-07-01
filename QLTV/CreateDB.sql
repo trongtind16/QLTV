@@ -92,10 +92,10 @@ CREATE TABLE [dbo].[TinhTrangSach](
 GO
 
 INSERT INTO [dbo].[TinhTrangSach]([MaTTS], [TenTTS]) 
-	VALUES(1, N'Còn')
+	VALUES(1, N'Rảnh')
 Go
 INSERT INTO [dbo].[TinhTrangSach]([MaTTS], [TenTTS]) 
-	VALUES(2, N'Hết')
+	VALUES(2, N'Đang Mượn')
 Go
 
 CREATE TABLE [dbo].[TheLoaiSach](

@@ -40,3 +40,4 @@ C:\Users\USER\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.vbproj.CopyComplete
 C:\Users\USER\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.dll
 C:\Users\USER\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.xml
 C:\Users\USER\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.pdb
+C:\Users\TrongTin16\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.vbproj.CopyComplete

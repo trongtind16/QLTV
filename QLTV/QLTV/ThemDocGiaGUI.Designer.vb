@@ -92,7 +92,7 @@ Partial Class ThemDocGiaGUI
         Me.dtpNgayHetHan.Name = "dtpNgayHetHan"
         Me.dtpNgayHetHan.Size = New System.Drawing.Size(275, 27)
         Me.dtpNgayHetHan.TabIndex = 96
-        Me.dtpNgayHetHan.Value = New Date(2018, 11, 25, 0, 0, 0, 0)
+        Me.dtpNgayHetHan.Value = New Date(2018, 7, 1, 0, 0, 0, 0)
         '
         'Label10
         '
